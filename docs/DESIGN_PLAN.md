@@ -478,3 +478,111 @@ PERSISTENT WORLD
 ```
 
 Nguyên tắc: **không xây MMO/world backend trước khi room combat + preparation + extraction đã chứng minh là vui.**
+
+
+---
+
+# 17. Loot / Crafting / Blueprint — DRAFTED
+
+Chi tiết: [LOOT_CRAFTING_V0.1.md](./LOOT_CRAFTING_V0.1.md)
+
+Đã có:
+
+- field loot ownership;
+- cargo baseline;
+- loot affinity;
+- room loot budget;
+- rarity;
+- blueprint fragment requirements;
+- guaranteed boss progress / bad-luck protection;
+- first-clear reward;
+- salvage;
+- prototype recipes;
+- source clarity;
+- multi-axis run progression;
+- Secure Data Case experiment.
+
+---
+
+# 18. Population / Jobs / Traits / Perks — DRAFTED
+
+Chi tiết: [POPULATION_TRAITS_V0.1.md](./POPULATION_TRAITS_V0.1.md)
+
+Đã có:
+
+- recruitment;
+- population cap;
+- room-job stat affinity;
+- worker efficiency formula;
+- Morale;
+- Fatigue;
+- death impact;
+- trait catalog;
+- role perk examples;
+- lightweight relationships;
+- survivor history;
+- roster rotation.
+
+---
+
+# 19. Scout / Travel / Contracts — DRAFTED
+
+Chi tiết: [SCOUT_TRAVEL_CONTRACTS_V0.1.md](./SCOUT_TRAVEL_CONTRACTS_V0.1.md)
+
+Đã có:
+
+- Radio Search;
+- Quick/Deep Scout;
+- confidence formula;
+- Drone bonus;
+- travel time;
+- travel risk;
+- Supply;
+- extraction accessibility;
+- contract-driven onboarding;
+- target expiry.
+
+---
+
+# 20. Silo Expansion / Sector Control — DRAFTED
+
+Chi tiết: [SILO_EXPANSION_V0.1.md](./SILO_EXPANSION_V0.1.md)
+
+Đã có:
+
+- excavation loop;
+- depth bands;
+- excavation cost/time;
+- sector discovery table;
+- challenge types;
+- control states;
+- Convert vs Restore;
+- special restorable rooms;
+- Seal Sector;
+- PvP layout implications;
+- anti-frustration pacing.
+
+---
+
+# 21. Lessons Applied — DRAFTED
+
+Chi tiết: [LESSONS_APPLIED_V0.1.md](./LESSONS_APPLIED_V0.1.md)
+
+Đã ghi rõ:
+
+- cái gì học từ Duckov / Fallout Shelter / Last Fortress / Bunker Buster / System Arrival;
+- cái gì không học;
+- những trụ signature phải bảo vệ.
+
+---
+
+# 22. Current next step
+
+**Combat Simulation vẫn NOT STARTED.**
+
+Sau khi chủ dự án muốn tiếp tục, hai hướng hợp lý nhất:
+
+1. Resource Site exact numbers + contest rules;
+2. NPC Silo Raid exact flow / defender AI / alarm.
+
+Combat Simulation có thể làm sau khi hai nhánh trên đủ context.
