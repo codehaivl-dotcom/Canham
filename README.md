@@ -8,10 +8,11 @@
 - [Game Vision / GDD](docs/GAME_DESIGN_V0.1.md)
 - [World Targets / Dungeon Design v0.1](docs/WORLD_TARGETS_V0.1.md)
 - [Units, Weapons & Items v0.1](docs/UNITS_ITEMS_V0.1.md)
+- [Enemies & Resistances v0.1](docs/ENEMIES_RESISTANCES_V0.1.md)
 
 ### Thứ tự thiết kế hiện tại
 
-**World Targets → Units & Items → Enemies & Resistances → Combat Simulation → Loot/Crafting → Silo Progression → Expedition → Resource Sites → NPC Silo Raid → Vertical Slice → PvP.**
+**World Targets ✓ → Units & Items ✓ → Enemies & Resistances ✓ → Combat Simulation → Loot/Crafting → Silo Progression → Expedition → Resource Sites → NPC Silo Raid → Vertical Slice → PvP.**
 
 ## North Star
 
