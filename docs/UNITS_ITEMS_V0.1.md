@@ -1,4 +1,4 @@
-# CĂN HẦM — Units, Weapons & Items v0.1
+# BURROW ZERO — Units, Weapons & Items v0.1
 
 **Status:** Prototype balance baseline  
 **Important:** số liệu dưới đây dùng để dựng combat prototype. Chưa phải live balance cuối cùng.
@@ -255,7 +255,7 @@ Max       5
 
 Không tăng quá 5 trong standard combat.
 
-Mốc CCL chính xác sẽ thiết kế trong Silo Progression.
+Canonical unlock baseline: **CCL2 = squad 3, CCL5 = squad 4, CCL8 = squad 5**. Exact balance may still be tuned, but implementation should use these milestones unless CANONICAL_RULES changes.
 
 ---
 
