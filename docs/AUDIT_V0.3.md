@@ -1,0 +1,409 @@
+# CĂN HẦM — Design Audit v0.3
+
+**Date:** 2026-11-12  
+**Scope:** audit toàn bộ design docs hiện có trước khi bước sâu vào prototype/balance.
+
+---
+
+# 1. Working title audit
+
+Repo hiện dùng **Căn Hầm / Canham** như codename.
+
+Quick public-name check cho thấy nhiều hướng tên hiển nhiên đã bị dùng:
+
+- Deep Signal — đã có game;
+- Hollow Signal — đã có game;
+- Deepward — đã có game;
+- Deephold — đã có game;
+- Project Silo — đã có ít nhất một game/project;
+- Signal Below — đã có game.
+
+## Working title đề xuất: ECHO SILO
+
+Lý do:
+
+- ngắn;
+- quốc tế;
+- gợi đúng hai trụ cốt truyện: **Silo + Signal**;
+- “Echo” hợp với việc các Silo tìm thấy nhau sau nhiều năm im lặng;
+- dùng được cho logo / UI / season:
+  - ECHO SILO
+  - ECHO SILO: FIRST SIGNAL
+  - ECHO SILO: THE AWAKENING
+- quick search hiện không surfacing một game nổi bật có exact title này.
+
+**Lưu ý:** quick web check không phải trademark clearance. Trước khi public/store page cần kiểm tra Steam/App Store/domain/trademark chính thức.
+
+Các tên dự phòng:
+
+1. **ECHO SILO** — đề xuất số 1.
+2. **UNDERNODE** — mạnh về persistent network, yếu hơn về survival fantasy.
+3. **SILO ECHO** — trực diện nhưng âm kém tự nhiên hơn.
+4. **THE LAST NETWORK** — nhấn shared world, không nói bunker.
+5. **DEEP NETWORK** — đúng concept nhưng generic.
+
+Repo tiếp tục dùng Canham cho tới khi chủ dự án khóa tên.
+
+---
+
+# 2. Những hệ thống đã có đủ direction
+
+## A. Game Vision — GOOD
+
+Đã khóa:
+
+- Silo home base;
+- expedition;
+- PvE;
+- boss;
+- PvP;
+- contested resource;
+- imperfect intel;
+- extraction;
+- death/revive;
+- alien exposure;
+- noise;
+- faction/alliance direction.
+
+## B. World Targets — GOOD FOR PROTOTYPE
+
+Đã có archetype:
+
+- House;
+- Warehouse;
+- Hospital;
+- Military Depot;
+- Research Lab;
+- Metro;
+- Resource Site;
+- NPC Silo;
+- Player Silo;
+- Alien Crash post-MVP.
+
+Đã có:
+
+- room band;
+- threat;
+- loot affinity;
+- objective;
+- extraction;
+- procedural rule.
+
+## C. Units / Weapons / Items — GOOD BASELINE
+
+Đã có:
+
+- 8 stats;
+- level;
+- roles;
+- squad 3 → 4 → 5;
+- formation;
+- 9 weapon classes;
+- armor;
+- utility;
+- consumables;
+- revival;
+- damage formula baseline.
+
+## D. Enemy / Resistance — GOOD BASELINE
+
+Đã có:
+
+- 24 archetype;
+- full resistance matrix;
+- Threat Cost;
+- AI priority;
+- elites;
+- bosses;
+- encounter budget;
+- TTK target.
+
+---
+
+# 3. P0 — Thiếu trước khi prototype economy/base
+
+## P0.1 Silo Building Stats — MISSING → NOW DRAFTED
+
+Trước audit chỉ có tên phòng, chưa có:
+
+- Power use/output;
+- production/hour;
+- storage;
+- beds;
+- queue;
+- level;
+- build cost;
+- build time;
+- CCL gate.
+
+Đã bổ sung tại:
+
+[SILO_BUILDINGS_V0.1.md](./SILO_BUILDINGS_V0.1.md)
+
+## P0.2 Currency / Resource / Power Economy — MISSING → NOW DRAFTED
+
+Trước audit chưa định nghĩa rõ:
+
+- currency;
+- source/sink;
+- Food/Water consumption;
+- Power grid;
+- Battery;
+- expedition Supply;
+- strategic materials;
+- starting economy.
+
+Đã bổ sung tại:
+
+[ECONOMY_RESOURCES_V0.1.md](./ECONOMY_RESOURCES_V0.1.md)
+
+## P0.3 Combat Simulation — MISSING
+
+Hiện ta có rất nhiều con số nhưng chưa chạy simulation.
+
+Cần:
+
+- Monte Carlo / deterministic encounter sim;
+- TTK;
+- HP loss;
+- wrong-loadout penalty;
+- healing;
+- AOE;
+- boss length;
+- squad 3/4/5.
+
+Không nên khóa live balance trước bước này.
+
+## P0.4 Crafting / Loot tables — MISSING
+
+Ta đã có loot affinity nhưng chưa có:
+
+- exact drop weight;
+- item salvage value;
+- recipe;
+- blueprint fragment requirement;
+- upgrade cost;
+- repair;
+- inventory weight/capacity.
+
+Đây là dependency trực tiếp của economy.
+
+---
+
+# 4. P1 — Thiếu để Vertical Slice hoàn chỉnh
+
+## P1.1 Scout formula
+
+Đã có philosophy nhưng chưa có:
+
+- Quick Scout cost/time;
+- Deep Scout cost/time;
+- exact confidence formula;
+- Scout stat contribution;
+- Drone contribution;
+- false-negative band.
+
+## P1.2 Expedition travel
+
+Chưa khóa:
+
+- travel time;
+- Supply cost exact formula;
+- distance impact;
+- random travel encounter;
+- return travel;
+- offline behavior.
+
+## P1.3 Population system
+
+Chưa có đủ:
+
+- recruit rate;
+- survivor quality;
+- population cap progression;
+- morale formula;
+- hunger/dehydration penalties;
+- worker assignment output;
+- death impact;
+- relationship effect.
+
+## P1.4 Trait / Perk catalog
+
+Hiện chỉ có ví dụ.
+
+Cần ít nhất:
+
+- 20–30 traits;
+- positive/negative/mixed;
+- 20–30 combat perks;
+- role progression.
+
+## P1.5 Silo sector expansion generation
+
+Đã có concept “clear rồi mới chiếm” nhưng chưa có:
+
+- sector size;
+- expansion cost;
+- hidden sector probability;
+- room-restoration probability;
+- threat scaling theo depth/CCL.
+
+## P1.6 Mimic
+
+GDD có Mimic/infiltration nhưng Enemy spec chưa có Mimic prototype.
+
+Cần tách:
+
+- combat Mimic;
+- hidden colonist Mimic;
+- investigation event.
+
+---
+
+# 5. P2 — Thiếu cho shared-world / live game
+
+## PvP
+
+Direction tốt nhưng chưa có exact:
+
+- matchmaking score;
+- protection/shield;
+- attacker attempts;
+- exposed resources;
+- defender loss;
+- ranking;
+- season;
+- anti-abuse.
+
+## Resource Site
+
+Đã có lifecycle nhưng chưa có:
+
+- capture time;
+- output/day;
+- worker scaling;
+- discovery chance;
+- defense cap;
+- contest window.
+
+## World Map
+
+Chưa có:
+
+- region size;
+- spawn density;
+- refresh;
+- persistent vs temporary target;
+- travel graph;
+- fog radius;
+- relocation.
+
+## Faction
+
+Chưa có:
+
+- reputation thresholds;
+- faction store;
+- exclusive gear;
+- hostility;
+- faction mission generation.
+
+## Alliance
+
+Chưa có:
+
+- size;
+- roles;
+- projects;
+- shared resources;
+- alliance PvE;
+- alliance PvP.
+
+---
+
+# 6. P3 — Production / product design chưa cần khóa ngay
+
+- art direction;
+- UI/UX wireframes;
+- sound direction;
+- narrative campaign;
+- tutorial;
+- quests/dailies;
+- achievements;
+- monetization detail;
+- analytics;
+- backend authority;
+- anti-cheat;
+- save/version migration;
+- localization;
+- accessibility;
+- notifications.
+
+Những phần này quan trọng nhưng không nên chặn combat/base prototype.
+
+---
+
+# 7. Audit conclusion
+
+Sau audit, thứ tự hợp lý hơn là:
+
+```
+VISION ✓
+WORLD TARGETS ✓
+UNITS / ITEMS ✓
+ENEMIES ✓
+    ↓
+ECONOMY / RESOURCES ✓ baseline
+SILO BUILDINGS ✓ baseline
+    ↓
+COMBAT SIMULATION
+    ↓
+CRAFTING / LOOT
+    ↓
+POPULATION / TRAITS
+    ↓
+SCOUT / TRAVEL
+    ↓
+SILO EXPANSION
+    ↓
+RESOURCE SITES
+    ↓
+NPC SILO RAID
+    ↓
+VERTICAL SLICE
+    ↓
+PVP / SHARED WORLD
+```
+
+Lý do đưa Economy + Building lên trước simulation integration:
+
+> Combat có thể cân riêng bằng số, nhưng vertical slice không thể tồn tại nếu người chơi chưa có lý do kinh tế để xây phòng, sản xuất, tiêu thụ và đi expedition.
+
+---
+
+# 8. Current readiness score
+
+Đánh giá design readiness, không phải code readiness:
+
+| Area | Readiness |
+|---|---:|
+| Game vision | 90% |
+| Combat concept | 85% |
+| Unit/item baseline | 80% |
+| Enemy baseline | 85% |
+| World target design | 80% |
+| Silo buildings | 70% |
+| Economy/resources | 70% |
+| Loot/crafting | 35% |
+| Population | 30% |
+| Scout/travel | 40% |
+| Resource territory | 40% |
+| PvP | 45% |
+| World map | 35% |
+| Narrative content | 30% |
+
+Overall pre-production design readiness:
+
+**~62%**
+
+Đủ để bắt đầu prototype combat/base nhỏ, chưa đủ để build full game.
