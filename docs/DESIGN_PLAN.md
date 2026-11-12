@@ -616,3 +616,102 @@ Chi tiết: [REWARD_REVEAL_CACHE_V0.1.md](./REWARD_REVEAL_CACHE_V0.1.md)
 - paid RNG không được là nguồn exclusive power.
 
 Combat Simulation vẫn **NOT STARTED**.
+
+
+---
+
+# 24. Resource Sites — DRAFTED
+
+[RESOURCE_SITES_V0.1.md](./RESOURCE_SITES_V0.1.md)
+
+Covers capture, workers, production, local buffer, Signal, discovery, defense, contest, plunder cap, capture protection and PvE-only access.
+
+# 25. NPC Silo Raid — DRAFTED
+
+[NPC_SILO_RAID_V0.1.md](./NPC_SILO_RAID_V0.1.md)
+
+Covers raid objectives, partial scouting, Alarm 0–100, infrastructure actions, reinforcements, extraction and tutorial raid.
+
+# 26. Player PvP Silo Raid — DRAFTED
+
+[PLAYER_PVP_RAID_V0.1.md](./PLAYER_PVP_RAID_V0.1.md)
+
+Covers async infiltration, defender conversion, hidden layout, objectives, attacker risk, defender loss limits, retreat, Command Core and anti-grief.
+
+# 27. PvP Matchmaking / Protection / Revenge — DRAFTED
+
+[PVP_MATCHMAKING_PROTECTION_V0.1.md](./PVP_MATCHMAKING_PROTECTION_V0.1.md)
+
+Covers hidden Match Score, CCL bands, Raid Charges, shields, same-target cooldown, Revenge, rank, leagues, loss caps and anti-sandbag rules.
+
+# 28. World Map / Regions — DRAFTED
+
+[WORLD_MAP_REGIONS_V0.1.md](./WORLD_MAP_REGIONS_V0.1.md)
+
+Covers region structure, Fog of War, node budgets, persistent/semi-persistent/temporary targets, refresh/evolution, routes, faction influence, world events and player Silo discovery.
+
+# 29. Factions — DRAFTED
+
+[FACTIONS_V0.1.md](./FACTIONS_V0.1.md)
+
+Initial factions: Continuity, Free Settlements, Earthborn, Archivists, Ascendants. Reputation, rivalries, stores, sidegrade tech, contracts and hostility are defined.
+
+# 30. Alliance / Coalition — DRAFTED
+
+[ALLIANCE_COALITION_V0.1.md](./ALLIANCE_COALITION_V0.1.md)
+
+20-member baseline, roles, shared intel, limited trade, coalition projects, asynchronous alliance PvE and solo compatibility.
+
+# 31. Mimic / Infiltration — DRAFTED
+
+[MIMIC_INFILTRATION_V0.1.md](./MIMIC_INFILTRATION_V0.1.md)
+
+Covers combat Mimic, hidden infiltrator, clues, investigation, false positives, sabotage, Alien Exposure and anti-frustration rules.
+
+# 32. Story Campaign — DRAFTED
+
+[STORY_CAMPAIGN_V0.1.md](./STORY_CAMPAIGN_V0.1.md)
+
+8-chapter campaign from Wake → First Signal → factions → Alien truth → PvP network → deep-Earth mystery → endgame transition.
+
+# 33. Tutorial / First 1–2 Hours — DRAFTED
+
+[TUTORIAL_FIRST_2H_V0.1.md](./TUTORIAL_FIRST_2H_V0.1.md)
+
+Curated onboarding from restoring the Silo through first House/Warehouse expeditions to the UNKNOWN HUMAN SIGNAL hook.
+
+# 34. UI/UX Navigation — DRAFTED
+
+[UI_UX_NAVIGATION_V0.1.md](./UI_UX_NAVIGATION_V0.1.md)
+
+Defines primary navigation, Silo interaction, roster, squad builder, World Map, mission prep, expedition HUD, post-run, inventory, research, notifications, localization and accessibility.
+
+# 35. Sound / Music — DRAFTED
+
+[SOUND_MUSIC_V0.1.md](./SOUND_MUSIC_V0.1.md)
+
+Defines warm-home/cold-outside audio contrast, adaptive music stems, weapon/enemy telegraphs, minimal survivor voice and AI-friendly audio scope.
+
+# 36. Seasons / Endgame — DRAFTED
+
+[SEASONS_ENDGAME_V0.1.md](./SEASONS_ENDGAME_V0.1.md)
+
+Defines 8–12 week seasons, no Silo wipe, seasonal regions, catch-up, PvE/PvP endgame, Artifact sidegrades and Coalition endgame.
+
+---
+
+# 37. Design completion status excluding Combat Simulation
+
+The major game-design systems are now documented at baseline level.
+
+Remaining non-simulation work is mainly:
+
+- detailed Art Production spec / asset budgets;
+- exact content tables and tuning;
+- technical architecture / save/backend implementation;
+- monetization implementation details;
+- analytics / telemetry;
+- accessibility implementation validation;
+- final narrative dialogue/content production.
+
+**Combat Simulation remains intentionally NOT STARTED.**
