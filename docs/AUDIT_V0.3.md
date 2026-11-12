@@ -438,3 +438,63 @@ Differentiation phải giữ:
 8. contested resource sites.
 
 Combat Simulation: **NOT STARTED**.
+
+
+---
+
+# 10. Gap closure update
+
+Sau audit, các gap P0/P1 sau đã được lấp bằng spec baseline:
+
+- Loot/Crafting/Blueprint;
+- Population/Jobs/Morale/Fatigue;
+- Trait/Perk;
+- Scout confidence;
+- Travel time/risk;
+- Contract-driven onboarding;
+- Silo excavation;
+- sector challenge/control;
+- Restore vs Convert old facility;
+- anti-RNG progression;
+- source clarity;
+- multi-axis run rewards.
+
+Files:
+
+- [LOOT_CRAFTING_V0.1.md](./LOOT_CRAFTING_V0.1.md)
+- [POPULATION_TRAITS_V0.1.md](./POPULATION_TRAITS_V0.1.md)
+- [SCOUT_TRAVEL_CONTRACTS_V0.1.md](./SCOUT_TRAVEL_CONTRACTS_V0.1.md)
+- [SILO_EXPANSION_V0.1.md](./SILO_EXPANSION_V0.1.md)
+- [LESSONS_APPLIED_V0.1.md](./LESSONS_APPLIED_V0.1.md)
+
+## Revised readiness estimate
+
+| Area | Readiness |
+|---|---:|
+| Game vision | 92% |
+| Combat concept | 85% |
+| Unit/item baseline | 82% |
+| Enemy baseline | 85% |
+| World target design | 82% |
+| Silo buildings | 75% |
+| Economy/resources | 75% |
+| Loot/crafting | 70% |
+| Population/jobs/traits | 68% |
+| Scout/travel/contracts | 70% |
+| Silo expansion | 78% |
+| Resource territory | 40% |
+| PvP | 45% |
+| World map | 35% |
+
+Overall design readiness now roughly **72%** for a vertical-slice pre-production package.
+
+Major remaining design gaps:
+
+1. Resource Site exact contest/output/defense rules;
+2. NPC Silo Raid flow and alarm/reinforcement;
+3. PvP exact loss/protection/matchmaking;
+4. World Map spawn/refresh/region model;
+5. Faction/Alliance exact systems;
+6. Combat Simulation.
+
+Combat Simulation remains **NOT STARTED**.
