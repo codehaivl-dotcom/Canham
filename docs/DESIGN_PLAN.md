@@ -95,36 +95,40 @@ Chi tiết: [UNITS_ITEMS_V0.1.md](./UNITS_ITEMS_V0.1.md)
 
 ---
 
-# 3. Enemy & Resistance Matrix — NEXT
+# 3. Enemy & Resistance Matrix — DRAFTED
 
-Cần thiết kế:
+Chi tiết: [ENEMIES_RESISTANCES_V0.1.md](./ENEMIES_RESISTANCES_V0.1.md)
 
-- threat families;
-- enemy archetypes;
-- HP / damage / attack interval;
-- armor;
-- resistance;
-- movement/aggro behavior;
-- swarm vs elite vs boss;
-- robot;
-- human raider;
-- infected;
-- alien fauna;
-- alien construct;
-- mimic;
-- boss phases.
+Đã có:
 
-Đầu ra cần có:
+- 24 enemy prototype;
+- 5 Infected;
+- 4 Human/Raider;
+- 4 Mechanical;
+- 5 Alien;
+- 3 Elite;
+- 3 Boss;
+- HP / damage / attack interval / armor;
+- full resistance matrix theo 6 damage type;
+- Threat Cost + encounter budget;
+- target priority AI;
+- status effect baseline;
+- boss CC rules;
+- difficulty multiplier;
+- TTK target;
+- Bestiary knowledge progression;
+- Scout hint language;
+- 12 encounter chuẩn để simulation.
 
-- ít nhất 20 enemy prototype;
-- matrix weapon × enemy;
+Nguyên tắc giữ nguyên:
+
 - không có hard counter phổ biến;
-- TTK target cho Easy / Medium / Hard;
-- encounter budget.
+- wrong weapon vẫn gây damage;
+- encounter difficulty đến từ composition + mechanic nhiều hơn raw stat inflation.
 
 ---
 
-# 4. Combat Simulation & Encounter Budget
+# 4. Combat Simulation & Encounter Budget — NEXT
 
 Sau Enemy table:
 
