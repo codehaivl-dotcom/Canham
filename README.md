@@ -18,6 +18,7 @@
 - [Scout, Travel & Contracts v0.1](docs/SCOUT_TRAVEL_CONTRACTS_V0.1.md)
 - [Population, Jobs, Traits & Perks v0.1](docs/POPULATION_TRAITS_V0.1.md)
 - [Loot, Crafting & Blueprint Economy v0.1](docs/LOOT_CRAFTING_V0.1.md)
+- [Reward Reveal, Cache & Survivor Signal v0.1](docs/REWARD_REVEAL_CACHE_V0.1.md)
 
 ### Thứ tự thiết kế hiện tại
 
