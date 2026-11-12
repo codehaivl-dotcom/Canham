@@ -1818,7 +1818,7 @@ Không học theo kiểu:
 - phá % công trình để lấy sao;
 - người chơi mạnh nghiền người yếu.
 
-Trong Căn Hầm:
+Trong BURROW ZERO:
 
 **raid là một dungeon infiltration bằng squad mà người chơi đã nuôi từ trước.**
 
