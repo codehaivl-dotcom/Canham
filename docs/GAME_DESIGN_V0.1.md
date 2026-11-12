@@ -1,7 +1,24 @@
-# CĂN HẦM — Game Vision / GDD v0.2
+# BURROW ZERO — Game Vision / GDD v0.3
 
 **Trạng thái:** Concept / Pre-production  
+**Tên game:** BURROW ZERO  
+**Slogan:** *Deep Below. Far Beyond.*  
+**Ngôn ngữ đầu tiên:** Tiếng Việt + English  
+**Art direction:** Panda survivors, simple AI-first low-poly 3D  
 **Mục tiêu tài liệu:** khóa hướng game trước khi prototype để tránh biến dự án thành bản sao đơn giản của Fallout Shelter hoặc Clash of Clans.
+
+---
+
+# 0. Brand lock
+
+- **Game:** BURROW ZERO
+- **Slogan:** Deep Below. Far Beyond.
+- **Initial languages:** Vietnamese + English.
+- **Primary survivor visual:** panda mascot.
+- **Production art:** simple low-poly 3D, primitive-friendly, one shared survivor rig.
+- **Localization:** no production UI text baked into textures or concept art.
+
+Canonical brand/localization spec: [BRAND_LOCALIZATION_V0.1.md](./BRAND_LOCALIZATION_V0.1.md)
 
 ---
 
