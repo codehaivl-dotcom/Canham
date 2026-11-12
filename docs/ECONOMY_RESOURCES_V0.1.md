@@ -1,4 +1,4 @@
-# ECHO SILO / CĂN HẦM — Economy & Resources v0.1
+# BURROW ZERO — Economy & Resources v0.1
 
 **Status:** Prototype baseline  
 **Rule:** số liệu là baseline để test, chưa phải final economy.
@@ -177,7 +177,8 @@ Nguồn:
 
 - PvP;
 - NPC Silo challenge;
-- combat simulation events.
+- tactical/security contracts;
+- selected contested events.
 
 Dùng:
 
