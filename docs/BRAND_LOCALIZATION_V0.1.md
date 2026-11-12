@@ -50,6 +50,18 @@ BURROW ZERO should feel:
 
 ---
 
+# 3.1 Canonical Art Production
+
+Detailed production rules:
+
+[ART_PRODUCTION_V0.1.md](./ART_PRODUCTION_V0.1.md)
+
+Core visual screen targets:
+
+[VISUAL_SCREEN_TARGETS_V0.1.md](./VISUAL_SCREEN_TARGETS_V0.1.md)
+
+---
+
 # 4. Mascot Direction — LOCKED
 
 Primary survivor species:
