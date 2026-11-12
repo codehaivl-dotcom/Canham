@@ -19,6 +19,19 @@ Tutorial uses curated outcomes, not randomness.
 
 ---
 
+# 1.1 CCL milestones during onboarding
+
+Curated tutorial progression:
+
+- Start at **CCL1**.
+- After restoring basic life support, upgrade to **CCL2** → Surface Gate + squad cap 3.
+- Before the first full expedition, curated objectives advance to **CCL3** → Radio/Scout + Workshop.
+- After first expedition/return milestone, advance to **CCL4** → Clinic/Training.
+
+These early CCL upgrades are tutorial-curated and inexpensive; exact live costs remain tuning work.
+
+---
+
 # 2. 0–5 Minutes — Wake the Silo
 
 Scene:
@@ -97,7 +110,8 @@ Post-run:
 - Clinic build;
 - loot used for Workshop;
 - open first Supply Cache;
-- rescue survivor joins.
+- rescue survivor joins;
+- Living Quarters upgrade/expansion objective appears if beds are full.
 
 Teach:
 - injury;
@@ -190,7 +204,7 @@ Teach:
 Radio receives:
 
 ```
-UNKNOWN HUMAN SIGNAL
+UNKNOWN SILO SIGNAL
 DISTANCE: 18.4 KM
 STATUS: ACTIVE
 ```
