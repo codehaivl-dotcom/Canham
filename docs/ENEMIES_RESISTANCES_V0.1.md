@@ -1,4 +1,4 @@
-# CĂN HẦM — Enemies & Resistances v0.1
+# BURROW ZERO — Enemies & Resistances v0.1
 
 **Status:** Prototype balance baseline  
 **Dependency:** [UNITS_ITEMS_V0.1.md](./UNITS_ITEMS_V0.1.md)  
@@ -38,7 +38,7 @@ Identity:
 - thường yếu hơn với Fire;
 - Chemical/Bio thường kém hiệu quả.
 
-## Human / Raider
+## Raider / hostile survivor
 
 Identity:
 
@@ -336,7 +336,7 @@ Priority lesson:
 
 ---
 
-# 9. HUMAN / RAIDER FAMILY
+# 9. RAIDER / HOSTILE SURVIVOR FAMILY
 
 ## HUM-01 — Scavenger Rifleman
 
@@ -1019,7 +1019,7 @@ Legend:
 - **-** weak;
 - **--** severe mismatch nhưng vẫn usable.
 
-| Weapon | Infected | Human | Mechanical | Alien |
+| Weapon | Infected | Raider | Mechanical | Alien |
 |---|---|---|---|---|
 | Pistol | 0 | 0 | - | 0 |
 | SMG | 0 | + | - | 0 |
@@ -1292,7 +1292,7 @@ Không khóa cứng, chỉ tăng xác suất.
 
 | Location | Common Threat |
 |---|---|
-| House | Infected / Human |
+| House | Infected / Raider |
 | Warehouse | Infected / Raider / Mechanical |
 | Hospital | Infected / Bio Alien |
 | Military Depot | Mechanical / Raider |
