@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Scout, Travel & Contracts v0.1
+# BURROW ZERO — Scout, Travel & Contracts v0.1
 
 **Status:** Prototype baseline  
 **Research influence:** directed progression + forgiving-but-meaningful extraction.
