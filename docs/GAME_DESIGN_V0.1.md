@@ -2521,3 +2521,26 @@ Slot thứ 5 không đơn giản là +25% damage.
 Nó mở ra khả năng mang một vai trò chuyên dụng mà trước đây người chơi không đủ chỗ.
 
 Đây phải là một trong những milestone progression đáng nhớ của Silo.
+
+
+---
+
+# Extended System Specs
+
+The following documents are canonical extensions of this GDD:
+
+- [RESOURCE_SITES_V0.1.md](./RESOURCE_SITES_V0.1.md)
+- [NPC_SILO_RAID_V0.1.md](./NPC_SILO_RAID_V0.1.md)
+- [PLAYER_PVP_RAID_V0.1.md](./PLAYER_PVP_RAID_V0.1.md)
+- [PVP_MATCHMAKING_PROTECTION_V0.1.md](./PVP_MATCHMAKING_PROTECTION_V0.1.md)
+- [WORLD_MAP_REGIONS_V0.1.md](./WORLD_MAP_REGIONS_V0.1.md)
+- [FACTIONS_V0.1.md](./FACTIONS_V0.1.md)
+- [ALLIANCE_COALITION_V0.1.md](./ALLIANCE_COALITION_V0.1.md)
+- [MIMIC_INFILTRATION_V0.1.md](./MIMIC_INFILTRATION_V0.1.md)
+- [STORY_CAMPAIGN_V0.1.md](./STORY_CAMPAIGN_V0.1.md)
+- [TUTORIAL_FIRST_2H_V0.1.md](./TUTORIAL_FIRST_2H_V0.1.md)
+- [UI_UX_NAVIGATION_V0.1.md](./UI_UX_NAVIGATION_V0.1.md)
+- [SOUND_MUSIC_V0.1.md](./SOUND_MUSIC_V0.1.md)
+- [SEASONS_ENDGAME_V0.1.md](./SEASONS_ENDGAME_V0.1.md)
+
+Combat Simulation is intentionally not started and is not assumed by these specs.
