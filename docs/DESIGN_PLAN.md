@@ -128,7 +128,48 @@ Nguyên tắc giữ nguyên:
 
 ---
 
-# 4. Combat Simulation & Encounter Budget — NEXT
+# 4. Economy / Resources — DRAFTED
+
+Chi tiết: [ECONOMY_RESOURCES_V0.1.md](./ECONOMY_RESOURCES_V0.1.md)
+
+Đã có baseline:
+
+- Food / Water consumption;
+- Power generation/load;
+- Battery reserve;
+- Credits;
+- Scrap / Components / Chemicals;
+- Research Data;
+- Supply;
+- strategic resources;
+- starting economy;
+- resource-site production;
+- source/sink philosophy.
+
+---
+
+# 5. Silo Buildings / Power — DRAFTED
+
+Chi tiết: [SILO_BUILDINGS_V0.1.md](./SILO_BUILDINGS_V0.1.md)
+
+Đã có:
+
+- CCL 1–12 unlock direction;
+- squad cap 4 tại CCL5;
+- squad cap 5 tại CCL8;
+- room L1–L5;
+- Power output/load;
+- Food/Water production;
+- beds/storage;
+- Workshop/Clinic/Training/Research;
+- Radio/Scout;
+- Security/Armory;
+- build cost/time baseline;
+- room state/damage/repair.
+
+---
+
+# 6. Combat Simulation & Encounter Budget — NEXT
 
 Sau Enemy table:
 
@@ -162,7 +203,7 @@ Mục tiêu:
 
 ---
 
-# 5. Loot / Crafting / Blueprint Economy
+# 7. Loot / Crafting / Blueprint Economy
 
 Thiết kế chính xác:
 
@@ -186,7 +227,7 @@ Phải đảm bảo:
 
 ---
 
-# 6. Silo Architecture & Progression
+# 8. Silo Architecture & Progression — PARTIAL
 
 Thiết kế:
 
@@ -218,7 +259,7 @@ Cần xác định chính xác:
 
 ---
 
-# 7. Scout / Intel System
+# 9. Scout / Intel System
 
 Thiết kế:
 
@@ -237,7 +278,7 @@ Không bao giờ reveal 100%.
 
 ---
 
-# 8. Expedition Flow
+# 10. Expedition Flow
 
 Full state machine:
 
@@ -269,7 +310,7 @@ Cần UI state cho:
 
 ---
 
-# 9. Resource Sites & Territory
+# 11. Resource Sites & Territory
 
 Thiết kế:
 
@@ -296,7 +337,7 @@ Resource sites ban đầu:
 
 ---
 
-# 10. PvP Silo Raid
+# 12. PvP Silo Raid
 
 Thiết kế sau khi PvE combat ổn.
 
@@ -321,7 +362,7 @@ PvP phải sử dụng cùng combat language với PvE.
 
 ---
 
-# 11. World Map
+# 13. World Map
 
 Cần định nghĩa:
 
@@ -340,7 +381,7 @@ Cần định nghĩa:
 
 ---
 
-# 12. Vertical Slice
+# 14. Vertical Slice
 
 Vertical slice đầu tiên chưa cần MMO.
 
@@ -378,7 +419,7 @@ Status: ACTIVE
 
 ---
 
-# 13. Thứ tự triển khai khuyến nghị
+# 15. Thứ tự triển khai khuyến nghị
 
 ```
 GAME VISION
@@ -388,6 +429,8 @@ WORLD TARGETS
 UNITS & ITEMS
    ↓
 ENEMIES & RESISTANCES
+   ↓
+ECONOMY / SILO BUILDINGS
    ↓
 COMBAT SIMULATION
    ↓
