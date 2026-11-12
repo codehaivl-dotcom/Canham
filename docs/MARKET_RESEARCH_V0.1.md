@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Market & Competitor Research v0.1
+# BURROW ZERO — Market & Competitor Research v0.1
 
 **Date:** 2026-11-12  
 **Status:** Research only — không thay đổi combat simulation/balance.  
@@ -8,7 +8,7 @@
 
 # 1. Executive conclusion
 
-Không tìm thấy một game hiện tại ghép đúng toàn bộ tổ hợp của Căn Hầm:
+Không tìm thấy một game hiện tại ghép đúng toàn bộ tổ hợp của BURROW ZERO:
 
 - underground cutaway Silo management;
 - named survivors có giá trị lâu dài;
@@ -51,7 +51,7 @@ Sources:
 - PC Gamer: https://www.pcgamer.com/games/third-person-shooter/escape-from-duckov-might-look-like-a-parody-but-its-a-full-fledged-full-featured-singleplayer-bottling-of-extraction-shooter-juice/
 - Steam Community reviews: https://steamcommunity.com/app/3167020/reviews/
 
-## 2.1 Vì sao Duckov quan trọng với Căn Hầm
+## 2.1 Vì sao Duckov quan trọng với BURROW ZERO
 
 Không phải vì duck/shooter.
 
@@ -70,7 +70,7 @@ PREPARE
 → UNLOCK DEEPER CONTENT
 ```
 
-Đây gần như chính xác tension loop mà Căn Hầm đang hướng tới, chỉ khác combat model.
+Đây gần như chính xác tension loop mà BURROW ZERO đang hướng tới, chỉ khác combat model.
 
 Steam mô tả:
 
@@ -96,9 +96,9 @@ Một expedition hay phải liên tục đặt câu hỏi:
 
 > “Đồ tôi đã kiếm được có đủ để rút chưa?”
 
-Căn Hầm đã có Partial Clear/Extraction. Duckov củng cố rằng đây phải là **core emotion**, không phải nút phụ.
+BURROW ZERO đã có Partial Clear/Extraction. Duckov củng cố rằng đây phải là **core emotion**, không phải nút phụ.
 
-Trong Căn Hầm:
+Trong BURROW ZERO:
 
 ```
 Room 1–3
@@ -127,7 +127,7 @@ Community reviews thường khen nhiều lớp progression:
 - quests;
 - exploration.
 
-Căn Hầm cũng nên tránh một progression bar duy nhất.
+BURROW ZERO cũng nên tránh một progression bar duy nhất.
 
 Một expedition có thể tiến cùng lúc:
 
@@ -198,7 +198,7 @@ Duckov có multiple difficulty presets và custom difficulty.
 
 Extraction không nhất thiết chỉ dành cho hardcore audience.
 
-Căn Hầm cũng nên giữ:
+BURROW ZERO cũng nên giữ:
 
 - Easy vẫn có death/revive rules;
 - nhưng Intel tốt hơn;
@@ -214,7 +214,7 @@ PC Gamer mô tả companion có khả năng bảo vệ một item khi player ch�
 
 Không copy trực tiếp.
 
-Candidate cho Căn Hầm:
+Candidate cho BURROW ZERO:
 
 ### Secure Data Case / Black Box — CHƯA KHÓA
 
@@ -239,7 +239,7 @@ Community feedback chỉ ra:
 - một số item description chưa rõ;
 - late-game repetition.
 
-Vì vậy Căn Hầm cần:
+Vì vậy BURROW ZERO cần:
 
 ### Bad-luck protection
 
@@ -306,7 +306,7 @@ RAID
 PVP
 ```
 
-## 3.1 Điểm Căn Hầm phải khác rõ
+## 3.1 Điểm BURROW ZERO phải khác rõ
 
 Không cạnh tranh bằng “bunker có nhiều phòng hơn”.
 
@@ -316,7 +316,7 @@ Signature khác biệt của ta phải là:
 
 Bunker Buster tập trung fortress/weapon systems.
 
-Căn Hầm tập trung **những con người cụ thể** đi vào unknown location.
+BURROW ZERO tập trung **những con người cụ thể** đi vào unknown location.
 
 ### B. Named survivor attachment
 
@@ -394,7 +394,7 @@ Resource/camp/alliance kéo player ra ngoài.
 
 ## Không nên học
 
-Căn Hầm không nên trôi thành:
+BURROW ZERO không nên trôi thành:
 
 - hero collection;
 - generic power number;
@@ -403,7 +403,7 @@ Căn Hầm không nên trôi thành:
 - whale snowball;
 - early-game shelter chỉ là skin của 4X.
 
-PvP của Căn Hầm phải giữ squad/room gameplay.
+PvP của BURROW ZERO phải giữ squad/room gameplay.
 
 ---
 
@@ -436,7 +436,7 @@ PvP
 
 ## Differentiation bắt buộc
 
-Nếu Căn Hầm chỉ là:
+Nếu BURROW ZERO chỉ là:
 
 > Fallout Shelter + better gear + PvP
 
@@ -547,7 +547,7 @@ Không phải competitor trực tiếp, nhưng có lesson tốt:
 
 > progression cần cho player lý do để đi sâu hơn, không chỉ “ore tier cao hơn”.
 
-Căn Hầm nên gắn depth/world progression với mystery/story signal.
+BURROW ZERO nên gắn depth/world progression với mystery/story signal.
 
 ---
 
@@ -591,7 +591,7 @@ Không coi là reference chính cho tới khi có official/public build rõ hơn
 | Duckov | + hideout | single char | +++ | +++ | - | - | ++ |
 | Bunker Buster | +++ | ? | +/tech capture | + | +++ | + | + |
 | System Arrival | ++ | ++ | +++ | + | - | - | + |
-| Căn Hầm target | +++ | +++ | +++ | +++ | +++ | +++ | +++ |
+| BURROW ZERO target | +++ | +++ | +++ | +++ | +++ | +++ | +++ |
 
 Đây không phải điểm review; chỉ là feature-fit matrix.
 
@@ -666,7 +666,7 @@ Hiện đối thủ đáng lo nhất không phải Fallout Shelter.
 
 **Duckov đã chứng minh extraction + base progression + loot greed rất hấp dẫn.**
 
-Vì vậy Căn Hầm phải giữ phần giao nhau độc đáo:
+Vì vậy BURROW ZERO phải giữ phần giao nhau độc đáo:
 
 ```
 FALLOUT-SHELTER READABILITY
