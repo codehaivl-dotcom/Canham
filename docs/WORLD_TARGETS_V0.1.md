@@ -1,4 +1,4 @@
-# CĂN HẦM — World Targets / Dungeon Design v0.1
+# BURROW ZERO — World Targets / Dungeon Design v0.1
 
 **Status:** Prototype design baseline  
 **Scope:** địa điểm người chơi scout, explore, attack, clear, capture hoặc raid.
@@ -387,6 +387,8 @@ Metro identity:
 
 **Role:** clear → capture → produce → defend / contest.
 
+Canonical detailed Resource Site rules: [RESOURCE_SITES_V0.1.md](./RESOURCE_SITES_V0.1.md). Economy output values come from [ECONOMY_RESOURCES_V0.1.md](./ECONOMY_RESOURCES_V0.1.md).
+
 Resource Site không phải dungeon loot một lần.
 
 Lifecycle:
@@ -421,7 +423,7 @@ Example:
 OLD URANIUM MINE
 
 Status: CONTROLLED
-Output: 12 Ore/hour
+Output: 3 Reactor Material/hour (canonical baseline before worker/integrity modifiers)
 Workers: 3
 Noise: HIGH
 Security: LOW
