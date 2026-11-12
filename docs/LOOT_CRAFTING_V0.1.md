@@ -46,7 +46,7 @@ SUCCESSFUL EXTRACTION
 Nếu squad failed extraction:
 
 - normal field loot mất;
-- equipped gear của survivor chết/lost tuân theo recovery rule của mission;
+- equipped gear follows explicit escort/body/wipe rules in [SURVIVOR_RECOVERY_V0.1.md](SURVIVOR_RECOVERY_V0.1.md);
 - mission-specific protected items chỉ tồn tại nếu rule nói rõ.
 
 Điều này giữ extraction tension.
@@ -108,6 +108,8 @@ Prototype:
 
 | Squad size | Base Cargo Units |
 |---|---:|
+| 1 (comeback) | 4 |
+| 2 (comeback) | 8 |
 | 3 | 12 |
 | 4 | 16 |
 | 5 | 20 |
@@ -123,7 +125,7 @@ Cargo tạo decision:
 
 > mang khẩu súng nặng về hay bỏ nó để lấy Components + Chemicals?
 
-Không tính consumable đã mang vào mission vào cargo trừ loot mới.
+Không tính consumable đã mang vào mission vào cargo trừ loot mới. Body/DOWN2CU, rescued passenger1CU; one escort/living member. Fixed cargo cap at departure. Return overflow, first-clear atomicity and retry-safe settlement: MISSION_SESSION_REWARDS_V0.1.md.
 
 ---
 
@@ -350,7 +352,7 @@ Requires Standard weapon blueprint.
 
 ## Revival Injector
 
-Requires Clinic L2 + medical research.
+Requires Clinic L2 + COM-04 Combat Triage research. Crafted at Clinic with one worker and a free treatment slot; same queue ownership and persistence rules as recovery, not a second free Workshop queue.
 
 - Chemicals 12
 - Components 4

@@ -102,6 +102,7 @@ Prototype:
 ```
 Base Worker Efficiency =
 0.85 + RelevantStat × 0.03
+RelevantStat = (Primary + Secondary) / 2
 ```
 
 Stat 5 → 1.00×  
@@ -123,7 +124,7 @@ Soft cap prototype:
 0.65× – 1.35×
 ```
 
-Không để một survivor giỏi tạo production gấp 3 lần.
+Không để một survivor giỏi tạo production gấp 3 lần. Room staffing, unstaffed50% output, automated Generator output and life-support negative-modifier exemption are defined in SURVIVOR_RECOVERY_V0.1.md. One survivor has exactly one assignment.
 
 ---
 
@@ -229,32 +230,9 @@ Negative:
 
 # 10. Fatigue
 
-Expedition tạo Fatigue.
+Authoritative timing and staffing: [SURVIVOR_RECOVERY_V0.1.md](SURVIVOR_RECOVERY_V0.1.md#4-rest-morale-staffing).
 
-Prototype:
-
-- short mission: +10;
-- medium: +20;
-- long/hard: +30–40.
-
-Scale 0–100.
-
-At >60:
-
-- -5% attack speed;
-- -5% work efficiency.
-
-At >80:
-
-- -10% combat efficiency;
-- cannot immediately redeploy unless Emergency.
-
-Rest:
-
-- Living / Recreation;
-- Clinic if injured.
-
-Không dùng fatigue để ép wait quá lâu; mục tiêu là rotate roster.
+Gain on mission settlement: Easy10, Medium20, Hard30, Extreme40; clamp0–100. REST bed recovers2/min, overflow cot1/min, active Clinic1/min; jobs/travel/mission0. Rest needs no Power. Normal deploy requires fatigue≤80. Band60<fatigue≤80:−5%attack speed/work;>80:−10%attack speed and weapon damage, no band stacking. Emergency only tagged rescue,80<fatigue<95, once/rolling24h, never bypasses HP/injury/Supply. Fatigue81 drops to80 after30seconds in a bed. Offline recovery uses shared8h simulation window.
 
 ---
 
@@ -268,7 +246,7 @@ Prototype:
 - same expedition squad survivors: -8;
 - Bonded survivor: additional -10.
 
-Penalty decay theo thời gian / positive event.
+Death overlay lasts60 simulated minutes, total floor−25; morale returns toward60 at1point/10min under stable Food/Water. Rescue/extract grants+3 once/event. Detailed separation and ordering: SURVIVOR_RECOVERY_V0.1.md.
 
 Không để một death tạo death spiral không cứu được.
 
@@ -377,7 +355,7 @@ Hard/Extreme mission +8% attack speed;
 Easy mission -5 Morale reward.
 
 ## Pacifist
-Human enemy damage -10%;
+Damage against Raider/hostile-survivor enemies−10%;
 Medical/Negotiation event bonus.
 
 ---

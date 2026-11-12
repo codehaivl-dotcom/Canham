@@ -8,6 +8,8 @@
 
 Mimic introduces uncertainty inside the safe Silo.
 
+The first curated event, exact clues/actions and Exposure gain/band/detox values are authored in [CAMPAIGN_CONTRACTS_V0.1.md](CAMPAIGN_CONTRACTS_V0.1.md#4-curated-mimic-and-alien-exposure). Procedural use stays disabled until that event completes; no runtime behavior is claimed validated.
+
 It must create:
 
 - suspicion;

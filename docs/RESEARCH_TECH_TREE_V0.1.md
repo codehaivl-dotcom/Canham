@@ -7,7 +7,7 @@
 
 # 1. Purpose
 
-Research converts exploration knowledge into permanent options.
+Research converts exploration knowledge into permanent options. All named node IDs, costs, gates, prerequisite links, durations and effects: [PROTOTYPE_RESEARCH_CATALOG_V0.1.md](PROTOTYPE_RESEARCH_CATALOG_V0.1.md). That catalog owns prototype node values; this file owns branch direction.
 
 Research should unlock:
 

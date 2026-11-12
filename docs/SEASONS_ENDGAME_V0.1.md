@@ -83,7 +83,7 @@ Ancient structures activate.
 New surface region opens.
 
 ## Season: Signal War
-Human Silo network conflict.
+Survivor Silo network conflict.
 
 ---
 
@@ -249,7 +249,7 @@ Avoid power creep stacking every season.
 
 Chapter 8 strategic path can influence seasonal flavor:
 
-- Human Network;
+- Survivor Network;
 - Alien Hybrid;
 - Isolation;
 - Coalition.

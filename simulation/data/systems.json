@@ -1,0 +1,2138 @@
+{
+  "assumptions": [
+    "Text prerequisites/effects are exported as source text rather than falsely presented as fully machine-executable semantics.",
+    "Loot weights are parsed from Implementation table; quantity bands Easy8–15/Medium12–20/Hard18–28/Extreme24–36 are documented uniform integers. Food/Water split50/50; one choice per roll.",
+    "Tutorial balances include stored plus Return Inbox entitlement; not all entitlement is immediately spendable.",
+    "Resource-site base_output excludes tier, staffing, integrity, ownership and control multipliers; systems engine must apply documented factors explicitly."
+  ],
+  "ccl": [
+    {
+      "cost": {
+        "components": 5,
+        "research_data": 0,
+        "scrap": 20
+      },
+      "level": 2,
+      "minutes": 0.5,
+      "prerequisite_text": "Water restored + Living6beds; curated sector được clear bằng internal3-unit squad trước Gate",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 10,
+        "research_data": 0,
+        "scrap": 30
+      },
+      "level": 3,
+      "minutes": 0.5,
+      "prerequisite_text": "HydroL1 active;6living; không bắt first external mission",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 10,
+        "research_data": 0,
+        "scrap": 40
+      },
+      "level": 4,
+      "minutes": 1,
+      "prerequisite_text": "First House successful extract",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 75,
+        "research_data": 10,
+        "scrap": 200
+      },
+      "level": 5,
+      "minutes": 5,
+      "prerequisite_text": "Warehouse objective clear, GeneratorL2, LivingL2; không yêu cầu Lab trước unlock",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 150,
+        "research_data": 30,
+        "scrap": 400
+      },
+      "level": 6,
+      "minutes": 10,
+      "prerequisite_text": "Population≥10, GeneratorL3, WorkshopL2, LabL1,1Military Authorization",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 240,
+        "research_data": 60,
+        "scrap": 650
+      },
+      "level": 7,
+      "minutes": 15,
+      "prerequisite_text": "SecurityL1,1Hive Chitin Core, Population≥12",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 320,
+        "research_data": 90,
+        "scrap": 900
+      },
+      "level": 8,
+      "minutes": 20,
+      "prerequisite_text": "1NPC Silo09 command objective successful extract, GeneratorL3",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 450,
+        "research_data": 140,
+        "scrap": 1250
+      },
+      "level": 9,
+      "minutes": 30,
+      "prerequisite_text": "1Military AI Core, LabL3, WorkshopL3",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 600,
+        "research_data": 220,
+        "scrap": 1700
+      },
+      "level": 10,
+      "minutes": 45,
+      "prerequisite_text": "1Neural Core, GeneratorL4, LabL4",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 800,
+        "research_data": 320,
+        "scrap": 2200
+      },
+      "level": 11,
+      "minutes": 60,
+      "prerequisite_text": "Chapter7BelowZero discovery,1Architect Archive, Population≥18; không cần Alliance membership",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    },
+    {
+      "cost": {
+        "components": 1100,
+        "research_data": 450,
+        "scrap": 3000
+      },
+      "level": 12,
+      "minutes": 90,
+      "prerequisite_text": "Chapter8 resolution,2Architect Archives, GeneratorL5; solo path hợp lệ",
+      "source": {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "section": "1 CCL requirements"
+      }
+    }
+  ],
+  "economy": {
+    "consumption": {
+      "food": 1,
+      "water": 1.2
+    },
+    "offline_cap_hours": 8,
+    "production": {
+      "food": 10,
+      "water": 12
+    },
+    "start": {
+      "chemicals": 40,
+      "components": 120,
+      "credits": 500,
+      "food": 100,
+      "population": 6,
+      "research_data": 0,
+      "scrap": 300,
+      "supply": 20,
+      "water": 120
+    }
+  },
+  "loot_weights": {
+    "depot": {
+      "chemicals": 5,
+      "components": 25,
+      "data": 15,
+      "food_water": 0,
+      "fragment": 10,
+      "gear_consumable": 30,
+      "scrap": 15
+    },
+    "hospital": {
+      "chemicals": 35,
+      "components": 10,
+      "data": 15,
+      "food_water": 10,
+      "fragment": 2,
+      "gear_consumable": 18,
+      "scrap": 10
+    },
+    "house": {
+      "chemicals": 10,
+      "components": 10,
+      "data": 0,
+      "food_water": 30,
+      "fragment": 2,
+      "gear_consumable": 18,
+      "scrap": 30
+    },
+    "lab": {
+      "chemicals": 15,
+      "components": 20,
+      "data": 30,
+      "food_water": 0,
+      "fragment": 10,
+      "gear_consumable": 15,
+      "scrap": 10
+    },
+    "metro": {
+      "chemicals": 15,
+      "components": 15,
+      "data": 10,
+      "food_water": 20,
+      "fragment": 3,
+      "gear_consumable": 12,
+      "scrap": 25
+    },
+    "npc_silo": {
+      "chemicals": 10,
+      "components": 20,
+      "data": 20,
+      "food_water": 0,
+      "fragment": 10,
+      "gear_consumable": 20,
+      "scrap": 20
+    },
+    "warehouse": {
+      "chemicals": 10,
+      "components": 30,
+      "data": 5,
+      "food_water": 10,
+      "fragment": 2,
+      "gear_consumable": 8,
+      "scrap": 35
+    }
+  },
+  "pvp": {
+    "charge_cap": 3,
+    "exposure_fraction": 0.1,
+    "loss_caps": {
+      "10": {
+        "chemicals": 18,
+        "components": 30,
+        "scrap": 90
+      },
+      "11": {
+        "chemicals": 21,
+        "components": 35,
+        "scrap": 105
+      },
+      "12": {
+        "chemicals": 24,
+        "components": 40,
+        "scrap": 120
+      },
+      "8": {
+        "chemicals": 12,
+        "components": 20,
+        "scrap": 60
+      },
+      "9": {
+        "chemicals": 15,
+        "components": 25,
+        "scrap": 75
+      }
+    },
+    "max_incoming": 1,
+    "raid_charges": 3,
+    "regen_hours": 4,
+    "revenge_hours": 24,
+    "rolling_loss_hours": 24,
+    "same_target_cooldown_hours": 24,
+    "site_output_hours_cap": 2
+  },
+  "recipes": [
+    {
+      "id": "supply",
+      "inputs": {
+        "food": 5,
+        "scrap": 2,
+        "water": 6
+      },
+      "minutes": 2,
+      "name": "5 Supply",
+      "outputs": {
+        "supply": 5
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 5 Supply"
+      },
+      "unlock_text": ""
+    },
+    {
+      "id": "medkit",
+      "inputs": {
+        "chemicals": 4,
+        "scrap": 1
+      },
+      "minutes": 2,
+      "name": "Medkit",
+      "outputs": {
+        "medkit": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 Medkit"
+      },
+      "unlock_text": ""
+    },
+    {
+      "id": "frag_grenade",
+      "inputs": {
+        "chemicals": 2,
+        "components": 1,
+        "scrap": 6
+      },
+      "minutes": 3,
+      "name": "Frag Grenade",
+      "outputs": {
+        "frag_grenade": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 Frag Grenade"
+      },
+      "unlock_text": ""
+    },
+    {
+      "id": "emp_grenade",
+      "inputs": {
+        "chemicals": 2,
+        "components": 5,
+        "scrap": 2
+      },
+      "minutes": 4,
+      "name": "EMP Grenade",
+      "outputs": {
+        "emp_grenade": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 EMP Grenade"
+      },
+      "unlock_text": ""
+    },
+    {
+      "id": "pistol",
+      "inputs": {
+        "components": 4,
+        "scrap": 18
+      },
+      "minutes": 5,
+      "name": "C-9 Civilian Pistol",
+      "outputs": {
+        "pistol": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 C-9 Civilian Pistol"
+      },
+      "unlock_text": ""
+    },
+    {
+      "id": "service_rifle",
+      "inputs": {
+        "components": 12,
+        "scrap": 30
+      },
+      "minutes": 10,
+      "name": "M-4 Service Rifle",
+      "outputs": {
+        "service_rifle": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 M-4 Service Rifle"
+      },
+      "unlock_text": "Requires Standard weapon blueprint.\r"
+    },
+    {
+      "id": "combat_armor",
+      "inputs": {
+        "chemicals": 4,
+        "components": 10,
+        "scrap": 35
+      },
+      "minutes": 12,
+      "name": "Combat Armor",
+      "outputs": {
+        "combat_armor": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 Combat Armor"
+      },
+      "unlock_text": ""
+    },
+    {
+      "id": "revival_injector",
+      "inputs": {
+        "chemicals": 12,
+        "components": 4,
+        "research_data": 2
+      },
+      "minutes": 8,
+      "name": "Revival Injector",
+      "outputs": {
+        "revival_injector": 1
+      },
+      "source": {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "section": "13 Revival Injector"
+      },
+      "unlock_text": "Requires Clinic L2 + COM-04 Combat Triage research. Crafted at Clinic with one worker and a free treatment slot; same queue ownership and persistence rules as recovery, not a second free Workshop queue.\r"
+    }
+  ],
+  "research": [
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 8
+      },
+      "effect_text": "Hydroponics normal Food output ×1.10; applies once before common output multipliers",
+      "id": "SUR-01",
+      "lab_level": 1,
+      "minutes": 5,
+      "name": "Efficient Hydroponics",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SUR-01"
+      },
+      "source_text": "Complete first Hydroponics build at CCL1–2",
+      "tier": "I"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 8
+      },
+      "effect_text": "Water Treatment normal output ×1.10",
+      "id": "SUR-02",
+      "lab_level": 1,
+      "minutes": 5,
+      "name": "Water Reclamation",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SUR-02"
+      },
+      "source_text": "Restore starting Water Treatment",
+      "tier": "I"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 10
+      },
+      "effect_text": "Battery capacity ×1.20; does not fill added capacity or increase charge rate",
+      "id": "SUR-03",
+      "lab_level": 1,
+      "minutes": 10,
+      "name": "Expanded Battery",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SUR-03"
+      },
+      "source_text": "Build a Battery; base recipe already available",
+      "tier": "I"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 8
+      },
+      "effect_text": "Delay Food shortage penalty transitions by 1h: first band 0–2h, next 2–5h, crisis5h+; no effect on consumption/Water or emergency recovery guarantees",
+      "id": "SUR-04",
+      "lab_level": 1,
+      "minutes": 5,
+      "name": "Emergency Rationing",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SUR-04"
+      },
+      "source_text": "First Food warning preview; can deliberately preview warning without reaching shortage",
+      "tier": "I"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "chemicals": 4,
+        "research_data": 20
+      },
+      "effect_text": "Clinic Infection treatment base duration ×0.80; no bonus to field healing/revive",
+      "id": "SUR-05",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Medical Sterilization",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SUR-05"
+      },
+      "source_text": "Extract Hospital Pharmacy medical manifest; optional normal Hospital exists at CCL4",
+      "tier": "II"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 10
+      },
+      "effect_text": "Existing 5-Supply recipe becomes Food4 + Water5 + Scrap2, still2min; Command emergency queue retains original recipe, preventing two bonuses",
+      "id": "EXP-01",
+      "lab_level": 1,
+      "minutes": 10,
+      "name": "Field Packing",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "EXP-01"
+      },
+      "source_text": "Craft one normal Supply batch at Command/Workshop",
+      "tier": "I"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 12
+      },
+      "effect_text": "Existing Deep Scout gains +5 percentage points confidence, capped90%; does not gate basic Deep Scout availability",
+      "id": "EXP-02",
+      "lab_level": 1,
+      "minutes": 15,
+      "name": "Deep Scan",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "EXP-02"
+      },
+      "source_text": "Complete a Deep Scout using Radio L1; no research prerequisite for that scout",
+      "tier": "I"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 5,
+        "research_data": 20
+      },
+      "effect_text": "Squad Cargo +2 CU total, not per unit, including squad3/4/5",
+      "id": "EXP-03",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Cargo Harness",
+      "prerequisites": [
+        "EXP-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "EXP-03"
+      },
+      "source_text": "Complete one successful extraction",
+      "tier": "II"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 5,
+        "research_data": 25
+      },
+      "effect_text": "Unlock Emergency Beacon recipe: Scrap10 + Components5 + Chemicals2, Workshop5min, stack1; opens only the exits explicitly marked beacon-compatible by mission",
+      "id": "EXP-04",
+      "lab_level": 2,
+      "minutes": 30,
+      "name": "Emergency Extraction",
+      "prerequisites": [
+        "EXP-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "EXP-04"
+      },
+      "source_text": "Observe an emergency-exit sign in any normal Warehouse/Hospital; no Beacon needed to observe",
+      "tier": "II"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "research_data": 40
+      },
+      "effect_text": "Bad travel-event probability ×0.90 after base chance and before final cap; no effect on positive events or max travel time",
+      "id": "EXP-05",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Route Analysis",
+      "prerequisites": [
+        "EXP-02"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "EXP-05"
+      },
+      "source_text": "Return from any two non-tutorial missions; no bad event must actually occur",
+      "tier": "III"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "components": 3,
+        "research_data": 12
+      },
+      "effect_text": "Unlock existing Stabilized modifier for a ballistic weapon: +6 percentage points Accuracy, obey cap98%; install once for Scrap8 + Components4, Workshop3min; uses its one Major Modifier slot",
+      "id": "COM-01",
+      "lab_level": 1,
+      "minutes": 10,
+      "name": "Ballistic Calibration",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "COM-01"
+      },
+      "source_text": "Extract one ballistic weapon or use starting Rifle",
+      "tier": "I"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 5,
+        "research_data": 20
+      },
+      "effect_text": "Laser Focus cap20%→24%; +4%/sec rate and reset-on-switch unchanged",
+      "id": "COM-02",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Energy Focusing",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "COM-02"
+      },
+      "source_text": "Extract/equip a Laser from normal Lab/Military/contract source; research not needed to acquire it",
+      "tier": "II"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "chemicals": 4,
+        "research_data": 20
+      },
+      "effect_text": "Frag secondary-target damage ×1.10; primary55 and target limit/radius unchanged; no bonus to Rocket or EMP",
+      "id": "COM-03",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Blast Control",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "COM-03"
+      },
+      "source_text": "Use one Frag in any mission; starting stock is sufficient",
+      "tier": "II"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "chemicals": 4,
+        "research_data": 12
+      },
+      "effect_text": "Medkit use-action duration ×0.80; does not alter heal amount, revive count or healing cooldown",
+      "id": "COM-04",
+      "lab_level": 1,
+      "minutes": 10,
+      "name": "Combat Triage",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "COM-04"
+      },
+      "source_text": "Use a Medkit and extract; tutorial stock supplies it",
+      "tier": "I"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "military_data": 2,
+        "research_data": 40
+      },
+      "effect_text": "Add Support First preset: valid revealed Support enemies first, then lowest currentHP, then stable enemyID tie-break; manual focus overrides until target invalid",
+      "id": "COM-05",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Tactical Doctrine",
+      "prerequisites": [
+        "COM-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "COM-05"
+      },
+      "source_text": "Observe Support enemy; Military Data from CCL5–6 Military Depot contract, not PvP",
+      "tier": "III"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 5,
+        "research_data": 20
+      },
+      "effect_text": "Unlock Door MkII: same8 Capacity/1PU, HP150/Armor25. Upgrade existing MkI for15 Scrap/5 Components/2min; choose fail-open/fail-closed. Installed-defense data owned by Security§17; objective/extraction path remains valid",
+      "id": "SEC-01",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Reinforced Doors",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SEC-01"
+      },
+      "source_text": "Inspect any standard Door; starting Silo door qualifies",
+      "tier": "II"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 5,
+        "research_data": 20
+      },
+      "effect_text": "Unlock Sensor Node,5 Capacity/1PU; build15 Scrap/5 Components/2min; records entry once/room and adds10 Alarm. Also unlock Backup Cell per Security§7/17",
+      "id": "SEC-02",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Sensor Network",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SEC-02"
+      },
+      "source_text": "Build Security L1 and inspect its overlay",
+      "tier": "II"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 8,
+        "research_data": 25
+      },
+      "effect_text": "Unlock player Sentry Turret MkI,15 Capacity/3PU; build35 Scrap/12 Components/4min, HP140/Armor25,12 Ballistic/1sec. Enemy Auto Turret MkII remains a different entity; Security§17 owns full stats",
+      "id": "SEC-03",
+      "lab_level": 2,
+      "minutes": 30,
+      "name": "Automated Turret",
+      "prerequisites": [
+        "SEC-02"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SEC-03"
+      },
+      "source_text": "Encounter normal Mechanical threat in Warehouse or Military Depot; neither needs a player Turret",
+      "tier": "II"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "military_data": 2,
+        "research_data": 40
+      },
+      "effect_text": "One-time choice of response threshold70 or80 instead of75; show tradeoff in editor; threshold never spawns more than one response wave; switch freely outside an active raid",
+      "id": "SEC-04",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Alarm Logic",
+      "prerequisites": [
+        "SEC-02"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SEC-04"
+      },
+      "source_text": "Complete Silo09 NPC tutorial raid; NPC Alarm is available without this player research",
+      "tier": "III"
+    },
+    {
+      "ccl": 8,
+      "cost": {
+        "military_data": 3,
+        "research_data": 50
+      },
+      "effect_text": "Allow response squad to stage in one validated adjacent room at threshold, without exceeding squad cap or duplicating stationed defenders; retain one-wave limit",
+      "id": "SEC-05",
+      "lab_level": 3,
+      "minutes": 90,
+      "name": "Response Doctrine",
+      "prerequisites": [
+        "SEC-04"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "SEC-05"
+      },
+      "source_text": "Complete any second NPC raid; can be same archetype after refresh, no PvP requirement",
+      "tier": "III"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "components": 3,
+        "research_data": 10
+      },
+      "effect_text": "Workshop craft-speed ×1.10; timer duration = base / speed; does not multiply item yield",
+      "id": "ENG-01",
+      "lab_level": 1,
+      "minutes": 10,
+      "name": "Workshop Tooling",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "ENG-01"
+      },
+      "source_text": "Finish one Workshop craft",
+      "tier": "I"
+    },
+    {
+      "ccl": 6,
+      "cost": {
+        "components": 5,
+        "research_data": 20
+      },
+      "effect_text": "Gear salvage recovery +5 percentage points (Civilian30→35%, Industrial35→40%, Military40→45%, Advanced45→50%, Prototype50→55%); round each material down; special rolls unchanged",
+      "id": "ENG-02",
+      "lab_level": 2,
+      "minutes": 20,
+      "name": "Salvage Recovery",
+      "prerequisites": [
+        "ENG-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "ENG-02"
+      },
+      "source_text": "Salvage one nonunique duplicate; initial loot/contract can provide Civilian gear without this node",
+      "tier": "II"
+    },
+    {
+      "ccl": 5,
+      "cost": {
+        "research_data": 10
+      },
+      "effect_text": "Unlock custom room load-shedding order; emergency life-support floor cannot be disabled accidentally and mandatory path validation still applies",
+      "id": "ENG-03",
+      "lab_level": 1,
+      "minutes": 10,
+      "name": "Power Management",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "ENG-03"
+      },
+      "source_text": "Open default power-priority panel; no shortage required",
+      "tier": "I"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "components": 8,
+        "research_data": 40
+      },
+      "effect_text": "Unlock Scout Drone utility: Scrap20 + Components12, Workshop6min; Deep Scout +8 percentage points cap90%; one adjacent-room reveal/mission; mission anti-drone action may consume it. Defense Drone12Capacity/2PU, build30 Scrap/12 Components/4min; Security§17 owns installed-defense data",
+      "id": "ENG-04",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Drone Systems",
+      "prerequisites": [
+        "ENG-03"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "ENG-04"
+      },
+      "source_text": "Extract Mechanical salvage from Warehouse/Depot; no Drone needed for source",
+      "tier": "III"
+    },
+    {
+      "ccl": 9,
+      "cost": {
+        "prototype_core": 1,
+        "research_data": 80
+      },
+      "effect_text": "Grants fabrication license required to build Prototype Forge and use known Prototype blueprints; does not grant free Forge/blueprint/gear",
+      "id": "ENG-05",
+      "lab_level": 3,
+      "minutes": 180,
+      "name": "Prototype Fabrication",
+      "prerequisites": [
+        "ENG-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "ENG-05"
+      },
+      "source_text": "Prototype Core guaranteed progression path from Hard boss/NPC lab objective; no Forge needed to earn it",
+      "tier": "IV"
+    },
+    {
+      "ccl": 10,
+      "cost": {
+        "alien_material": 2,
+        "research_data": 120
+      },
+      "effect_text": "Analyze one known Alien sample to advance its Bestiary by one knowledge tier, never beyond Researched; action costs1 sample +5RD, Lab10min; no automatic knowledge of unknown enemies. Handling adds1 Exposure per analysis",
+      "id": "XEN-01",
+      "lab_level": 4,
+      "minutes": 480,
+      "name": "Alien Tissue Analysis",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "XEN-01"
+      },
+      "source_text": "Extract first Alien tissue from CCL9–10 anomaly, combat or story; no Xenobiology gear needed",
+      "tier": "V"
+    },
+    {
+      "ccl": 10,
+      "cost": {
+        "alien_material": 2,
+        "research_data": 120
+      },
+      "effect_text": "Display exact current Exposure, band boundaries and predicted change for known gear/actions; monitoring itself adds0 Exposure",
+      "id": "XEN-02",
+      "lab_level": 4,
+      "minutes": 480,
+      "name": "Exposure Monitoring",
+      "prerequisites": [
+        "XEN-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "XEN-02"
+      },
+      "source_text": "First Alien Exposure warning or first sample, both available before node",
+      "tier": "V"
+    },
+    {
+      "ccl": 10,
+      "cost": {
+        "alien_material": 4,
+        "research_data": 140
+      },
+      "effect_text": "Unlock Adaptive Hazmat sidegrade recipe: Scrap35 + Components10 + Chemicals8 + Alien Material3, Xenobiology10min; Hazmat base armor12/Bio45%, add Energy15%; attack-speed -5%; adds5 Exposure per deployment. Caps apply",
+      "id": "XEN-03",
+      "lab_level": 4,
+      "minutes": 600,
+      "name": "Adaptive Material",
+      "prerequisites": [
+        "XEN-01"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "XEN-03"
+      },
+      "source_text": "Extract Alien shell material through Alien tissue objective; no adaptive gear required",
+      "tier": "V"
+    },
+    {
+      "ccl": 10,
+      "cost": {
+        "alien_material": 4,
+        "research_data": 140
+      },
+      "effect_text": "Alien utility recipe: Components12 + Alien Material3 + Research Data10, Xenobiology12min; +10% Tech Effect for bearer while equipped, +5 Exposure per deployment; occupies one existing Utility slot",
+      "id": "XEN-04",
+      "lab_level": 4,
+      "minutes": 600,
+      "name": "Neural Interface",
+      "prerequisites": [
+        "XEN-02"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "XEN-04"
+      },
+      "source_text": "Read Alien terminal with manual story translation; Engineer only speeds interaction, no Interface needed",
+      "tier": "V"
+    },
+    {
+      "ccl": 11,
+      "cost": {
+        "alien_material": 5,
+        "research_data": 160
+      },
+      "effect_text": "Unlock artifact blueprint research actions and source hints; consumes no artifact, grants no raw stat bonus/Artifact itself, adds0 Exposure",
+      "id": "XEN-05",
+      "lab_level": 5,
+      "minutes": 720,
+      "name": "Artifact Theory",
+      "prerequisites": [
+        "XEN-03"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "XEN-05"
+      },
+      "source_text": "Recover Artifact fragment from guaranteed late-PvE story objective; finding fragment needs no Artifact research",
+      "tier": "V"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "military_data": 2,
+        "research_data": 35
+      },
+      "effect_text": "Door MkII security sidegrade may add +10% breach time with +1 activePU; does not stack a second generic Door upgrade; same8 Capacity. Toggle per door outside active raid",
+      "id": "FAC-01",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Continuity — Security Protocol",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "FAC-01"
+      },
+      "source_text": "Continuity Trusted20 + complete “Door Audit” PvE contract; normal Door/Lab available beforehand; SEC-01 required only to install on MkII, not to learn node",
+      "tier": "special"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "research_data": 35
+      },
+      "effect_text": "Data/Blueprint field-loot stacks weigh 0.5CU instead of1CU, round total cargo up at mission boundary; never protects from extraction loss, increases RD yield or changes physical-material weight",
+      "id": "FAC-02",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Archivists — Archive Compression",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "FAC-02"
+      },
+      "source_text": "Archivists Trusted20 + retrieve a Data Center archive through PvE; no Compression needed",
+      "tier": "special"
+    },
+    {
+      "ccl": 7,
+      "cost": {
+        "chemicals": 4,
+        "research_data": 35
+      },
+      "effect_text": "Allow hazard training stance: bearer gains +10 percentage points Bio/Rad resistance and -5% attack speed for one mission; choose at preparation, free to remove afterward, no midmission switching; obey caps",
+      "id": "FAC-03",
+      "lab_level": 3,
+      "minutes": 60,
+      "name": "Earthborn — Surface Conditioning",
+      "prerequisites": [],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "FAC-03"
+      },
+      "source_text": "Earthborn Trusted20 + surface route survey; route has a hazard-free extraction alternative",
+      "tier": "special"
+    },
+    {
+      "ccl": 10,
+      "cost": {
+        "alien_material": 3,
+        "research_data": 100
+      },
+      "effect_text": "Optional Neural Interface sidegrade: Tech Effect bonus15% instead of10%, deployment Exposure8 instead of5; same Utility slot; not stackable with normal Interface and still requires its recipe/installation materials",
+      "id": "FAC-04",
+      "lab_level": 4,
+      "minutes": 480,
+      "name": "Ascendants — Hybrid Interface",
+      "prerequisites": [
+        "XEN-02"
+      ],
+      "source": {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "section": "FAC-04"
+      },
+      "source_text": "Ascendants Trusted20 + Alien terminal contract; neither reputation nor contract requires equipped Neural Interface; XEN-04 license required to craft either variant",
+      "tier": "special"
+    }
+  ],
+  "rooms": {
+    "armory": {
+      "build_cost": {
+        "components": 40,
+        "scrap": 120
+      },
+      "build_minutes": 6,
+      "id": "armory",
+      "levels": [
+        {
+          "gear_capacity": 20,
+          "level": 1,
+          "power": 3,
+          "prep_bonus_percent": 0
+        },
+        {
+          "gear_capacity": 35,
+          "level": 2,
+          "power": 4,
+          "prep_bonus_percent": 5
+        },
+        {
+          "gear_capacity": 55,
+          "level": 3,
+          "power": 5,
+          "prep_bonus_percent": 10
+        },
+        {
+          "gear_capacity": 80,
+          "level": 4,
+          "power": 6,
+          "prep_bonus_percent": 15
+        },
+        {
+          "gear_capacity": 110,
+          "level": 5,
+          "power": 8,
+          "prep_bonus_percent": 20
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "17 Room table"
+      }
+    },
+    "battery": {
+      "build_cost": {
+        "components": 20,
+        "scrap": 50
+      },
+      "build_minutes": 1,
+      "id": "battery",
+      "levels": [
+        {
+          "level": 1,
+          "reserve_puh": 20
+        },
+        {
+          "level": 2,
+          "reserve_puh": 35
+        },
+        {
+          "level": 3,
+          "reserve_puh": 55
+        },
+        {
+          "level": 4,
+          "reserve_puh": 80
+        },
+        {
+          "level": 5,
+          "reserve_puh": 110
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "6 Room table"
+      }
+    },
+    "clinic": {
+      "build_cost": {
+        "chemicals": 20,
+        "components": 25,
+        "scrap": 90
+      },
+      "build_minutes": 5,
+      "id": "clinic",
+      "levels": [
+        {
+          "beds": 2,
+          "heal_speed": 1,
+          "level": 1,
+          "power": 4
+        },
+        {
+          "beds": 3,
+          "heal_speed": 1.2,
+          "level": 2,
+          "power": 5
+        },
+        {
+          "beds": 4,
+          "heal_speed": 1.45,
+          "level": 3,
+          "power": 6
+        },
+        {
+          "beds": 5,
+          "heal_speed": 1.75,
+          "level": 4,
+          "power": 7
+        },
+        {
+          "beds": 6,
+          "heal_speed": 2.1,
+          "level": 5,
+          "power": 8
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "12 Room table"
+      }
+    },
+    "generator": {
+      "build_cost": {
+        "components": 25,
+        "scrap": 80
+      },
+      "build_minutes": 2,
+      "id": "generator",
+      "levels": [
+        {
+          "level": 1,
+          "power_output": 20
+        },
+        {
+          "level": 2,
+          "power_output": 32
+        },
+        {
+          "level": 3,
+          "power_output": 46
+        },
+        {
+          "level": 4,
+          "power_output": 62
+        },
+        {
+          "level": 5,
+          "power_output": 80
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "5 Room table"
+      }
+    },
+    "hydroponics": {
+      "build_cost": {
+        "chemicals": 10,
+        "components": 15,
+        "scrap": 80
+      },
+      "build_minutes": 3,
+      "id": "hydroponics",
+      "levels": [
+        {
+          "food_per_hour": 10,
+          "level": 1,
+          "power": 5
+        },
+        {
+          "food_per_hour": 17,
+          "level": 2,
+          "power": 7
+        },
+        {
+          "food_per_hour": 26,
+          "level": 3,
+          "power": 9
+        },
+        {
+          "food_per_hour": 36,
+          "level": 4,
+          "power": 12
+        },
+        {
+          "food_per_hour": 48,
+          "level": 5,
+          "power": 15
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "8 Room table"
+      }
+    },
+    "living": {
+      "build_cost": {
+        "components": 10,
+        "scrap": 60
+      },
+      "build_minutes": 2,
+      "id": "living",
+      "levels": [
+        {
+          "beds": 6,
+          "level": 1,
+          "power": 1
+        },
+        {
+          "beds": 10,
+          "level": 2,
+          "power": 1
+        },
+        {
+          "beds": 14,
+          "level": 3,
+          "power": 2
+        },
+        {
+          "beds": 18,
+          "level": 4,
+          "power": 2
+        },
+        {
+          "beds": 24,
+          "level": 5,
+          "power": 3
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "9 Room table"
+      }
+    },
+    "radio": {
+      "build_cost": {
+        "components": 40,
+        "scrap": 110
+      },
+      "build_minutes": 5,
+      "id": "radio",
+      "levels": [
+        {
+          "intel_bonus_percent": 0,
+          "level": 1,
+          "power": 4,
+          "radius_km": 8
+        },
+        {
+          "intel_bonus_percent": 5,
+          "level": 2,
+          "power": 6,
+          "radius_km": 15
+        },
+        {
+          "intel_bonus_percent": 10,
+          "level": 3,
+          "power": 8,
+          "radius_km": 25
+        },
+        {
+          "intel_bonus_percent": 15,
+          "level": 4,
+          "power": 10,
+          "radius_km": 40
+        },
+        {
+          "intel_bonus_percent": 20,
+          "level": 5,
+          "power": 13,
+          "radius_km": 60
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "15 Room table"
+      }
+    },
+    "recycler": {
+      "build_cost": {
+        "components": 25,
+        "scrap": 70
+      },
+      "build_minutes": 4,
+      "id": "recycler",
+      "levels": [
+        {
+          "level": 1,
+          "power": 3,
+          "scrap_per_hour": 2
+        },
+        {
+          "level": 2,
+          "power": 4,
+          "scrap_per_hour": 4
+        },
+        {
+          "level": 3,
+          "power": 5,
+          "scrap_per_hour": 7
+        },
+        {
+          "level": 4,
+          "power": 6,
+          "scrap_per_hour": 10
+        },
+        {
+          "level": 5,
+          "power": 8,
+          "scrap_per_hour": 14
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "18 Room table"
+      }
+    },
+    "research_lab": {
+      "build_cost": {
+        "chemicals": 10,
+        "components": 50,
+        "scrap": 140
+      },
+      "build_minutes": 8,
+      "id": "research_lab",
+      "levels": [
+        {
+          "level": 1,
+          "power": 6,
+          "queue": 1,
+          "research_speed": 1
+        },
+        {
+          "level": 2,
+          "power": 8,
+          "queue": 1,
+          "research_speed": 1.2
+        },
+        {
+          "level": 3,
+          "power": 10,
+          "queue": 2,
+          "research_speed": 1.45
+        },
+        {
+          "level": 4,
+          "power": 12,
+          "queue": 2,
+          "research_speed": 1.75
+        },
+        {
+          "level": 5,
+          "power": 15,
+          "queue": 3,
+          "research_speed": 2.1
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "14 Room table"
+      }
+    },
+    "security": {
+      "build_cost": {
+        "components": 35,
+        "scrap": 100
+      },
+      "build_minutes": 4,
+      "id": "security",
+      "levels": [
+        {
+          "capacity": 20,
+          "level": 1,
+          "power": 3
+        },
+        {
+          "capacity": 35,
+          "level": 2,
+          "power": 4
+        },
+        {
+          "capacity": 55,
+          "level": 3,
+          "power": 6
+        },
+        {
+          "capacity": 80,
+          "level": 4,
+          "power": 8
+        },
+        {
+          "capacity": 110,
+          "level": 5,
+          "power": 10
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "16 Room table"
+      }
+    },
+    "storage": {
+      "build_cost": {
+        "components": 10,
+        "scrap": 50
+      },
+      "build_minutes": 1,
+      "id": "storage",
+      "levels": [
+        {
+          "capacity": 250,
+          "level": 1,
+          "power": 1
+        },
+        {
+          "capacity": 450,
+          "level": 2,
+          "power": 1
+        },
+        {
+          "capacity": 700,
+          "level": 3,
+          "power": 2
+        },
+        {
+          "capacity": 1000,
+          "level": 4,
+          "power": 2
+        },
+        {
+          "capacity": 1400,
+          "level": 5,
+          "power": 3
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "10 Room table"
+      }
+    },
+    "training": {
+      "build_cost": {
+        "components": 20,
+        "scrap": 80
+      },
+      "build_minutes": 4,
+      "id": "training",
+      "levels": [
+        {
+          "level": 1,
+          "power": 3,
+          "slots": 2,
+          "training_speed": 1
+        },
+        {
+          "level": 2,
+          "power": 4,
+          "slots": 3,
+          "training_speed": 1.15
+        },
+        {
+          "level": 3,
+          "power": 5,
+          "slots": 4,
+          "training_speed": 1.35
+        },
+        {
+          "level": 4,
+          "power": 6,
+          "slots": 5,
+          "training_speed": 1.6
+        },
+        {
+          "level": 5,
+          "power": 7,
+          "slots": 6,
+          "training_speed": 1.9
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "13 Room table"
+      }
+    },
+    "water": {
+      "build_cost": {
+        "components": 20,
+        "scrap": 70
+      },
+      "build_minutes": 2,
+      "id": "water",
+      "levels": [
+        {
+          "level": 1,
+          "power": 4,
+          "water_per_hour": 12
+        },
+        {
+          "level": 2,
+          "power": 6,
+          "water_per_hour": 20
+        },
+        {
+          "level": 3,
+          "power": 8,
+          "water_per_hour": 30
+        },
+        {
+          "level": 4,
+          "power": 10,
+          "water_per_hour": 42
+        },
+        {
+          "level": 5,
+          "power": 13,
+          "water_per_hour": 56
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "7 Room table"
+      }
+    },
+    "workshop": {
+      "build_cost": {
+        "chemicals": 5,
+        "components": 30,
+        "scrap": 100
+      },
+      "build_minutes": 5,
+      "id": "workshop",
+      "levels": [
+        {
+          "craft_speed": 1,
+          "level": 1,
+          "power": 4,
+          "queue": 1
+        },
+        {
+          "craft_speed": 1.15,
+          "level": 2,
+          "power": 5,
+          "queue": 1
+        },
+        {
+          "craft_speed": 1.35,
+          "level": 3,
+          "power": 6,
+          "queue": 2
+        },
+        {
+          "craft_speed": 1.6,
+          "level": 4,
+          "power": 8,
+          "queue": 2
+        },
+        {
+          "craft_speed": 1.9,
+          "level": 5,
+          "power": 10,
+          "queue": 3
+        }
+      ],
+      "source": {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "section": "11 Room table"
+      }
+    }
+  },
+  "schema_version": 1,
+  "sites": {
+    "alien_crater": {
+      "base_output": {
+        "alien_material": 2
+      },
+      "id": "alien_crater",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "2 Alien Material/h"
+    },
+    "chemical_plant": {
+      "base_output": {
+        "chemicals": 8
+      },
+      "id": "chemical_plant",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "8 Chemicals/h"
+    },
+    "data_center": {
+      "base_output": {
+        "research_data": 6
+      },
+      "id": "data_center",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "6 Research Data/h"
+    },
+    "military_salvage": {
+      "base_output": {
+        "components": 5
+      },
+      "id": "military_salvage",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "5 Components/h + rare military roll"
+    },
+    "scrapyard": {
+      "base_output": {
+        "scrap": 18
+      },
+      "id": "scrapyard",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "18 Scrap/h"
+    },
+    "solar_farm": {
+      "base_output": {
+        "energy_cells": 8
+      },
+      "id": "solar_farm",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "8 Energy Cells/h*"
+    },
+    "uranium_mine": {
+      "base_output": {
+        "reactor_material": 3
+      },
+      "id": "uranium_mine",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "3 Reactor Material/h"
+    },
+    "water_facility": {
+      "base_output": {
+        "water": 30
+      },
+      "id": "water_facility",
+      "source": {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "section": "20 Resource Site Baseline Output"
+      },
+      "source_text": "30 Water/h"
+    }
+  },
+  "sources": [
+    {
+      "path": "docs/CAMPAIGN_CONTRACTS_V0.1.md",
+      "sha256": "08e9167424d10a97bdfc4363cc2b0273d795d67c3050b20a3e5f19dbdfca0a8a"
+    },
+    {
+      "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+      "sha256": "f6414c7a7b78371a5ab1d46213eb5162ecb33fb62660b62929699d2b850845fa"
+    },
+    {
+      "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+      "sha256": "cb2c0692dad7018abbe5d67414bf3d56149f43f77cd24b7b02f78a76f8cb13b0"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_BASELINE_V0.1.md",
+      "sha256": "be27523214e3d13401d392aa635b805990cc286e2ebabfeeb147d17b4ca476f0"
+    },
+    {
+      "path": "docs/LOOT_CRAFTING_V0.1.md",
+      "sha256": "007312b38eb8abad7b4c81ef115d688eab008bf0de542abb4869674d270d3804"
+    },
+    {
+      "path": "docs/POPULATION_TRAITS_V0.1.md",
+      "sha256": "8030c15e192736de43400ee89e01aa17197a24158cd6ac29d66446c11db76e2c"
+    },
+    {
+      "path": "docs/PROTOTYPE_CONTENT_PACK_V0.1.md",
+      "sha256": "eab787dce325d1906fa84492728ff6881f199cee4c39e0ef73e4eabc1e10fa90"
+    },
+    {
+      "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+      "sha256": "9717b8b7adff11441efd4e539f88e3d7008390d5e09ac8547130162b4ccd0787"
+    },
+    {
+      "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+      "sha256": "df50c5729fb04a1b90e620d4f6e53c940cd4baab4e2381f1493fa9ba6871b396"
+    },
+    {
+      "path": "docs/PVP_MATCHMAKING_PROTECTION_V0.1.md",
+      "sha256": "0f3e4ad8406746c612fa1906ec175d3db0ee0d6b3268e16a3d74a0feda37f4b8"
+    },
+    {
+      "path": "docs/RESOURCE_SITES_V0.1.md",
+      "sha256": "fade404f220bebee31f218840d1d28b6ac5ee9bd7a77611557970ee194620e48"
+    },
+    {
+      "path": "docs/SILO_BUILDINGS_V0.1.md",
+      "sha256": "4c7a929c6d0de78dfeeeaab932832d0d400bca82377659132eb005950523d722"
+    },
+    {
+      "path": "docs/SILO_DEFENSE_SECURITY_V0.1.md",
+      "sha256": "40b8fdb319d19fbf8532ce58571665217f45c848a37bc35bc9a91245c7e1c2c4"
+    },
+    {
+      "path": "docs/SURVIVOR_RECOVERY_V0.1.md",
+      "sha256": "c640956db86da1086e3705fe616f17c184e5d104551a668c7b74f40d718b302b"
+    },
+    {
+      "path": "docs/UNITS_ITEMS_V0.1.md",
+      "sha256": "41e025012e9b31ddb936b7782ceb8c8e23e6c9557050230cbe2d37b905ca85c4"
+    }
+  ],
+  "treatment": [
+    {
+      "chemicals": 0,
+      "id": "routine_hp_recovery",
+      "minutes": 10,
+      "name": "Routine HP recovery",
+      "result_text": "Restore HP, không xóa injury"
+    },
+    {
+      "chemicals": 0,
+      "id": "tutorial_bruising",
+      "minutes": 3,
+      "name": "Tutorial bruising",
+      "result_text": "Xóa tutorial injury, full HP"
+    },
+    {
+      "chemicals": 2,
+      "id": "fracture",
+      "minutes": 15,
+      "name": "Fracture",
+      "result_text": "Xóa−10% effectiveAGI"
+    },
+    {
+      "chemicals": 2,
+      "id": "concussion",
+      "minutes": 12,
+      "name": "Concussion",
+      "result_text": "Xóa−10 percentage-point accuracy"
+    },
+    {
+      "chemicals": 2,
+      "id": "burn",
+      "minutes": 10,
+      "name": "Burn",
+      "result_text": "Restore maxHP, clamp currentHP"
+    },
+    {
+      "chemicals": 4,
+      "id": "infection",
+      "minutes": 20,
+      "name": "Infection",
+      "result_text": "Xóa Bio penalty"
+    },
+    {
+      "chemicals": 3,
+      "id": "trauma",
+      "minutes": 20,
+      "name": "Trauma",
+      "result_text": "Xóa−15%dmg/−10%attack speed"
+    },
+    {
+      "chemicals": 6,
+      "id": "recovered_body",
+      "minutes": 30,
+      "name": "RECOVERED_BODY",
+      "result_text": "ACTIVE HP30%, Trauma; không field-revive allowance cho mission cũ"
+    }
+  ],
+  "tutorial_ledger": [
+    {
+      "balance": {
+        "chemicals": 40,
+        "components": 115,
+        "scrap": 280
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -5,
+        "scrap": -20
+      },
+      "id": "generator_repair",
+      "label": "Generator repair"
+    },
+    {
+      "balance": {
+        "chemicals": 40,
+        "components": 110,
+        "scrap": 260
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -5,
+        "scrap": -20
+      },
+      "id": "water_repair",
+      "label": "Water repair"
+    },
+    {
+      "balance": {
+        "chemicals": 40,
+        "components": 110,
+        "scrap": 250
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": 0,
+        "scrap": -10
+      },
+      "id": "living_repair",
+      "label": "Living repair"
+    },
+    {
+      "balance": {
+        "chemicals": 30,
+        "components": 95,
+        "scrap": 170
+      },
+      "delta": {
+        "chemicals": -10,
+        "components": -15,
+        "scrap": -80
+      },
+      "id": "free_first_sector_hydro_l1_build",
+      "label": "Free first sector; Hydro L1 build"
+    },
+    {
+      "balance": {
+        "chemicals": 30,
+        "components": 90,
+        "scrap": 150
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -5,
+        "scrap": -20
+      },
+      "id": "ccl2",
+      "label": "CCL2"
+    },
+    {
+      "balance": {
+        "chemicals": 30,
+        "components": 80,
+        "scrap": 120
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -10,
+        "scrap": -30
+      },
+      "id": "ccl3",
+      "label": "CCL3"
+    },
+    {
+      "balance": {
+        "chemicals": 30,
+        "components": 70,
+        "scrap": 100
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -10,
+        "scrap": -20
+      },
+      "id": "radio_repair_before_house_quick_scout",
+      "label": "Radio repair before House Quick Scout"
+    },
+    {
+      "balance": {
+        "chemicals": 60,
+        "components": 145,
+        "scrap": 260
+      },
+      "delta": {
+        "chemicals": 30,
+        "components": 75,
+        "scrap": 160
+      },
+      "id": "house_all_pickups_its_cache_once",
+      "label": "House all pickups + its cache, once"
+    },
+    {
+      "balance": {
+        "chemicals": 55,
+        "components": 135,
+        "scrap": 230
+      },
+      "delta": {
+        "chemicals": -5,
+        "components": -10,
+        "scrap": -30
+      },
+      "id": "workshop_repair",
+      "label": "Workshop repair"
+    },
+    {
+      "balance": {
+        "chemicals": 55,
+        "components": 135,
+        "scrap": 228
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": 0,
+        "scrap": -2
+      },
+      "id": "first_workshop_craft_5_supply_5_food_6_water_2min",
+      "label": "First Workshop craft: 5 Supply (-5 Food/-6 Water,2min)"
+    },
+    {
+      "balance": {
+        "chemicals": 55,
+        "components": 125,
+        "scrap": 188
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -10,
+        "scrap": -40
+      },
+      "id": "ccl4",
+      "label": "CCL4"
+    },
+    {
+      "balance": {
+        "chemicals": 45,
+        "components": 115,
+        "scrap": 158
+      },
+      "delta": {
+        "chemicals": -10,
+        "components": -10,
+        "scrap": -30
+      },
+      "id": "clinic_repair",
+      "label": "Clinic repair"
+    },
+    {
+      "balance": {
+        "chemicals": 45,
+        "components": 110,
+        "scrap": 138
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -5,
+        "scrap": -20
+      },
+      "id": "training_repair",
+      "label": "Training repair"
+    },
+    {
+      "balance": {
+        "chemicals": 45,
+        "components": 95,
+        "scrap": 48
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -15,
+        "scrap": -90
+      },
+      "id": "living_l1l2_normal_upgrade",
+      "label": "Living L1→L2 normal upgrade"
+    },
+    {
+      "balance": {
+        "chemicals": 75,
+        "components": 225,
+        "scrap": 348
+      },
+      "delta": {
+        "chemicals": 30,
+        "components": 130,
+        "scrap": 300
+      },
+      "id": "warehouse_all_pickups_its_cache_once",
+      "label": "Warehouse all pickups + its cache, once"
+    },
+    {
+      "balance": {
+        "chemicals": 75,
+        "components": 187,
+        "scrap": 228
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -38,
+        "scrap": -120
+      },
+      "id": "generator_l1l2_normal_upgrade",
+      "label": "Generator L1→L2 normal upgrade"
+    },
+    {
+      "balance": {
+        "chemicals": 75,
+        "components": 182,
+        "scrap": 178
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -5,
+        "scrap": -50
+      },
+      "id": "old_sensor_sector_depth_3_excavation_stabilization",
+      "label": "Old Sensor sector depth -3 excavation + stabilization"
+    },
+    {
+      "balance": {
+        "chemicals": 75,
+        "components": 177,
+        "scrap": 158
+      },
+      "delta": {
+        "chemicals": 0,
+        "components": -5,
+        "scrap": -20
+      },
+      "id": "choose_restore_old_sensor",
+      "label": "Choose Restore old Sensor"
+    }
+  ]
+}

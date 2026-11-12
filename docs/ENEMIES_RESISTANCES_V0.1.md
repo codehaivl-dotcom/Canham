@@ -526,7 +526,7 @@ Resistance:
 
 | Ballistic | Energy | Explosive | Fire | Electric | Bio |
 |---:|---:|---:|---:|---:|---:|
-| 25% | 10% | 0% | 80% | -30% | 80% |
+| 25% | 10% | 0% | 80% | -25% | 80% |
 
 Design:
 
@@ -556,7 +556,7 @@ Resistance:
 
 | Ballistic | Energy | Explosive | Fire | Electric | Bio |
 |---:|---:|---:|---:|---:|---:|
-| 15% | 5% | -5% | 60% | -35% | 80% |
+| 15% | 5% | -5% | 60% | -25% | 80% |
 
 ---
 
@@ -887,7 +887,7 @@ Resistance:
 
 | Ballistic | Energy | Explosive | Fire | Electric | Bio |
 |---:|---:|---:|---:|---:|---:|
-| 40% | 25% | 10% | 80% | -30% | 80% |
+| 40% | 25% | 10% | 80% | -25% | 80% |
 
 ### Phase 1 — Shielded
 
@@ -952,7 +952,7 @@ Mỗi 20 sec:
 - boss phân tích damage type gây nhiều damage nhất;
 - +20% resistance với type đó;
 - -15% resistance với damage type ngẫu nhiên khác;
-- cap vẫn 80%;
+- clamp every resistance after adaptation to[−25%,80%];
 - telegraph rõ.
 
 Mục tiêu:
@@ -993,8 +993,8 @@ Values = damage reduction.
 | Tech Raider | 0 | 0 | 0 | 0 | -10 | 0 |
 | Sentry Drone | 20 | 10 | 0 | 65 | -25 | 80 |
 | Security Bot | 30 | 15 | 10 | 70 | -20 | 80 |
-| Auto Turret | 25 | 10 | 0 | 80 | -30 | 80 |
-| Repair Drone | 15 | 5 | -5 | 60 | -35 | 80 |
+| Auto Turret | 25 | 10 | 0 | 80 | -25 | 80 |
+| Repair Drone | 15 | 5 | -5 | 60 | -25 | 80 |
 | Stalker | 0 | 15 | 0 | 0 | 5 | 40 |
 | Crystal Beast | 10 | 70 | 25 | 35 | 20 | 50 |
 | Spore Weaver | 0 | 0 | 0 | -25 | 0 | 80 |
@@ -1004,7 +1004,7 @@ Values = damage reduction.
 | Warden Mech | 35 | 20 | 5 | 75 | -25 | 80 |
 | Phase Hunter | 0 | 50 | 10 | 5 | -10 | 45 |
 | Hive Mother | 10 | 10 | 10 | -10 | 5 | 80 |
-| War Machine A-17 | 40 | 25 | 10 | 80→40 | -30 | 80 |
+| War Machine A-17 | 40 | 25 | 10 | 80→40 | -25 | 80 |
 | Fallen Visitor | 10 | 55 | 15 | 15 | 0 | 60 |
 
 ---

@@ -66,7 +66,7 @@ CCL là progression trung tâm.
 | 11 | Coalition systems |
 | 12 | Surface Return / endgame |
 
-Exact upgrade cost của CCL sẽ được chốt sau economy/content tuning; hiện dùng baseline trong các spec canonical.
+CCL prototype costs/prerequisites/time are defined in [PROTOTYPE_PROGRESSION_V0.1.md](PROTOTYPE_PROGRESSION_V0.1.md#1-ccl-requirements); final live balance remains tunable.
 
 Không nâng CCL chỉ bằng Credits.
 
@@ -74,15 +74,9 @@ Không nâng CCL chỉ bằng Credits.
 
 # 4. Emergency Core
 
-Starting infrastructure.
+Starting infrastructure:8PU, cannot upgrade or be permanently destroyed. It does not power normal Water4+Hydro5+Command2 simultaneously.
 
-- Power: +8 PU;
-- cannot upgrade;
-- cannot be destroyed permanently;
-- đủ duy trì tutorial life support;
-- không đủ cho Silo phát triển.
-
-Mục đích tránh soft-lock nếu Generator bị offline.
+When Generator unavailable/battery0, emergency mode uses Command2+Water3+Food3=8PU, waives survival consumption (no generated/tradable output), pauses nonessential jobs and preserves residents. Free automated Generator Manual Restart5min restores25%integrity, once/generator/rolling24h. Exact recovery/exemption/repair rules: [PROTOTYPE_PROGRESSION_V0.1.md §3](PROTOTYPE_PROGRESSION_V0.1.md#3-emergency8pu-mode-và-survival-comeback).
 
 ---
 
@@ -206,7 +200,7 @@ Base cost:
 - Components 10;
 - Build 1 min.
 
-Capacity áp riêng cho mỗi common stockpile category trong prototype để UI dễ hiểu.
+Capacity áp riêng cho mỗi common stockpile category trong prototype để UI dễ hiểu. Starting StorageL1 is operational and provides250/category; no extra base250. Additional Storage rooms add listed capacity. StartingScrap300 grandfathered, never deleted; no incoming claim until sufficient headroom.
 
 Có thể chuyển sang shared capacity sau UX test.
 
@@ -264,7 +258,7 @@ Clinic handles:
 - infection;
 - post-expedition recovery.
 
-Dead unit không auto-revive ở Clinic nếu death condition đã khóa permanent loss.
+Permanent-death unit cannot revive. Recovered body service30min/6Chemicals at ClinicL1, then Trauma20min/3Chemicals; complete injury/HP/worker/offline table: [SURVIVOR_RECOVERY_V0.1.md](SURVIVOR_RECOVERY_V0.1.md).
 
 ---
 
@@ -338,7 +332,7 @@ Functions:
 - target search;
 - Quick Scout;
 - Deep Scout;
-- human signal detection;
+- survivor/Silo signal detection;
 - later alliance/network.
 
 Intel bonus không thể đưa confidence lên 100%.
@@ -389,7 +383,7 @@ Base cost:
 - Components 40;
 - Build 6 min.
 
-Gear capacity tính weapon/armor special inventory.
+Gear capacity tính weapon/armor special inventory. Before Armory, automated Command locker has20slots. Armory listed cap replaces locker cap, does not add another20; equipped items exempt. Overflow uses Return Inbox in MISSION_SESSION_REWARDS_V0.1.md.
 
 Không thay General Storage.
 
@@ -455,9 +449,7 @@ Role:
 - boss component;
 - advanced blueprint.
 
-Power target baseline:
-
-- 12–18 PU khi active.
+Prototype build cost:300Scrap/120Components/1PrototypeCore,12min; CCL9 and ENG-05 Prototype Fabrication. One worker, one active craft/queue2, speed1.0. Active15PU/idle6PU. Normal room integrity rules apply. No full gear-tier expansion is required in first slice.
 
 Không idle consume full load nếu không craft.
 
@@ -474,9 +466,7 @@ Role:
 - Alien gear;
 - Bestiary advanced research.
 
-Power target:
-
-- 12–18 PU active.
+Prototype build cost:350Scrap/140Components/4AlienMaterial,15min; CCL10, no research prerequisite that would require this building first. One worker, one active analysis/craft/queue2, speed1.0. Active16PU/idle6.4PU. Research costs use ResearchLab; Xenobiology handles only analysis/craft. Exposure monitoring does not require a separate building upgrade.
 
 Có thể tăng Signal/Noise.
 
@@ -534,10 +524,12 @@ Room Integrity = 100%
 
 At:
 
-- <75%: no penalty;
-- <50%: output -20%;
-- <25%: output -50%;
-- 0%: disabled, không destroyed permanently.
+- 50–100% integrity: no output penalty;
+- 25% ≤ integrity <50%: output−20%;
+- 0% < integrity <25%: output−50%;
+- 0%: disabled, never permanently destroyed.
+
+Manual Restart returns exactly25% with output−20% (Generator16PU+Core8PU). Repair costs/times: PROTOTYPE_PROGRESSION_V0.1.md §3. Upgrade downtime pauses room actions/output; residents keep REST and automated Core emergency mode.
 
 Repair dùng:
 
@@ -560,7 +552,7 @@ CCL upgrade cần 4 loại requirement:
 
 Example CCL5 → CCL6:
 
-- Population ≥ 18;
+- Population ≥ 10;
 - Generator ≥ L3;
 - Workshop ≥ L2;
 - Research Lab ≥ L1;
@@ -568,7 +560,7 @@ Example CCL5 → CCL6:
 - Components;
 - 1 Military Authorization item.
 
-Exact CCL cost table sẽ làm sau Loot/Crafting economy.
+Use complete CCL2–12 baseline table in PROTOTYPE_PROGRESSION_V0.1.md; this example is not a separate cost owner.
 
 ---
 

@@ -1,0 +1,3425 @@
+{
+  "affixes": [
+    {
+      "effect_text": "+6% accuracy.",
+      "id": "stabilized",
+      "implementation_status": "catalog_adapter_effect_support_separate",
+      "name": "Stabilized",
+      "numeric_declarations": [
+        "+6%"
+      ],
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "24 Stabilized"
+      }
+    },
+    {
+      "effect_text": "+8 Armor.",
+      "id": "reinforced",
+      "implementation_status": "catalog_adapter_effect_support_separate",
+      "name": "Reinforced",
+      "numeric_declarations": [
+        "+8 "
+      ],
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "24 Reinforced"
+      }
+    },
+    {
+      "effect_text": "+10% Energy damage, +8% Heat/Noise.",
+      "id": "overcharged",
+      "implementation_status": "catalog_adapter_effect_support_separate",
+      "name": "Overcharged",
+      "numeric_declarations": [
+        "+10%",
+        "+8%"
+      ],
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "24 Overcharged"
+      }
+    },
+    {
+      "effect_text": "-5% attack interval penalty / hoặc giảm mobility penalty.",
+      "id": "lightweight",
+      "implementation_status": "catalog_only_corrosive_and_lightweight_effects_incomplete_in_source",
+      "name": "Lightweight",
+      "numeric_declarations": [
+        "-5%"
+      ],
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "24 Lightweight"
+      }
+    },
+    {
+      "effect_text": "thêm DOT nhỏ, nhưng durability/deployment cost cao hơn nếu hệ thống đó được bật.",
+      "id": "corrosive",
+      "implementation_status": "catalog_only_corrosive_and_lightweight_effects_incomplete_in_source",
+      "name": "Corrosive",
+      "numeric_declarations": [],
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "24 Corrosive"
+      }
+    }
+  ],
+  "armor": {
+    "civilian_jacket": {
+      "armor": 6,
+      "attack_speed_multiplier": 1,
+      "effects": {},
+      "id": "civilian_jacket",
+      "name": "Civilian Jacket",
+      "penalty_text": "none",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "none"
+    },
+    "combat_armor": {
+      "armor": 30,
+      "attack_speed_multiplier": 0.97,
+      "effects": {},
+      "id": "combat_armor",
+      "name": "Combat Armor",
+      "penalty_text": "-3% attack speed",
+      "resistances": {
+        "ballistic": 0.1,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+10% Ballistic Resist"
+    },
+    "hazmat_suit": {
+      "armor": 12,
+      "attack_speed_multiplier": 1,
+      "effects": {
+        "ballistic_armor_multiplier": 0.95,
+        "radiation_resistance": 0.45
+      },
+      "id": "hazmat_suit",
+      "name": "Hazmat Suit",
+      "penalty_text": "-5% Armor vs ballistic",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0.45,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+45% Bio/Rad Resist"
+    },
+    "heavy_armor": {
+      "armor": 48,
+      "attack_speed_multiplier": 0.92,
+      "effects": {},
+      "id": "heavy_armor",
+      "name": "Heavy Armor",
+      "penalty_text": "-8% attack speed",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+15% stagger resist"
+    },
+    "insulated_suit": {
+      "armor": 18,
+      "attack_speed_multiplier": 1,
+      "effects": {},
+      "id": "insulated_suit",
+      "name": "Insulated Suit",
+      "penalty_text": "none",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0.35,
+        "energy": 0.35,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+35% Electric/Energy Resist"
+    },
+    "light_scout_armor": {
+      "armor": 15,
+      "attack_speed_multiplier": 1,
+      "effects": {},
+      "id": "light_scout_armor",
+      "name": "Light Scout Armor",
+      "penalty_text": "none",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+5% reposition, +5 PER checks"
+    }
+  },
+  "assumptions": [
+    "Enemy direct damage types are explicit adapter assumptions; enemy attack accuracy is absent from stat tables and must be labeled by the engine, not fabricated as parsed data.",
+    "Boss Threat Cost is null because Boss Budget is Fixed, never zero-cost generated content.",
+    "Ability parameters exported does not imply engine implements every ability; runner must report unsupported IDs.",
+    "Hazmat ballistic armor penalty interpreted as armor ×0.95, not resistance -5 percentage points.",
+    "Engineer tech and EMP bonuses describe overlapping effect fields; engine must document whether it applies role multiplier once or stacks two distinct bonuses."
+  ],
+  "catalog_coverage": {
+    "affixes": 5,
+    "alien_item_examples": 2,
+    "named_weapon_variants": 6,
+    "perks_including_shared_level40": 19,
+    "tiers": 7,
+    "traits": 24,
+    "utilities": 6,
+    "warning": "Catalog exported does not mean effects simulated. Incomplete source values remain null/text with unresolved notes; runner reports support separately."
+  },
+  "consumables": {
+    "antidote": {
+      "effect_text": "remove Poison/Bio + 30% Bio resist 20 sec",
+      "id": "antidote",
+      "name": "Antidote",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "breach_charge": {
+      "effect_text": "phá một door / gây 40 explosive near door",
+      "id": "breach_charge",
+      "name": "Breach Charge",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 1
+    },
+    "combat_stim": {
+      "effect_text": "+15% dmg, +15% attack speed, 15 sec",
+      "id": "combat_stim",
+      "name": "Combat Stim",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "emergency_beacon": {
+      "effect_text": "mở emergency extraction nếu location cho phép",
+      "id": "emergency_beacon",
+      "name": "Emergency Beacon",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 1
+    },
+    "emp_grenade": {
+      "effect_text": "20 Electric + Disable Mechanical 3 sec",
+      "id": "emp_grenade",
+      "name": "EMP Grenade",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "frag_grenade": {
+      "effect_text": "55 Explosive AOE",
+      "id": "frag_grenade",
+      "name": "Frag Grenade",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "medkit": {
+      "effect_text": "heal 35% Max HP",
+      "id": "medkit",
+      "name": "Medkit",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "rad_injector": {
+      "effect_text": "giảm Radiation / +40% Rad resist 30 sec",
+      "id": "rad_injector",
+      "name": "Rad Injector",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "revival_injector": {
+      "effect_text": "revive unit",
+      "id": "revival_injector",
+      "name": "Revival Injector",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 1
+    },
+    "smoke_charge": {
+      "effect_text": "enemy accuracy -20% trong room, 8 sec",
+      "id": "smoke_charge",
+      "name": "Smoke Charge",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    }
+  },
+  "difficulty": {
+    "easy": {
+      "damage": 0.9,
+      "hp": 0.9
+    },
+    "extreme": {
+      "damage": 1.18,
+      "hp": 1.18
+    },
+    "hard": {
+      "damage": 1.1,
+      "hp": 1.1
+    },
+    "medium": {
+      "damage": 1,
+      "hp": 1
+    }
+  },
+  "encounters": [
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "crawler",
+        "crawler",
+        "crawler",
+        "crawler"
+      ],
+      "id": "swarm",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "mutated_brute",
+        "crawler",
+        "crawler"
+      ],
+      "id": "brute_swarm",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "hive_carrier",
+        "crawler",
+        "crawler",
+        "spitter"
+      ],
+      "id": "carrier_swarm",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "rifleman",
+        "rifleman",
+        "breacher"
+      ],
+      "id": "raider_basic",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "marksman",
+        "rifleman",
+        "rifleman"
+      ],
+      "id": "marksman_room",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "tech_raider",
+        "breacher",
+        "rifleman",
+        "rifleman"
+      ],
+      "id": "tech_raider_room",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "security_bot",
+        "sentry_drone"
+      ],
+      "id": "security_pair",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "security_bot",
+        "repair_drone",
+        "sentry_drone"
+      ],
+      "id": "repair_room",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "crystal_beast",
+        "stalker"
+      ],
+      "id": "crystal_stalker",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "spore_weaver",
+        "rift_hound",
+        "rift_hound"
+      ],
+      "id": "spore_hounds",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "regular",
+      "difficulty": "medium",
+      "enemies": [
+        "void_caster",
+        "stalker",
+        "stalker"
+      ],
+      "id": "void_stalkers",
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "29 Prototype Encounter Set"
+      }
+    },
+    {
+      "category": "elite",
+      "difficulty": "medium",
+      "enemies": [
+        "alpha_brute"
+      ],
+      "id": "solo_alpha_brute"
+    },
+    {
+      "category": "elite",
+      "difficulty": "medium",
+      "enemies": [
+        "warden_mech"
+      ],
+      "id": "solo_warden_mech"
+    },
+    {
+      "category": "elite",
+      "difficulty": "medium",
+      "enemies": [
+        "phase_hunter"
+      ],
+      "id": "solo_phase_hunter"
+    },
+    {
+      "category": "boss",
+      "difficulty": "medium",
+      "enemies": [
+        "hive_mother"
+      ],
+      "id": "solo_hive_mother"
+    },
+    {
+      "category": "boss",
+      "difficulty": "medium",
+      "enemies": [
+        "war_machine_a_17"
+      ],
+      "id": "solo_war_machine_a_17"
+    },
+    {
+      "category": "boss",
+      "difficulty": "medium",
+      "enemies": [
+        "fallen_visitor"
+      ],
+      "id": "solo_fallen_visitor"
+    }
+  ],
+  "enemies": {
+    "alpha_brute": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "attack_speed_delta": -0.15,
+          "cooldown": 14,
+          "duration": 5,
+          "id": "roar",
+          "resolve_check": true
+        },
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 9,
+          "damage": 35,
+          "damage_type": "ballistic",
+          "id": "ground_slam",
+          "targets": "front_mid"
+        }
+      ],
+      "armor": 45,
+      "category": "elite",
+      "damage": 32,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ELT-01",
+      "family": "infected",
+      "hp": 680,
+      "id": "alpha_brute",
+      "interval": 1.3,
+      "name": "Alpha Brute",
+      "resistances": {
+        "ballistic": 0.15,
+        "bio": 0.65,
+        "electric": 0.0,
+        "energy": 0.05,
+        "explosive": 0.15,
+        "fire": -0.15
+      },
+      "role": "Elite Bruiser / Fear",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ELT-01 — Alpha Brute"
+      },
+      "source_text": "**Family:** Infected  \r\n**Role:** Elite Bruiser / Fear\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 680 |\r\n| Damage | 32 |\r\n| Attack Interval | 1.30s |\r\n| Armor | 45 |\r\n| Threat Cost | 14 |\r\n\r\nAbilities:\r\n\r\n**Roar**\r\n- mỗi 14 sec;\r\n- Resolve check;\r\n- fail → -15% attack speed 5 sec.\r\n\r\n**Ground Slam**\r\n- Front/Mid AOE 35 damage;\r\n- 9 sec cooldown.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 15% | 5% | 15% | -15% | 0% | 65% |\r\n\r\n---",
+      "threat_cost": 14
+    },
+    "auto_turret": {
+      "abilities": [],
+      "armor": 35,
+      "category": "regular",
+      "damage": 16,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "MEC-03",
+      "family": "mechanical",
+      "hp": 180,
+      "id": "auto_turret",
+      "interval": 0.65,
+      "name": "Auto Turret Mk II",
+      "resistances": {
+        "ballistic": 0.25,
+        "bio": 0.8,
+        "electric": -0.25,
+        "energy": 0.1,
+        "explosive": 0.0,
+        "fire": 0.8
+      },
+      "role": "Stationary DPS",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "MEC-03 — Auto Turret Mk II"
+      },
+      "source_text": "**Role:** Stationary DPS\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 180 |\r\n| Damage | 16 |\r\n| Attack Interval | 0.65s |\r\n| Armor | 35 |\r\n| Threat Cost | 5 |\r\n\r\nBehavior:\r\n\r\n- stationary;\r\n- không chase;\r\n- accuracy cao;\r\n- có thể disable bằng environment hack.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 25% | 10% | 0% | 80% | -25% | 80% |\r\n\r\nDesign:\r\n\r\nEngineer có thể thắng encounter bằng interaction thay vì pure DPS.\r\n\r\n---",
+      "threat_cost": 5
+    },
+    "bloated": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "damage": 22,
+          "damage_type": "bio",
+          "id": "rupture",
+          "targets": "nearby",
+          "trigger": "death"
+        }
+      ],
+      "armor": 8,
+      "category": "regular",
+      "damage": 16,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "INF-03",
+      "family": "infected",
+      "hp": 185,
+      "id": "bloated",
+      "interval": 1.55,
+      "name": "Bloated",
+      "resistances": {
+        "ballistic": 0.05,
+        "bio": 0.65,
+        "electric": 0.0,
+        "energy": 0.0,
+        "explosive": 0.2,
+        "fire": 0.05
+      },
+      "role": "Bruiser / Death hazard",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "INF-03 — Bloated"
+      },
+      "source_text": "**Role:** Bruiser / Death hazard\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 185 |\r\n| Damage | 16 |\r\n| Attack Interval | 1.55s |\r\n| Armor | 8 |\r\n| Threat Cost | 4 |\r\n\r\nAbility:\r\n\r\n**Rupture**\r\n- khi chết gây 22 Bio damage trong vùng gần;\r\n- có telegraph ngắn;\r\n- có thể stagger trước khi nổ.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 5% | 0% | 20% | 5% | 0% | 65% |\r\n\r\nDesign:\r\n\r\nRocket vẫn gây damage tốt nhưng nổ chết nhiều Bloated cùng lúc có thể gây chain hazard.\r\n\r\n---",
+      "threat_cost": 4
+    },
+    "breacher": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "first_hit_multiplier": 1.25,
+          "id": "breach_rush"
+        }
+      ],
+      "armor": 15,
+      "category": "regular",
+      "damage": 28,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "HUM-02",
+      "family": "raider",
+      "hp": 185,
+      "id": "breacher",
+      "interval": 1.55,
+      "name": "Breacher",
+      "resistances": {
+        "ballistic": 0.05,
+        "bio": 0.0,
+        "electric": 0.0,
+        "energy": 0.0,
+        "explosive": 0.0,
+        "fire": 0.0
+      },
+      "role": "Assault / Front breaker",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "HUM-02 — Breacher"
+      },
+      "source_text": "**Role:** Assault / Front breaker\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 185 |\r\n| Damage | 28 |\r\n| Attack Interval | 1.55s |\r\n| Armor | 15 |\r\n| Threat Cost | 4 |\r\n\r\nAbility:\r\n\r\n**Breach Rush**\r\n- đầu encounter lao Front;\r\n- first hit +25% damage.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 5% | 0% | 0% | 0% | 0% | 0% |\r\n\r\n---",
+      "threat_cost": 4
+    },
+    "crawler": {
+      "abilities": [],
+      "armor": 0,
+      "category": "regular",
+      "damage": 8,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "INF-01",
+      "family": "infected",
+      "hp": 70,
+      "id": "crawler",
+      "interval": 0.8,
+      "name": "Crawler",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.6,
+        "electric": 0.0,
+        "energy": 0.0,
+        "explosive": -0.1,
+        "fire": -0.2
+      },
+      "role": "Swarm / Front pressure",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "INF-01 — Crawler"
+      },
+      "source_text": "**Role:** Swarm / Front pressure\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 70 |\r\n| Damage | 8 |\r\n| Attack Interval | 0.80s |\r\n| Armor | 0 |\r\n| Threat Cost | 2 |\r\n\r\nBehavior:\r\n\r\n- lao Front;\r\n- ưu tiên target gần nhất;\r\n- thường xuất hiện 2–5 con;\r\n- dễ stagger.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 0% | -10% | -20% | 0% | 60% |\r\n\r\nPurpose:\r\n\r\n- dạy AOE;\r\n- Rocket/Shotgun/Flamethrower có cảm giác mạnh;\r\n- single-target Laser vẫn giết được nhưng inefficient.\r\n\r\n---",
+      "threat_cost": 2
+    },
+    "crystal_beast": {
+      "abilities": [],
+      "armor": 25,
+      "category": "regular",
+      "damage": 22,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ALN-02",
+      "family": "alien",
+      "hp": 305,
+      "id": "crystal_beast",
+      "interval": 1.3,
+      "name": "Crystal Beast",
+      "resistances": {
+        "ballistic": 0.1,
+        "bio": 0.5,
+        "electric": 0.2,
+        "energy": 0.7,
+        "explosive": 0.25,
+        "fire": 0.35
+      },
+      "role": "Energy-resistant Bruiser",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ALN-02 — Crystal Beast"
+      },
+      "source_text": "**Role:** Energy-resistant Bruiser\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 305 |\r\n| Damage | 22 |\r\n| Attack Interval | 1.30s |\r\n| Armor | 25 |\r\n| Threat Cost | 7 |\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 10% | 70% | 25% | 35% | 20% | 50% |\r\n\r\nĐây là canonical example cho **wrong weapon still works**.\r\n\r\nLaser vẫn gây 30% damage sau resistance.\r\n\r\n---",
+      "threat_cost": 7
+    },
+    "fallen_visitor": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "id": "adaptive_shell",
+          "interval": 20,
+          "other_resistance_delta": -0.15,
+          "resistance_cap": 0.8,
+          "resistance_gain": 0.2
+        },
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "hp_threshold": 0.5,
+          "id": "phase_shift",
+          "once": true,
+          "shield": 250,
+          "spawn": {
+            "stalker": 2
+          }
+        }
+      ],
+      "armor": 35,
+      "category": "boss",
+      "damage": 31,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "BOSS-03",
+      "family": "alien",
+      "hp": 3100,
+      "id": "fallen_visitor",
+      "interval": 1.25,
+      "name": "Fallen Visitor",
+      "resistances": {
+        "ballistic": 0.1,
+        "bio": 0.6,
+        "electric": 0.0,
+        "energy": 0.55,
+        "explosive": 0.15,
+        "fire": 0.15
+      },
+      "role": "boss",
+      "shield": 600,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "BOSS-03 — Fallen Visitor"
+      },
+      "source_text": "**Family:** Alien  \r\n**Location:** Alien Crash Site / Deep Research Sector\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 3,100 |\r\n| Shield | 600 |\r\n| Damage | 31 |\r\n| Attack Interval | 1.25s |\r\n| Armor | 35 |\r\n\r\nBase resistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 10% | 55% | 15% | 15% | 0% | 60% |\r\n\r\n### Adaptive Shell\r\n\r\nMỗi 20 sec:\r\n\r\n- boss phân tích damage type gây nhiều damage nhất;\r\n- +20% resistance với type đó;\r\n- -15% resistance với damage type ngẫu nhiên khác;\r\n- clamp every resistance after adaptation to[−25%,80%];\r\n- telegraph rõ.\r\n\r\nMục tiêu:\r\n\r\n> team mixed damage có lợi, nhưng specialized team vẫn có thể thắng bằng timing/consumable.\r\n\r\n### Phase Shift\r\n\r\n50% HP:\r\n\r\n- teleport;\r\n- spawn 2 Stalker;\r\n- Shield 250 tái tạo một lần.\r\n\r\nDrops:\r\n\r\n- Alien Crystal;\r\n- Neural Core;\r\n- Unknown Data;\r\n- Artifact Blueprint fragment.\r\n\r\n---",
+      "threat_cost": null
+    },
+    "hive_carrier": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "counts": [
+            1,
+            [
+              1,
+              2
+            ]
+          ],
+          "hp_thresholds": [
+            0.65,
+            0.3
+          ],
+          "id": "brood_release",
+          "once_per_threshold": true,
+          "spawn": "crawler"
+        }
+      ],
+      "armor": 10,
+      "category": "regular",
+      "damage": 9,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "INF-05",
+      "family": "infected",
+      "hp": 230,
+      "id": "hive_carrier",
+      "interval": 1.1,
+      "name": "Hive Carrier",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.75,
+        "electric": 0.0,
+        "energy": 0.05,
+        "explosive": 0.05,
+        "fire": -0.25
+      },
+      "role": "Support / Spawn",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "INF-05 — Hive Carrier"
+      },
+      "source_text": "**Role:** Support / Spawn\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 230 |\r\n| Damage | 9 |\r\n| Attack Interval | 1.10s |\r\n| Armor | 10 |\r\n| Threat Cost | 5 |\r\n\r\nAbility:\r\n\r\n**Brood Release**\r\n- ở 65% HP: spawn 1 Crawler;\r\n- ở 30% HP: spawn 1–2 Crawler;\r\n- mỗi trigger chỉ xảy ra một lần.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 5% | 5% | -25% | 0% | 75% |\r\n\r\nPriority lesson:\r\n\r\n> giết Support sớm hay clear swarm trước?\r\n\r\n---",
+      "threat_cost": 5
+    },
+    "hive_mother": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "id": "hive_phases",
+          "max_spawn_waves": 3,
+          "phase1_spawn": {
+            "crawler": 2
+          },
+          "phase2_spawn": {
+            "crawler": 1,
+            "spitter": 1
+          },
+          "phase2_zone_dps": 4,
+          "phase2_zone_duration": 6,
+          "phase2_zone_interval": 12,
+          "phase3_interval_multiplier": 0.85,
+          "phase3_slam_damage": 35,
+          "phase3_slam_interval": 8,
+          "spawn_interval": 18,
+          "thresholds": [
+            0.7,
+            0.35
+          ]
+        }
+      ],
+      "armor": 30,
+      "category": "boss",
+      "damage": 24,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "BOSS-01",
+      "family": "infected",
+      "hp": 2700,
+      "id": "hive_mother",
+      "interval": 1.1,
+      "name": "Hive Mother",
+      "resistances": {
+        "ballistic": 0.1,
+        "bio": 0.8,
+        "electric": 0.05,
+        "energy": 0.1,
+        "explosive": 0.1,
+        "fire": -0.1
+      },
+      "role": "boss",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "BOSS-01 — Hive Mother"
+      },
+      "source_text": "**Family:** Infected / Alien Bio  \r\n**Location:** Hospital deep lab / Nest / Bio facility\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 2,700 |\r\n| Damage | 24 |\r\n| Attack Interval | 1.10s |\r\n| Armor | 30 |\r\n| Boss Budget | Fixed |\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 10% | 10% | 10% | -10% | 5% | 80% |\r\n\r\n### Phase 1 — Nest Defense\r\n\r\n100–70% HP:\r\n\r\n- basic attack;\r\n- spawn 2 Crawler mỗi 18 sec.\r\n\r\n### Phase 2 — Acid Brood\r\n\r\n70–35%:\r\n\r\n- Spore/Acid zone;\r\n- spawn 1 Spitter + 1 Crawler;\r\n- room pressure tăng.\r\n\r\n### Phase 3 — Frenzy\r\n\r\n35–0%:\r\n\r\n- attack interval giảm 15%;\r\n- ngừng spawn;\r\n- Slam mỗi 8 sec.\r\n\r\nPreparation lesson:\r\n\r\n- AOE giúp xử lý add;\r\n- Fire mạnh nhưng không mandatory;\r\n- pure single-target team vẫn thắng nếu quản lý add tốt.\r\n\r\nDrops:\r\n\r\n- Chitin Core;\r\n- Bio Sample;\r\n- Revival Component chance;\r\n- Bio Weapon Blueprint fragment.\r\n\r\n---",
+      "threat_cost": null
+    },
+    "marksman": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "crit_delta": 0.15,
+          "every_n_attacks": 3,
+          "id": "marked_shot",
+          "targets": "back_mid"
+        }
+      ],
+      "armor": 5,
+      "category": "regular",
+      "damage": 42,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "HUM-03",
+      "family": "raider",
+      "hp": 115,
+      "id": "marksman",
+      "interval": 2.2,
+      "name": "Marksman",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "role": "Backline threat",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "HUM-03 — Marksman"
+      },
+      "source_text": "**Role:** Backline threat\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 115 |\r\n| Damage | 42 |\r\n| Attack Interval | 2.20s |\r\n| Armor | 5 |\r\n| Threat Cost | 4 |\r\n\r\nAbility:\r\n\r\n**Marked Shot**\r\n- every third attack ưu tiên Back/Mid;\r\n- +15% crit.\r\n\r\nResistance: neutral toàn bộ.\r\n\r\nDesign:\r\n\r\n- fragile;\r\n- dangerous nếu ignored;\r\n- tạo lý do focus target.\r\n\r\n---",
+      "threat_cost": 4
+    },
+    "mutated_brute": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 8,
+          "damage": 26,
+          "damage_type": "ballistic",
+          "id": "heavy_slam",
+          "stagger_seconds": 0.5,
+          "targets": "front"
+        }
+      ],
+      "armor": 25,
+      "category": "regular",
+      "damage": 24,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "INF-04",
+      "family": "infected",
+      "hp": 325,
+      "id": "mutated_brute",
+      "interval": 1.5,
+      "name": "Mutated Brute",
+      "resistances": {
+        "ballistic": 0.1,
+        "bio": 0.55,
+        "electric": 0.0,
+        "energy": 0.0,
+        "explosive": 0.15,
+        "fire": -0.15
+      },
+      "role": "Bruiser / Tank",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "INF-04 — Mutated Brute"
+      },
+      "source_text": "**Role:** Bruiser / Tank\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 325 |\r\n| Damage | 24 |\r\n| Attack Interval | 1.50s |\r\n| Armor | 25 |\r\n| Threat Cost | 6 |\r\n\r\nAbility:\r\n\r\n**Heavy Slam**\r\n- mỗi 8 sec;\r\n- 26 damage;\r\n- stagger Front.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 10% | 0% | 15% | -15% | 0% | 55% |\r\n\r\nPurpose:\r\n\r\n- single-target weapon có giá trị;\r\n- Sniper/Laser xử lý tốt hơn pure swarm weapon.\r\n\r\n---",
+      "threat_cost": 6
+    },
+    "phase_hunter": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 10,
+          "id": "phase",
+          "targets": "mid_back",
+          "untargetable_seconds": 1.2
+        },
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "damage_multiplier": 1.15,
+          "duration": 6,
+          "id": "marked_prey",
+          "target": "lowest_hp"
+        }
+      ],
+      "armor": 20,
+      "category": "elite",
+      "damage": 29,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ELT-03",
+      "family": "alien",
+      "hp": 560,
+      "id": "phase_hunter",
+      "interval": 1,
+      "name": "Phase Hunter",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.45,
+        "electric": -0.1,
+        "energy": 0.5,
+        "explosive": 0.1,
+        "fire": 0.05
+      },
+      "role": "Elite Assassin",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ELT-03 — Phase Hunter"
+      },
+      "source_text": "**Family:** Alien  \r\n**Role:** Elite Assassin\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 560 |\r\n| Damage | 29 |\r\n| Attack Interval | 1.00s |\r\n| Armor | 20 |\r\n| Threat Cost | 15 |\r\n\r\nAbilities:\r\n\r\n**Phase**\r\n- mỗi 10 sec;\r\n- untargetable 1.2 sec;\r\n- sau đó xuất hiện ở Mid/Back.\r\n\r\n**Marked Prey**\r\n- chọn unit có HP thấp nhất;\r\n- +15% damage vào target đó trong 6 sec.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 50% | 10% | 5% | -10% | 45% |\r\n\r\n---",
+      "threat_cost": 15
+    },
+    "repair_drone": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 8,
+          "duration": 3,
+          "heal_per_second": 18,
+          "id": "repair_beam",
+          "target": "mechanical_ally"
+        }
+      ],
+      "armor": 15,
+      "category": "regular",
+      "damage": 5,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "MEC-04",
+      "family": "mechanical",
+      "hp": 120,
+      "id": "repair_drone",
+      "interval": 1.5,
+      "name": "Repair Drone",
+      "resistances": {
+        "ballistic": 0.15,
+        "bio": 0.8,
+        "electric": -0.25,
+        "energy": 0.05,
+        "explosive": -0.05,
+        "fire": 0.6
+      },
+      "role": "Support / Priority target",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "MEC-04 — Repair Drone"
+      },
+      "source_text": "**Role:** Support / Priority target\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 120 |\r\n| Damage | 5 |\r\n| Attack Interval | 1.50s |\r\n| Armor | 15 |\r\n| Threat Cost | 4 |\r\n\r\nAbility:\r\n\r\n**Repair Beam**\r\n- heal Mechanical ally 18 HP/sec trong 3 sec;\r\n- cooldown 8 sec.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 15% | 5% | -5% | 60% | -25% | 80% |\r\n\r\n---",
+      "threat_cost": 4
+    },
+    "rifleman": {
+      "abilities": [],
+      "armor": 8,
+      "category": "regular",
+      "damage": 14,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "HUM-01",
+      "family": "raider",
+      "hp": 135,
+      "id": "rifleman",
+      "interval": 0.9,
+      "name": "Scavenger Rifleman",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.0,
+        "electric": 0.0,
+        "energy": 0.0,
+        "explosive": 0.0,
+        "fire": 0.0
+      },
+      "role": "General ranged",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "HUM-01 — Scavenger Rifleman"
+      },
+      "source_text": "**Role:** General ranged\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 135 |\r\n| Damage | 14 |\r\n| Attack Interval | 0.90s |\r\n| Armor | 8 |\r\n| Threat Cost | 3 |\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 0% | 0% | 0% | 0% | 0% |\r\n\r\nBehavior:\r\n\r\n- generalist;\r\n- dùng để baseline combat;\r\n- có thể focus target đang thấp HP ở Hard.\r\n\r\n---",
+      "threat_cost": 3
+    },
+    "rift_hound": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 4,
+          "dodge_chance": 0.2,
+          "id": "phase_dash"
+        }
+      ],
+      "armor": 12,
+      "category": "regular",
+      "damage": 20,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ALN-04",
+      "family": "alien",
+      "hp": 215,
+      "id": "rift_hound",
+      "interval": 0.8,
+      "name": "Rift Hound",
+      "resistances": {
+        "ballistic": 0.05,
+        "bio": 0.3,
+        "electric": -0.05,
+        "energy": 0.25,
+        "explosive": 0.1,
+        "fire": 0.05
+      },
+      "role": "Fast Bruiser",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ALN-04 — Rift Hound"
+      },
+      "source_text": "**Role:** Fast Bruiser\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 215 |\r\n| Damage | 20 |\r\n| Attack Interval | 0.80s |\r\n| Armor | 12 |\r\n| Threat Cost | 5 |\r\n\r\nAbility:\r\n\r\n**Phase Dash**\r\n- 20% chance né một projectile hit;\r\n- cooldown nội bộ 4 sec.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 5% | 25% | 10% | 5% | -5% | 30% |\r\n\r\n---",
+      "threat_cost": 5
+    },
+    "security_bot": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "aggro_multiplier": 1.2,
+          "id": "guard_protocol"
+        }
+      ],
+      "armor": 45,
+      "category": "regular",
+      "damage": 20,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "MEC-02",
+      "family": "mechanical",
+      "hp": 245,
+      "id": "security_bot",
+      "interval": 1.2,
+      "name": "Security Bot",
+      "resistances": {
+        "ballistic": 0.3,
+        "bio": 0.8,
+        "electric": -0.2,
+        "energy": 0.15,
+        "explosive": 0.1,
+        "fire": 0.7
+      },
+      "role": "Mechanical Tank",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "MEC-02 — Security Bot"
+      },
+      "source_text": "**Role:** Mechanical Tank\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 245 |\r\n| Damage | 20 |\r\n| Attack Interval | 1.20s |\r\n| Armor | 45 |\r\n| Threat Cost | 6 |\r\n\r\nAbility:\r\n\r\n**Guard Protocol**\r\n- +20% aggro;\r\n- bảo vệ Mechanical support phía sau.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 30% | 15% | 10% | 70% | -20% | 80% |\r\n\r\n---",
+      "threat_cost": 6
+    },
+    "sentry_drone": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "grenade_disable_seconds": 4,
+          "id": "emp_vulnerable"
+        }
+      ],
+      "armor": 20,
+      "category": "regular",
+      "damage": 12,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "MEC-01",
+      "family": "mechanical",
+      "hp": 105,
+      "id": "sentry_drone",
+      "interval": 0.75,
+      "name": "Sentry Drone",
+      "resistances": {
+        "ballistic": 0.2,
+        "bio": 0.8,
+        "electric": -0.25,
+        "energy": 0.1,
+        "explosive": 0.0,
+        "fire": 0.65
+      },
+      "role": "Fast ranged",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "MEC-01 — Sentry Drone"
+      },
+      "source_text": "**Role:** Fast ranged\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 105 |\r\n| Damage | 12 |\r\n| Attack Interval | 0.75s |\r\n| Armor | 20 |\r\n| Threat Cost | 3 |\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 20% | 10% | 0% | 65% | -25% | 80% |\r\n\r\nEMP:\r\n\r\n- Disable threshold thấp;\r\n- EMP Grenade disable 4 sec thay vì 3.\r\n\r\n---",
+      "threat_cost": 3
+    },
+    "spitter": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "armor_delta": -10,
+          "corrode_chance": 0.2,
+          "duration": 6,
+          "id": "acid_spit"
+        }
+      ],
+      "armor": 0,
+      "category": "regular",
+      "damage": 11,
+      "damage_type": "bio",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "INF-02",
+      "family": "infected",
+      "hp": 95,
+      "id": "spitter",
+      "interval": 1.3,
+      "name": "Spitter",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.7,
+        "electric": 0.0,
+        "energy": 0.05,
+        "explosive": 0.0,
+        "fire": -0.15
+      },
+      "role": "Ranged / Bio pressure",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "INF-02 — Spitter"
+      },
+      "source_text": "**Role:** Ranged / Bio pressure\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 95 |\r\n| Damage | 11 |\r\n| Attack Interval | 1.30s |\r\n| Armor | 0 |\r\n| Threat Cost | 3 |\r\n\r\nAbility:\r\n\r\n**Acid Spit**\r\n- 20% chance áp Corrode;\r\n- Corrode: -10 Armor trong 6 sec.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 5% | 0% | -15% | 0% | 70% |\r\n\r\nBehavior:\r\n\r\n- đứng Mid/Back;\r\n- target Front nhưng có thể đổi sang Medic nếu Front bị down.\r\n\r\n---",
+      "threat_cost": 3
+    },
+    "spore_weaver": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 9,
+          "damage_per_second": 4,
+          "damage_type": "bio",
+          "duration": 6,
+          "id": "spore_cloud",
+          "targets": "room_zone"
+        }
+      ],
+      "armor": 5,
+      "category": "regular",
+      "damage": 10,
+      "damage_type": "bio",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ALN-03",
+      "family": "alien",
+      "hp": 175,
+      "id": "spore_weaver",
+      "interval": 1,
+      "name": "Spore Weaver",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.8,
+        "electric": 0.0,
+        "energy": 0.0,
+        "explosive": 0.0,
+        "fire": -0.25
+      },
+      "role": "Controller / Bio zone",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ALN-03 — Spore Weaver"
+      },
+      "source_text": "**Role:** Controller / Bio zone\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 175 |\r\n| Damage | 10 |\r\n| Attack Interval | 1.00s |\r\n| Armor | 5 |\r\n| Threat Cost | 5 |\r\n\r\nAbility:\r\n\r\n**Spore Cloud**\r\n- mỗi 9 sec;\r\n- room zone 6 sec;\r\n- Bio damage 4/sec;\r\n- Antidote/Hazmat counter tốt.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 0% | 0% | -25% | 0% | 80% |\r\n\r\n---",
+      "threat_cost": 5
+    },
+    "stalker": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "first_hit_multiplier": 1.2,
+          "id": "shadow_leap",
+          "once": true,
+          "targets": "back"
+        }
+      ],
+      "armor": 8,
+      "category": "regular",
+      "damage": 18,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ALN-01",
+      "family": "alien",
+      "hp": 145,
+      "id": "stalker",
+      "interval": 0.9,
+      "name": "Stalker",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.4,
+        "electric": 0.05,
+        "energy": 0.15,
+        "explosive": 0.0,
+        "fire": 0.0
+      },
+      "role": "Assassin",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ALN-01 — Stalker"
+      },
+      "source_text": "**Role:** Assassin\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 145 |\r\n| Damage | 18 |\r\n| Attack Interval | 0.90s |\r\n| Armor | 8 |\r\n| Threat Cost | 4 |\r\n\r\nAbility:\r\n\r\n**Shadow Leap**\r\n- một lần mỗi encounter;\r\n- nhảy vào Back;\r\n- first hit +20%.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 15% | 0% | 0% | 5% | 40% |\r\n\r\n---",
+      "threat_cost": 4
+    },
+    "tech_raider": {
+      "abilities": [
+        {
+          "accuracy_delta": -0.1,
+          "adapter_status": "documented_parameters_interpreted",
+          "cooldown": 10,
+          "duration": 5,
+          "id": "jammer"
+        },
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "id": "deploy_shield_drone",
+          "once": true,
+          "shield": 50,
+          "target": "lowest_hp_ally"
+        }
+      ],
+      "armor": 12,
+      "category": "regular",
+      "damage": 10,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "HUM-04",
+      "family": "raider",
+      "hp": 155,
+      "id": "tech_raider",
+      "interval": 1,
+      "name": "Tech Raider",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.0,
+        "electric": -0.1,
+        "energy": 0.0,
+        "explosive": 0.0,
+        "fire": 0.0
+      },
+      "role": "Support / Controller",
+      "shield": 0,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "HUM-04 — Tech Raider"
+      },
+      "source_text": "**Role:** Support / Controller\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 155 |\r\n| Damage | 10 |\r\n| Attack Interval | 1.00s |\r\n| Armor | 12 |\r\n| Threat Cost | 5 |\r\n\r\nAbility:\r\n\r\n**Jammer**\r\n- mỗi 10 sec;\r\n- giảm Accuracy squad 10% trong 5 sec.\r\n\r\n**Deploy Shield Drone**\r\n- 1 lần;\r\n- cho ally thấp HP shield 50.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 0% | 0% | 0% | -10% | 0% |\r\n\r\nElectric vulnerability phản ánh thiết bị mang trên người, không biến Tech Raider thành robot.\r\n\r\n---",
+      "threat_cost": 5
+    },
+    "void_caster": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "ally_energy_resistance": 0.1,
+          "id": "distortion_field",
+          "while_shielded": true
+        },
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "emp_buildup_multiplier": 1.4,
+          "id": "shield_break",
+          "stagger_seconds": 2
+        }
+      ],
+      "armor": 5,
+      "category": "regular",
+      "damage": 26,
+      "damage_type": "energy",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ALN-05",
+      "family": "alien",
+      "hp": 165,
+      "id": "void_caster",
+      "interval": 1.8,
+      "name": "Void Caster",
+      "resistances": {
+        "ballistic": 0.0,
+        "bio": 0.45,
+        "electric": -0.15,
+        "energy": 0.4,
+        "explosive": 0.05,
+        "fire": 0.1
+      },
+      "role": "Ranged Controller / Shield",
+      "shield": 120,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ALN-05 — Void Caster"
+      },
+      "source_text": "**Role:** Ranged Controller / Shield\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 165 |\r\n| Shield | 120 |\r\n| Damage | 26 |\r\n| Attack Interval | 1.80s |\r\n| Armor | 5 |\r\n| Threat Cost | 6 |\r\n\r\nAbility:\r\n\r\n**Distortion Field**\r\n- khi Shield còn active:\r\n  - ally gần nhận +10% Energy resistance.\r\n\r\nShield interaction:\r\n\r\n- Electric/EMP gây +40% buildup vào Shield;\r\n- khi Shield break: stagger 2 sec.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 0% | 40% | 5% | 10% | -15% | 45% |\r\n\r\n---",
+      "threat_cost": 6
+    },
+    "war_machine_a_17": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "emp_exposure_bonus": 3,
+          "exposure_seconds": 12,
+          "hazard_damage": 6,
+          "hazard_interval": 10,
+          "hazard_type": "fire",
+          "id": "war_machine_phases",
+          "overheat_attack_speed_multiplier": 1.2,
+          "overheat_fire_resistance": 0.4,
+          "overheat_threshold": 0.35,
+          "repair_drone_threshold": 0.75,
+          "shield_break_armor_multiplier": 0.65
+        }
+      ],
+      "armor": 85,
+      "category": "boss",
+      "damage": 28,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "BOSS-02",
+      "family": "mechanical",
+      "hp": 3600,
+      "id": "war_machine_a_17",
+      "interval": 1,
+      "name": "War Machine A-17",
+      "resistances": {
+        "ballistic": 0.4,
+        "bio": 0.8,
+        "electric": -0.25,
+        "energy": 0.25,
+        "explosive": 0.1,
+        "fire": 0.8
+      },
+      "role": "boss",
+      "shield": 450,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "BOSS-02 — War Machine A-17"
+      },
+      "source_text": "**Family:** Mechanical  \r\n**Location:** Military Depot / NPC Silo / Factory\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 3,600 |\r\n| Shield | 450 |\r\n| Damage | 28 |\r\n| Attack Interval | 1.00s |\r\n| Armor | 85 |\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 40% | 25% | 10% | 80% | -25% | 80% |\r\n\r\n### Phase 1 — Shielded\r\n\r\n- Shield active;\r\n- dual cannon;\r\n- Repair Drone spawn ở 75%.\r\n\r\n### Phase 2 — Armor Open\r\n\r\nShield break lần đầu:\r\n\r\n- weak point exposed 12 sec;\r\n- Armor hiệu quả giảm 35%;\r\n- EMP có thể kéo dài exposure +3 sec.\r\n\r\n### Phase 3 — Overheat\r\n\r\n<35% HP:\r\n\r\n- Fire resistance giảm từ 80% → 40%;\r\n- attack speed +20%;\r\n- room hazard pulses.\r\n\r\nPreparation lesson:\r\n\r\n- EMP rất tốt;\r\n- Explosive vẫn viable;\r\n- Ballistic team không bị 0 damage nhưng mất nhiều thời gian.\r\n\r\nDrops:\r\n\r\n- Military AI Core;\r\n- Servo;\r\n- Prototype Capacitor;\r\n- Heavy Weapon Blueprint fragment.\r\n\r\n---",
+      "threat_cost": null
+    },
+    "warden_mech": {
+      "abilities": [
+        {
+          "adapter_status": "documented_parameters_interpreted",
+          "id": "shield_cycle",
+          "no_hit_seconds": 5,
+          "shield": 80
+        },
+        {
+          "accuracy_delta": -0.12,
+          "adapter_status": "documented_parameters_interpreted",
+          "duration": 4,
+          "id": "suppression_burst"
+        }
+      ],
+      "armor": 70,
+      "category": "elite",
+      "damage": 25,
+      "damage_type": "ballistic",
+      "damage_type_assumption": "Direct attack type not explicitly tabulated; adapter maps Bio-pressure to bio, Void Caster to energy, physical/gun/melee to ballistic; ability types override.",
+      "document_id": "ELT-02",
+      "family": "mechanical",
+      "hp": 800,
+      "id": "warden_mech",
+      "interval": 1,
+      "name": "Warden Mech",
+      "resistances": {
+        "ballistic": 0.35,
+        "bio": 0.8,
+        "electric": -0.25,
+        "energy": 0.2,
+        "explosive": 0.05,
+        "fire": 0.75
+      },
+      "role": "Elite Tank / Shield",
+      "shield": 220,
+      "source": {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "section": "ELT-02 — Warden Mech"
+      },
+      "source_text": "**Family:** Mechanical  \r\n**Role:** Elite Tank / Shield\r\n\r\n| Stat | Value |\r\n|---|---:|\r\n| HP | 800 |\r\n| Shield | 220 |\r\n| Damage | 25 |\r\n| Attack Interval | 1.00s |\r\n| Armor | 70 |\r\n| Threat Cost | 17 |\r\n\r\nAbilities:\r\n\r\n**Shield Cycle**\r\n- Shield hồi 80 nếu không bị hit 5 sec.\r\n\r\n**Suppression Burst**\r\n- giảm Accuracy target 12% trong 4 sec.\r\n\r\nResistance:\r\n\r\n| Ballistic | Energy | Explosive | Fire | Electric | Bio |\r\n|---:|---:|---:|---:|---:|---:|\r\n| 35% | 20% | 5% | 75% | -25% | 80% |\r\n\r\nEMP là counter mạnh nhưng không bắt buộc tuyệt đối.\r\n\r\n---",
+      "threat_cost": 17
+    }
+  },
+  "named_items": {
+    "armor_civilian_jacket": {
+      "armor": 6,
+      "attack_speed_multiplier": 1,
+      "effects": {},
+      "id": "civilian_jacket",
+      "implementation_status": "base_armor_catalog_engine_support_separate",
+      "kind": "armor",
+      "name": "Civilian Jacket",
+      "penalty_text": "none",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "none"
+    },
+    "armor_combat_armor": {
+      "armor": 30,
+      "attack_speed_multiplier": 0.97,
+      "effects": {},
+      "id": "combat_armor",
+      "implementation_status": "base_armor_catalog_engine_support_separate",
+      "kind": "armor",
+      "name": "Combat Armor",
+      "penalty_text": "-3% attack speed",
+      "resistances": {
+        "ballistic": 0.1,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+10% Ballistic Resist"
+    },
+    "armor_hazmat_suit": {
+      "armor": 12,
+      "attack_speed_multiplier": 1,
+      "effects": {
+        "ballistic_armor_multiplier": 0.95,
+        "radiation_resistance": 0.45
+      },
+      "id": "hazmat_suit",
+      "implementation_status": "base_armor_catalog_engine_support_separate",
+      "kind": "armor",
+      "name": "Hazmat Suit",
+      "penalty_text": "-5% Armor vs ballistic",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0.45,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+45% Bio/Rad Resist"
+    },
+    "armor_heavy_armor": {
+      "armor": 48,
+      "attack_speed_multiplier": 0.92,
+      "effects": {},
+      "id": "heavy_armor",
+      "implementation_status": "base_armor_catalog_engine_support_separate",
+      "kind": "armor",
+      "name": "Heavy Armor",
+      "penalty_text": "-8% attack speed",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+15% stagger resist"
+    },
+    "armor_insulated_suit": {
+      "armor": 18,
+      "attack_speed_multiplier": 1,
+      "effects": {},
+      "id": "insulated_suit",
+      "implementation_status": "base_armor_catalog_engine_support_separate",
+      "kind": "armor",
+      "name": "Insulated Suit",
+      "penalty_text": "none",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0.35,
+        "energy": 0.35,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+35% Electric/Energy Resist"
+    },
+    "armor_light_scout_armor": {
+      "armor": 15,
+      "attack_speed_multiplier": 1,
+      "effects": {},
+      "id": "light_scout_armor",
+      "implementation_status": "base_armor_catalog_engine_support_separate",
+      "kind": "armor",
+      "name": "Light Scout Armor",
+      "penalty_text": "none",
+      "resistances": {
+        "ballistic": 0,
+        "bio": 0,
+        "electric": 0,
+        "energy": 0,
+        "explosive": 0,
+        "fire": 0
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "16 Armor Archetypes"
+      },
+      "special_text": "+5% reposition, +5 PER checks"
+    },
+    "c_9_civilian_pistol": {
+      "absolute_stats": {
+        "accuracy": 0.86,
+        "crit": 0.05,
+        "damage": 17,
+        "damage_type": "ballistic",
+        "interval": 0.9
+      },
+      "apply_tier_multiplier": false,
+      "base_weapon": "pistol",
+      "effect_text": "- Damage 17;\r\n- Interval 0.90;\r\n- Accuracy 86%;\r\n- common;\r\n- repair/craft rẻ.",
+      "id": "c_9_civilian_pistol",
+      "implementation_status": "catalog_complete_base_effects_available_variant_not_automatically_simulated",
+      "inherited_fields": [
+        "crit"
+      ],
+      "kind": "named_weapon",
+      "name": "C-9 Civilian Pistol",
+      "numeric_declarations": [
+        "17",
+        "0.90",
+        "86%"
+      ],
+      "overrides": {
+        "accuracy": 0.86,
+        "damage": 17,
+        "interval": 0.9
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "15 C-9 Civilian Pistol"
+      }
+    },
+    "consumable_antidote": {
+      "effect_text": "remove Poison/Bio + 30% Bio resist 20 sec",
+      "id": "antidote",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Antidote",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "consumable_breach_charge": {
+      "effect_text": "phá một door / gây 40 explosive near door",
+      "id": "breach_charge",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Breach Charge",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 1
+    },
+    "consumable_combat_stim": {
+      "effect_text": "+15% dmg, +15% attack speed, 15 sec",
+      "id": "combat_stim",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Combat Stim",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "consumable_emergency_beacon": {
+      "effect_text": "mở emergency extraction nếu location cho phép",
+      "id": "emergency_beacon",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Emergency Beacon",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 1
+    },
+    "consumable_emp_grenade": {
+      "effect_text": "20 Electric + Disable Mechanical 3 sec",
+      "id": "emp_grenade",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "EMP Grenade",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "consumable_frag_grenade": {
+      "effect_text": "55 Explosive AOE",
+      "id": "frag_grenade",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Frag Grenade",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "consumable_medkit": {
+      "effect_text": "heal 35% Max HP",
+      "id": "medkit",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Medkit",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "consumable_rad_injector": {
+      "effect_text": "giảm Radiation / +40% Rad resist 30 sec",
+      "id": "rad_injector",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Rad Injector",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "consumable_revival_injector": {
+      "effect_text": "revive unit",
+      "id": "revival_injector",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Revival Injector",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 1
+    },
+    "consumable_smoke_charge": {
+      "effect_text": "enemy accuracy -20% trong room, 8 sec",
+      "id": "smoke_charge",
+      "implementation_status": "catalog_complete_runner_must_report_supported_effect_ids",
+      "kind": "consumable",
+      "name": "Smoke Charge",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "20 Consumables"
+      },
+      "stack": 2
+    },
+    "hsr_12_marksman_rifle": {
+      "absolute_stats": {
+        "accuracy": 0.92,
+        "crit": 0.12,
+        "damage": 60,
+        "damage_type": "ballistic",
+        "interval": 1.9
+      },
+      "apply_tier_multiplier": false,
+      "base_weapon": "sniper_rifle",
+      "effect_text": "- Damage 60;\r\n- Interval 1.90;\r\n- +20% vs Elite/Boss;\r\n- Military/Advanced.",
+      "id": "hsr_12_marksman_rifle",
+      "implementation_status": "catalog_complete_base_effects_available_variant_not_automatically_simulated",
+      "inherited_fields": [
+        "accuracy",
+        "crit"
+      ],
+      "kind": "named_weapon",
+      "name": "HSR-12 Marksman Rifle",
+      "numeric_declarations": [
+        "60",
+        "1.90",
+        "+20%"
+      ],
+      "overrides": {
+        "damage": 60,
+        "interval": 1.9
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "15 HSR-12 Marksman Rifle"
+      }
+    },
+    "living_armor": {
+      "effect_text": "- tự heal 1% HP / 5 sec;\r\n- Bio resist cao;\r\n- tăng infection/anomaly event risk.\r\n\r\nAlien item phải khiến người chơi cân nhắc power versus survivor identity / Exposure. Exposure band, gain and detox rules are specified in CAMPAIGN_CONTRACTS_V0.1.md.",
+      "id": "living_armor",
+      "implementation_status": "catalog_only_missing_full_base_stat_definition",
+      "kind": "alien_item",
+      "name": "Living Armor",
+      "numeric_declarations": [
+        "1%",
+        "5 ",
+        "0.1"
+      ],
+      "parameters": {
+        "regen_hp_fraction": 0.01,
+        "regen_interval": 5
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "25 Living Armor"
+      },
+      "unresolved": [
+        "Neural Beam base damage/interval and room Exposure amount not specified; Living Armor Armor value/Bio resistance/risk coefficient not specified. Do not invent complete balance stats."
+      ]
+    },
+    "lx_3_laser_carbine": {
+      "absolute_stats": {
+        "accuracy": 0.88,
+        "crit": 0.05,
+        "damage": 13,
+        "damage_type": "energy",
+        "interval": 0.4
+      },
+      "apply_tier_multiplier": false,
+      "base_weapon": "laser_rifle",
+      "effect_text": "- Damage 13;\r\n- Interval 0.40;\r\n- Focus cap +20%;\r\n- Energy;\r\n- Advanced.",
+      "id": "lx_3_laser_carbine",
+      "implementation_status": "catalog_complete_base_effects_available_variant_not_automatically_simulated",
+      "inherited_fields": [
+        "accuracy",
+        "crit"
+      ],
+      "kind": "named_weapon",
+      "name": "LX-3 Laser Carbine",
+      "numeric_declarations": [
+        "13",
+        "0.40",
+        "+20%"
+      ],
+      "overrides": {
+        "damage": 13,
+        "interval": 0.4
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "15 LX-3 Laser Carbine"
+      }
+    },
+    "m_4_service_rifle": {
+      "absolute_stats": {
+        "accuracy": 0.83,
+        "crit": 0.05,
+        "damage": 18,
+        "damage_type": "ballistic",
+        "interval": 0.62
+      },
+      "apply_tier_multiplier": false,
+      "base_weapon": "assault_rifle",
+      "effect_text": "- Damage 18;\r\n- Interval 0.62;\r\n- Accuracy 83%;\r\n- Military;\r\n- stable general-purpose.",
+      "id": "m_4_service_rifle",
+      "implementation_status": "catalog_complete_base_effects_available_variant_not_automatically_simulated",
+      "inherited_fields": [
+        "crit"
+      ],
+      "kind": "named_weapon",
+      "name": "M-4 Service Rifle",
+      "numeric_declarations": [
+        "18",
+        "0.62",
+        "83%"
+      ],
+      "overrides": {
+        "accuracy": 0.83,
+        "damage": 18,
+        "interval": 0.62
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "15 M-4 Service Rifle"
+      }
+    },
+    "neural_beam": {
+      "effect_text": "- +25% single-target damage;\r\n- Energy;\r\n- mỗi room tăng Alien Exposure.",
+      "id": "neural_beam",
+      "implementation_status": "catalog_only_missing_full_base_stat_definition",
+      "kind": "alien_item",
+      "name": "Neural Beam",
+      "numeric_declarations": [
+        "+25%"
+      ],
+      "parameters": {
+        "damage_type": "energy",
+        "single_target_damage_multiplier": 1.25
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "25 Neural Beam"
+      },
+      "unresolved": [
+        "Neural Beam base damage/interval and room Exposure amount not specified; Living Armor Armor value/Bio resistance/risk coefficient not specified. Do not invent complete balance stats."
+      ]
+    },
+    "pyr_2_incinerator": {
+      "absolute_stats": {
+        "accuracy": 0.9,
+        "crit": 0.0,
+        "damage": 8,
+        "damage_type": "fire",
+        "interval": 0.25
+      },
+      "apply_tier_multiplier": false,
+      "base_weapon": "flamethrower",
+      "effect_text": "- Damage 8/tick;\r\n- 0.25 sec;\r\n- Fire;\r\n- cone + Burn;\r\n- Advanced.",
+      "id": "pyr_2_incinerator",
+      "implementation_status": "catalog_complete_base_effects_available_variant_not_automatically_simulated",
+      "inherited_fields": [
+        "accuracy",
+        "crit"
+      ],
+      "kind": "named_weapon",
+      "name": "PYR-2 Incinerator",
+      "numeric_declarations": [
+        "8",
+        "0.25 "
+      ],
+      "overrides": {
+        "damage": 8,
+        "interval": 0.25
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "15 PYR-2 Incinerator"
+      }
+    },
+    "r_7_breach_launcher": {
+      "absolute_stats": {
+        "accuracy": 0.8,
+        "crit": 0.03,
+        "damage": 64,
+        "damage_type": "explosive",
+        "interval": 2.55
+      },
+      "apply_tier_multiplier": false,
+      "base_weapon": "rocket_launcher",
+      "effect_text": "- Damage 64;\r\n- Interval 2.55;\r\n- Explosive;\r\n- AOE profile 100/60/45/30;\r\n- Military.",
+      "id": "r_7_breach_launcher",
+      "implementation_status": "catalog_complete_base_effects_available_variant_not_automatically_simulated",
+      "inherited_fields": [
+        "accuracy",
+        "crit"
+      ],
+      "kind": "named_weapon",
+      "name": "R-7 Breach Launcher",
+      "numeric_declarations": [
+        "64",
+        "2.55",
+        "100",
+        "60",
+        "45",
+        "30"
+      ],
+      "overrides": {
+        "damage": 64,
+        "interval": 2.55
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "15 R-7 Breach Launcher"
+      }
+    },
+    "utility_bio_scanner": {
+      "effect_text": "- tăng chance phát hiện infection / mimic clue;\r\n- +15% Bio hazard detection.",
+      "id": "bio_scanner",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Bio Scanner",
+      "numeric_declarations": [
+        "+15%"
+      ],
+      "parameters": {
+        "bio_detection_delta": 0.15
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Bio Scanner"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "utility_breaching_tool": {
+      "effect_text": "- mở một số locked door;\r\n- giảm nhu cầu phá cửa bằng combat.",
+      "id": "breaching_tool",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Breaching Tool",
+      "numeric_declarations": [],
+      "parameters": {},
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Breaching Tool"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "utility_drone": {
+      "effect_text": "- reveal 1 adjacent room;\r\n- có xác suất bị destroy nếu room có anti-drone.",
+      "id": "drone",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Drone",
+      "numeric_declarations": [
+        "1 "
+      ],
+      "parameters": {
+        "adjacent_room_reveals": 1
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Drone"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "utility_portable_shield": {
+      "effect_text": "- tạo shield = 25% Max HP;\r\n- duration 10 sec;\r\n- cooldown / charge giới hạn.",
+      "id": "portable_shield",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Portable Shield",
+      "numeric_declarations": [
+        "25%",
+        "10 "
+      ],
+      "parameters": {
+        "duration": 10,
+        "shield_hp_fraction": 0.25
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Portable Shield"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "utility_shield_module": {
+      "effect_text": "- +10% Energy resist;\r\n- +5% Max HP shield layer nếu armor hỗ trợ.",
+      "id": "shield_module",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Shield Module",
+      "numeric_declarations": [
+        "+10%",
+        "+5%"
+      ],
+      "parameters": {
+        "energy_resistance_delta": 0.1,
+        "shield_hp_fraction": 0.05
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Shield Module"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "utility_tactical_scanner": {
+      "effect_text": "- +10% Scout confidence nếu unit tham gia scout;\r\n- trong dungeon: reveal threat hint của room kế bên một lần.",
+      "id": "tactical_scanner",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Tactical Scanner",
+      "numeric_declarations": [
+        "+10%"
+      ],
+      "parameters": {
+        "next_room_hint_charges": 1,
+        "scout_confidence_delta": 0.1
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Tactical Scanner"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    }
+  },
+  "perks": [
+    {
+      "effect_text": "+15% aggro, +5% damage reduction while Front.\r",
+      "id": "perk_hold_line",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Hold Line",
+      "numeric_declarations": [
+        "+15%",
+        "+5%"
+      ],
+      "role": "vanguard",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Vanguard"
+      }
+    },
+    {
+      "effect_text": "once/room survive lethal hit at 1 HP.\r",
+      "id": "perk_last_wall",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Last Wall",
+      "numeric_declarations": [
+        "1 "
+      ],
+      "role": "vanguard",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Vanguard"
+      }
+    },
+    {
+      "effect_text": "stagger attacker after shield break.",
+      "id": "perk_shock_guard",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Shock Guard",
+      "numeric_declarations": [],
+      "role": "vanguard",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Vanguard"
+      }
+    },
+    {
+      "effect_text": "+8% damage to target hit by another squadmate.\r",
+      "id": "perk_focus_fire",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Focus Fire",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "role": "assault",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Assault"
+      }
+    },
+    {
+      "effect_text": "attack interval -6%.\r",
+      "id": "perk_quick_reload",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Quick Reload",
+      "numeric_declarations": [
+        "-6%"
+      ],
+      "role": "assault",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Assault"
+      }
+    },
+    {
+      "effect_text": "+15% damage to enemy below 25% HP.",
+      "id": "perk_finisher",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Finisher",
+      "numeric_declarations": [
+        "+15%",
+        "25%"
+      ],
+      "role": "assault",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Assault"
+      }
+    },
+    {
+      "effect_text": "reveal one enemy resistance hint at room start.\r",
+      "id": "perk_first_read",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "First Read",
+      "numeric_declarations": [],
+      "role": "scout",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Scout"
+      }
+    },
+    {
+      "effect_text": "Travel event risk -10%.\r",
+      "id": "perk_pathfinder",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Pathfinder",
+      "numeric_declarations": [
+        "-10%"
+      ],
+      "role": "scout",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Scout"
+      }
+    },
+    {
+      "effect_text": "+8% crit vs Observed/Analyzed enemy.",
+      "id": "perk_weak_point",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Weak Point",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "role": "scout",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Scout"
+      }
+    },
+    {
+      "effect_text": "one turret/device interaction faster.\r",
+      "id": "perk_remote_override",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Remote Override",
+      "numeric_declarations": [],
+      "role": "engineer",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Engineer"
+      }
+    },
+    {
+      "effect_text": "EMP duration +15%.\r",
+      "id": "perk_emp_expert",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "EMP Expert",
+      "numeric_declarations": [
+        "+15%"
+      ],
+      "role": "engineer",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Engineer"
+      }
+    },
+    {
+      "effect_text": "once/room restore small shield/robot utility.",
+      "id": "perk_field_repair",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Field Repair",
+      "numeric_declarations": [],
+      "role": "engineer",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Engineer"
+      }
+    },
+    {
+      "effect_text": "Medkit use time -25%.\r",
+      "id": "perk_combat_triage",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Combat Triage",
+      "numeric_declarations": [
+        "-25%"
+      ],
+      "role": "medic",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Medic"
+      }
+    },
+    {
+      "effect_text": "revived unit Trauma penalty reduced.\r",
+      "id": "perk_stable_revival",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Stable Revival",
+      "numeric_declarations": [],
+      "role": "medic",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Medic"
+      }
+    },
+    {
+      "effect_text": "squad Bio resistance +8%.",
+      "id": "perk_preventive_dose",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Preventive Dose",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "role": "medic",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Medic"
+      }
+    },
+    {
+      "effect_text": "AOE secondary damage +10%.\r",
+      "id": "perk_blast_control",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Blast Control",
+      "numeric_declarations": [
+        "+10%"
+      ],
+      "role": "heavy",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Heavy/Specialist"
+      }
+    },
+    {
+      "effect_text": "heavy hit reduces enemy accuracy briefly.\r",
+      "id": "perk_suppression",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Suppression",
+      "numeric_declarations": [],
+      "role": "heavy",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Heavy/Specialist"
+      }
+    },
+    {
+      "effect_text": "heavy weapon Supply penalty -1.",
+      "id": "perk_load_bearer",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "name": "Load Bearer",
+      "numeric_declarations": [
+        "-1"
+      ],
+      "role": "heavy",
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "17 Heavy/Specialist"
+      }
+    },
+    {
+      "id": "perk_steady_resolve",
+      "implementation_status": "catalog_only_perk_effect_support_not_implied",
+      "level": 40,
+      "name": "Steady Resolve",
+      "parameters": {
+        "resolve_check_cap": 0.95,
+        "resolve_check_delta": 0.05
+      },
+      "role": "all",
+      "source": {
+        "path": "docs/IMPLEMENTATION_BASELINE_V0.1.md",
+        "section": "4 XP và Training"
+      }
+    }
+  ],
+  "roles": {
+    "assault": {
+      "attack_speed_multiplier": 1.05,
+      "damage_multiplier": 1.08,
+      "id": "assault",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "5 Roles"
+      }
+    },
+    "engineer": {
+      "emp_duration_multiplier": 1.2,
+      "id": "engineer",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "5 Roles"
+      },
+      "tech_multiplier": 1.2
+    },
+    "heavy": {
+      "aoe_multiplier": 1.15,
+      "heavy_penalty_multiplier": 0.5,
+      "id": "heavy",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "5 Roles"
+      },
+      "stagger_multiplier": 1.15
+    },
+    "medic": {
+      "healing_multiplier": 1.25,
+      "id": "medic",
+      "revive_hp_fraction": 0.4,
+      "revive_time_multiplier": 0.75,
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "5 Roles"
+      }
+    },
+    "scout": {
+      "crit_delta": 0.05,
+      "first_target_accuracy_delta": 0.1,
+      "id": "scout",
+      "intel_contribution_multiplier": 1.15,
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "5 Roles"
+      }
+    },
+    "vanguard": {
+      "aggro_multiplier": 1.25,
+      "hp_multiplier": 1.2,
+      "id": "vanguard",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "5 Roles"
+      },
+      "stagger_resistance": 0.15
+    }
+  },
+  "roster": [
+    {
+      "armor": "civilian_jacket",
+      "assignment_text": "Vanguard, Front",
+      "formation": "front",
+      "id": "SUR-001",
+      "level": 1,
+      "name": "Bảo",
+      "profession_trait_text": "Security / Tough",
+      "role": "vanguard",
+      "stats": {
+        "AGI": 4,
+        "COM": 7,
+        "END": 8,
+        "INT": 3,
+        "MED": 2,
+        "PER": 4,
+        "RES": 6,
+        "TEC": 4
+      },
+      "weapon": "shotgun"
+    },
+    {
+      "armor": "civilian_jacket",
+      "assignment_text": "Assault, Mid",
+      "formation": "mid",
+      "id": "SUR-002",
+      "level": 1,
+      "name": "Linh",
+      "profession_trait_text": "Civilian Generalist / Steady Hands",
+      "role": "assault",
+      "stats": {
+        "AGI": 7,
+        "COM": 7,
+        "END": 5,
+        "INT": 3,
+        "MED": 2,
+        "PER": 6,
+        "RES": 5,
+        "TEC": 3
+      },
+      "weapon": "assault_rifle"
+    },
+    {
+      "armor": "civilian_jacket",
+      "assignment_text": "Medic, Back",
+      "formation": "back",
+      "id": "SUR-003",
+      "level": 1,
+      "name": "Mai",
+      "profession_trait_text": "Doctor / Calm",
+      "role": "medic",
+      "stats": {
+        "AGI": 4,
+        "COM": 3,
+        "END": 5,
+        "INT": 7,
+        "MED": 8,
+        "PER": 5,
+        "RES": 5,
+        "TEC": 4
+      },
+      "weapon": "pistol"
+    },
+    {
+      "armor": "civilian_jacket",
+      "assignment_text": "Generator worker",
+      "formation": null,
+      "id": "SUR-004",
+      "level": 1,
+      "name": "Nam",
+      "profession_trait_text": "Engineer / Mechanic",
+      "role": null,
+      "stats": {
+        "AGI": 4,
+        "COM": 3,
+        "END": 6,
+        "INT": 6,
+        "MED": 3,
+        "PER": 4,
+        "RES": 5,
+        "TEC": 8
+      },
+      "weapon": "pistol"
+    },
+    {
+      "armor": "civilian_jacket",
+      "assignment_text": "Hydroponics worker",
+      "formation": null,
+      "id": "SUR-005",
+      "level": 1,
+      "name": "An",
+      "profession_trait_text": "Civilian Generalist / Fast Learner",
+      "role": null,
+      "stats": {
+        "AGI": 4,
+        "COM": 3,
+        "END": 5,
+        "INT": 7,
+        "MED": 3,
+        "PER": 4,
+        "RES": 6,
+        "TEC": 5
+      },
+      "weapon": "pistol"
+    },
+    {
+      "armor": "civilian_jacket",
+      "assignment_text": "Water worker; no combat role yet",
+      "formation": null,
+      "id": "SUR-006",
+      "level": 1,
+      "name": "Vy",
+      "profession_trait_text": "Scout / Keen Eye",
+      "role": null,
+      "stats": {
+        "AGI": 6,
+        "COM": 4,
+        "END": 5,
+        "INT": 5,
+        "MED": 3,
+        "PER": 8,
+        "RES": 5,
+        "TEC": 4
+      },
+      "weapon": "pistol"
+    },
+    {
+      "armor": null,
+      "formation": null,
+      "id": "SUR-007",
+      "level": 1,
+      "name": "Tùng",
+      "rescue": true,
+      "role": null,
+      "stats": {
+        "AGI": 4,
+        "COM": 4,
+        "END": 6,
+        "INT": 5,
+        "MED": 4,
+        "PER": 5,
+        "RES": 5,
+        "TEC": 6
+      },
+      "weapon": null
+    },
+    {
+      "armor": null,
+      "formation": null,
+      "id": "SUR-008",
+      "level": 1,
+      "name": "Hạnh",
+      "rescue": true,
+      "role": null,
+      "stats": {
+        "AGI": 5,
+        "COM": 5,
+        "END": 6,
+        "INT": 4,
+        "MED": 3,
+        "PER": 4,
+        "RES": 6,
+        "TEC": 7
+      },
+      "weapon": null
+    }
+  ],
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+      "sha256": "cb2c0692dad7018abbe5d67414bf3d56149f43f77cd24b7b02f78a76f8cb13b0"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_BASELINE_V0.1.md",
+      "sha256": "be27523214e3d13401d392aa635b805990cc286e2ebabfeeb147d17b4ca476f0"
+    },
+    {
+      "path": "docs/POPULATION_TRAITS_V0.1.md",
+      "sha256": "8030c15e192736de43400ee89e01aa17197a24158cd6ac29d66446c11db76e2c"
+    },
+    {
+      "path": "docs/PROTOTYPE_CONTENT_PACK_V0.1.md",
+      "sha256": "eab787dce325d1906fa84492728ff6881f199cee4c39e0ef73e4eabc1e10fa90"
+    },
+    {
+      "path": "docs/SURVIVOR_RECOVERY_V0.1.md",
+      "sha256": "c640956db86da1086e3705fe616f17c184e5d104551a668c7b74f40d718b302b"
+    },
+    {
+      "path": "docs/UNITS_ITEMS_V0.1.md",
+      "sha256": "41e025012e9b31ddb936b7782ceb8c8e23e6c9557050230cbe2d37b905ca85c4"
+    }
+  ],
+  "tiers": [
+    {
+      "budget_max": 1.0,
+      "budget_min": 1.0,
+      "effect_text": "1.00×",
+      "id": "civilian",
+      "name": "Civilian"
+    },
+    {
+      "budget_max": 1.05,
+      "budget_min": 1.05,
+      "effect_text": "1.05×",
+      "id": "industrial",
+      "name": "Industrial"
+    },
+    {
+      "budget_max": 1.12,
+      "budget_min": 1.12,
+      "effect_text": "1.12×",
+      "id": "military",
+      "name": "Military"
+    },
+    {
+      "budget_max": 1.2,
+      "budget_min": 1.2,
+      "effect_text": "1.20×",
+      "id": "advanced",
+      "name": "Advanced"
+    },
+    {
+      "budget_max": 1.28,
+      "budget_min": 1.28,
+      "effect_text": "1.28×",
+      "id": "prototype",
+      "name": "Prototype"
+    },
+    {
+      "budget_max": 1.35,
+      "budget_min": 1.25,
+      "effect_text": "1.25–1.35× + trade-off",
+      "id": "alien",
+      "name": "Alien"
+    },
+    {
+      "budget_max": null,
+      "budget_min": null,
+      "effect_text": "unique, không dùng scaling thuần",
+      "id": "artifact",
+      "name": "Artifact"
+    }
+  ],
+  "traits": [
+    {
+      "category": "positive",
+      "effect_text": "+20% Medkit effect.",
+      "id": "field_medic",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Field Medic",
+      "numeric_declarations": [
+        "+20%"
+      ],
+      "parameters": {
+        "medkit_multiplier": 1.2
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Field Medic"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+15% Fear resistance.",
+      "id": "calm",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Calm",
+      "numeric_declarations": [
+        "+15%"
+      ],
+      "parameters": {
+        "fear_resistance_delta": 0.15
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Calm"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+8% Workshop/Generator efficiency.",
+      "id": "mechanic",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Mechanic",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "parameters": {
+        "room_efficiency_delta": 0.08
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Mechanic"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+8% detection / Scout contribution.",
+      "id": "keen_eye",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Keen Eye",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "parameters": {
+        "detection_delta": 0.08,
+        "scout_contribution_delta": 0.08
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Keen Eye"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+8% Max HP.",
+      "id": "tough",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Tough",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "parameters": {
+        "hp_multiplier": 1.08
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Tough"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+10% XP.",
+      "id": "fast_learner",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Fast Learner",
+      "numeric_declarations": [
+        "+10%"
+      ],
+      "parameters": {
+        "xp_multiplier": 1.1
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Fast Learner"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+10% chance tìm extra common loot roll.",
+      "id": "scavenger",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Scavenger",
+      "numeric_declarations": [
+        "+10%"
+      ],
+      "parameters": {
+        "extra_common_roll_chance_delta": 0.1
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Scavenger"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+5% weapon accuracy.",
+      "id": "steady_hands",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Steady Hands",
+      "numeric_declarations": [
+        "+5%"
+      ],
+      "parameters": {
+        "accuracy_delta": 0.05
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Steady Hands"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+3 Morale cho squad sau successful extraction.",
+      "id": "team_player",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Team Player",
+      "numeric_declarations": [
+        "+3 "
+      ],
+      "parameters": {
+        "extraction_morale": 3
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Team Player"
+      }
+    },
+    {
+      "category": "positive",
+      "effect_text": "+8% efficiency trong night-cycle event nếu system bật.",
+      "id": "night_owl",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Night Owl",
+      "numeric_declarations": [
+        "+8%"
+      ],
+      "parameters": {
+        "night_efficiency_delta": 0.08
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "13 Night Owl"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "-8 Morale khi ở Silo quá lâu; +3 Morale sau expedition.",
+      "id": "claustrophobic",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Claustrophobic",
+      "numeric_declarations": [
+        "-8 ",
+        "+3 "
+      ],
+      "parameters": {
+        "extraction_morale": 3,
+        "long_silo_morale": -8
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Claustrophobic"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "+5% damage; +10% damage received.",
+      "id": "reckless",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Reckless",
+      "numeric_declarations": [
+        "+5%",
+        "+10%"
+      ],
+      "parameters": {
+        "damage_multiplier": 1.05,
+        "damage_taken_multiplier": 1.1
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Reckless"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "-8% Max HP.",
+      "id": "fragile",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Fragile",
+      "numeric_declarations": [
+        "-8%"
+      ],
+      "parameters": {
+        "hp_multiplier": 0.92
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Fragile"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "Clinic time +20%.",
+      "id": "slow_recovery",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Slow Recovery",
+      "numeric_declarations": [
+        "+20%"
+      ],
+      "parameters": {
+        "clinic_duration_multiplier": 1.2
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Slow Recovery"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "Fear/psychic resistance -15%.",
+      "id": "nervous",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Nervous",
+      "numeric_declarations": [
+        "-15%"
+      ],
+      "parameters": {
+        "fear_psychic_resistance_delta": -0.15
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Nervous"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "+1 Cargo Unit personal contribution; Storage work -5%.",
+      "id": "hoarder",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Hoarder",
+      "numeric_declarations": [
+        "+1 ",
+        "-5%"
+      ],
+      "parameters": {
+        "cargo_delta": 1,
+        "storage_efficiency_delta": -0.05
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Hoarder"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "internal conflict event chance tăng.",
+      "id": "short_temper",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Short Temper",
+      "numeric_declarations": [],
+      "parameters": {},
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Short Temper"
+      }
+    },
+    {
+      "category": "negative",
+      "effect_text": "TEC interaction -15%.",
+      "id": "tech_illiterate",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Tech Illiterate",
+      "numeric_declarations": [
+        "-15%"
+      ],
+      "parameters": {
+        "tech_interaction_multiplier": 0.85
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "14 Tech Illiterate"
+      }
+    },
+    {
+      "category": "mixed",
+      "effect_text": "+15% Mimic/anomaly detection;\r\n-5 Morale khi overcrowded.",
+      "id": "paranoid",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Paranoid",
+      "numeric_declarations": [
+        "+15%",
+        "-5 "
+      ],
+      "parameters": {
+        "mimic_detection_delta": 0.15,
+        "overcrowded_morale": -5
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "15 Paranoid"
+      }
+    },
+    {
+      "category": "mixed",
+      "effect_text": "+10% Alien gear efficiency;\r\nAlien Exposure +20%.",
+      "id": "alien_touched",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Alien Touched",
+      "numeric_declarations": [
+        "+10%",
+        "+20%"
+      ],
+      "parameters": {
+        "alien_efficiency_multiplier": 1.1,
+        "exposure_multiplier": 1.2
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "15 Alien Touched"
+      }
+    },
+    {
+      "category": "mixed",
+      "effect_text": "+5% damage/accuracy;\r\ndeath of squadmate Morale impact +50%.",
+      "id": "veteran",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Veteran",
+      "numeric_declarations": [
+        "+5%",
+        "+50%"
+      ],
+      "parameters": {
+        "accuracy_delta": 0.05,
+        "damage_multiplier": 1.05,
+        "death_morale_multiplier": 1.5
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "15 Veteran"
+      }
+    },
+    {
+      "category": "mixed",
+      "effect_text": "below 30% HP: +10% damage resistance;\r\nClinic recovery +15% time.",
+      "id": "survivor",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Survivor",
+      "numeric_declarations": [
+        "30%",
+        "+10%",
+        "+15%"
+      ],
+      "parameters": {
+        "clinic_duration_multiplier": 1.15,
+        "hp_threshold": 0.3,
+        "low_hp_damage_taken_multiplier": 0.9
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "15 Survivor"
+      }
+    },
+    {
+      "category": "mixed",
+      "effect_text": "Hard/Extreme mission +8% attack speed;\r\nEasy mission -5 Morale reward.",
+      "id": "adrenaline_junkie",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Adrenaline Junkie",
+      "numeric_declarations": [
+        "+8%",
+        "-5 "
+      ],
+      "parameters": {
+        "easy_morale_reward_delta": -5,
+        "hard_extreme_attack_speed_multiplier": 1.08
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "15 Adrenaline Junkie"
+      }
+    },
+    {
+      "category": "mixed",
+      "effect_text": "Damage against Raider/hostile-survivor enemies−10%;\r\nMedical/Negotiation event bonus.",
+      "id": "pacifist",
+      "implementation_status": "catalog_adapter_parameters_runner_support_separate",
+      "name": "Pacifist",
+      "numeric_declarations": [
+        "10%"
+      ],
+      "parameters": {
+        "raider_damage_multiplier": 0.9
+      },
+      "source": {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "section": "15 Pacifist"
+      }
+    }
+  ],
+  "utilities": {
+    "bio_scanner": {
+      "effect_text": "- tăng chance phát hiện infection / mimic clue;\r\n- +15% Bio hazard detection.",
+      "id": "bio_scanner",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Bio Scanner",
+      "numeric_declarations": [
+        "+15%"
+      ],
+      "parameters": {
+        "bio_detection_delta": 0.15
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Bio Scanner"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "breaching_tool": {
+      "effect_text": "- mở một số locked door;\r\n- giảm nhu cầu phá cửa bằng combat.",
+      "id": "breaching_tool",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Breaching Tool",
+      "numeric_declarations": [],
+      "parameters": {},
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Breaching Tool"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "drone": {
+      "effect_text": "- reveal 1 adjacent room;\r\n- có xác suất bị destroy nếu room có anti-drone.",
+      "id": "drone",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Drone",
+      "numeric_declarations": [
+        "1 "
+      ],
+      "parameters": {
+        "adjacent_room_reveals": 1
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Drone"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "portable_shield": {
+      "effect_text": "- tạo shield = 25% Max HP;\r\n- duration 10 sec;\r\n- cooldown / charge giới hạn.",
+      "id": "portable_shield",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Portable Shield",
+      "numeric_declarations": [
+        "25%",
+        "10 "
+      ],
+      "parameters": {
+        "duration": 10,
+        "shield_hp_fraction": 0.25
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Portable Shield"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "shield_module": {
+      "effect_text": "- +10% Energy resist;\r\n- +5% Max HP shield layer nếu armor hỗ trợ.",
+      "id": "shield_module",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Shield Module",
+      "numeric_declarations": [
+        "+10%",
+        "+5%"
+      ],
+      "parameters": {
+        "energy_resistance_delta": 0.1,
+        "shield_hp_fraction": 0.05
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Shield Module"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    },
+    "tactical_scanner": {
+      "effect_text": "- +10% Scout confidence nếu unit tham gia scout;\r\n- trong dungeon: reveal threat hint của room kế bên một lần.",
+      "id": "tactical_scanner",
+      "implementation_status": "catalog_only_unmodeled_utility_actions",
+      "kind": "utility",
+      "name": "Tactical Scanner",
+      "numeric_declarations": [
+        "+10%"
+      ],
+      "parameters": {
+        "next_room_hint_charges": 1,
+        "scout_confidence_delta": 0.1
+      },
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "18 Tactical Scanner"
+      },
+      "unresolved": [
+        "Cooldown/charges or interaction availability not fully quantified in source; no invented value."
+      ]
+    }
+  },
+  "weapons": {
+    "assault_rifle": {
+      "accuracy": 0.82,
+      "base_dps_display": 25.8,
+      "crit": 0.05,
+      "damage": 16,
+      "damage_type": "ballistic",
+      "effects": {},
+      "id": "assault_rifle",
+      "identity": "safe generalist",
+      "interval": 0.62,
+      "name": "Assault Rifle",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "emp_rifle": {
+      "accuracy": 0.86,
+      "base_dps_display": 12.9,
+      "crit": 0.02,
+      "damage": 9,
+      "damage_type": "electric",
+      "effects": {
+        "buildup_per_hit": 1,
+        "disable_seconds": 2.5,
+        "mechanical_threshold": 3,
+        "shielded_organic_threshold": 4
+      },
+      "id": "emp_rifle",
+      "identity": "disable / anti-system",
+      "interval": 0.7,
+      "name": "EMP Rifle",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "flamethrower": {
+      "accuracy": 0.9,
+      "base_dps_display": 28,
+      "crit": 0.0,
+      "damage": 7,
+      "damage_type": "fire",
+      "effects": {
+        "aoe_falloff": [
+          1,
+          0.6,
+          0.6
+        ],
+        "burn_dps": 3,
+        "burn_seconds": 4
+      },
+      "id": "flamethrower",
+      "identity": "cone + DOT",
+      "interval": 0.25,
+      "name": "Flamethrower",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "laser_rifle": {
+      "accuracy": 0.88,
+      "base_dps_display": 27.5,
+      "crit": 0.05,
+      "damage": 11,
+      "damage_type": "energy",
+      "effects": {
+        "focus_cap": 0.2,
+        "focus_per_second": 0.04
+      },
+      "id": "laser_rifle",
+      "identity": "single focus",
+      "interval": 0.4,
+      "name": "Laser Rifle",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "pistol": {
+      "accuracy": 0.86,
+      "base_dps_display": 18.9,
+      "crit": 0.05,
+      "damage": 17,
+      "damage_type": "ballistic",
+      "effects": {},
+      "id": "pistol",
+      "identity": "backup / cheap",
+      "interval": 0.9,
+      "name": "Pistol",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "rocket_launcher": {
+      "accuracy": 0.8,
+      "base_dps_display": 22.4,
+      "crit": 0.03,
+      "damage": 56,
+      "damage_type": "explosive",
+      "effects": {
+        "aoe_falloff": [
+          1,
+          0.6,
+          0.45,
+          0.3
+        ],
+        "stagger_seconds": 0.5
+      },
+      "id": "rocket_launcher",
+      "identity": "AOE burst",
+      "interval": 2.5,
+      "name": "Rocket Launcher",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "shotgun": {
+      "accuracy": 0.78,
+      "base_dps_display": 27.2,
+      "crit": 0.04,
+      "damage": 34,
+      "damage_type": "ballistic",
+      "effects": {
+        "aoe_falloff": [
+          1,
+          0.45,
+          0.25
+        ],
+        "front_damage_multiplier": 1.1
+      },
+      "id": "shotgun",
+      "identity": "close cone",
+      "interval": 1.25,
+      "name": "Shotgun",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "smg": {
+      "accuracy": 0.76,
+      "base_dps_display": 26.3,
+      "crit": 0.04,
+      "damage": 10,
+      "damage_type": "ballistic",
+      "effects": {
+        "far_accuracy_delta": -0.15,
+        "front_mid_damage_multiplier": 1.1
+      },
+      "id": "smg",
+      "identity": "close-mid sustained",
+      "interval": 0.38,
+      "name": "SMG",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    },
+    "sniper_rifle": {
+      "accuracy": 0.92,
+      "base_dps_display": 27.4,
+      "crit": 0.12,
+      "damage": 52,
+      "damage_type": "ballistic",
+      "effects": {
+        "back_accuracy_delta": 0.05,
+        "back_bonus_apply_once": true,
+        "elite_boss_damage_multiplier": 1.2
+      },
+      "id": "sniper_rifle",
+      "identity": "elite/boss burst",
+      "interval": 1.9,
+      "name": "Sniper Rifle",
+      "source": {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "section": "11–12 Weapon baseline/effects"
+      }
+    }
+  }
+}

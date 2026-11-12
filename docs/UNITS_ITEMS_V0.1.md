@@ -172,7 +172,7 @@ Mỗi **5 level**, unit nhận:
 
 - +1 trainable stat point;
 
-hoặc:
+và tại Level10/20/30/40 nhận thêm:
 
 - perk choice tại milestone nhất định.
 
@@ -213,7 +213,7 @@ Passive:
 
 - +5% crit;
 - +10% accuracy với first target;
-- +15% Scout Intel contribution.
+- +5 percentage points Scout Role bonus in the Scout formula (apply once, not +15% contribution).
 
 ## Engineer
 
@@ -221,7 +221,7 @@ Passive:
 
 - +20% Tech Effect;
 - hack / disable nhanh hơn;
-- EMP duration +20%.
+- EMP duration derives from the role's +20% Tech Effect once; no second +20% duration multiplier. EMP Expert perk, if selected, is a separate +15% multiplier before boss diminishing returns.
 
 ## Medic
 
@@ -715,27 +715,14 @@ Cap healing không vượt Max HP.
 
 # 22. Revival Injector
 
-Rare consumable.
+Rare field consumable. Exact states, action ordering, bodies/gear and recovery: [SURVIVOR_RECOVERY_V0.1.md](SURVIVOR_RECOVERY_V0.1.md) is authoritative.
 
-Prototype effect:
-
-- target phải DEAD/DOWN và body còn recoverable;
-- revive với 30% Max HP;
-- Medic role revive → 40% Max HP;
-- unit nhận **Trauma**:
-  - -15% damage;
-  - -10% attack speed;
-  - kéo dài đến khi về Clinic.
-
-Không thể spam revive cùng một unit vô hạn.
-
-Prototype rule:
-
-```
-1 successful field revive / unit / mission
-```
-
-Lần chết tiếp theo phải extract body hoặc mất unit tùy encounter.
+- Only DOWN before60s bleedout and `field_revives_used=0`; ACTIVE actor in same room; action3s.
+- Reserve at start, consume only on successful completion; actor down cancels/refunds reservation.
+- Restore30%MaxHP; Medic40%; Trauma−15%damage/−10%attack speed until treatment.
+- Maximum1successful field revive/unit/missionID, persisted across reload. DEAD_RECOVERABLE is not a valid field target.
+- Second lethal hit or bleedout → body recovery. Escort uses2Cargo Units and1living escort; base ClinicL1 body service30min/6Chemicals, then Trauma service. Permanent death cannot be reversed.
+- Last active squad member down → wipe after same-tick resolution. Tutorial and offline defense exceptions are explicit in Recovery contract.
 
 ---
 
@@ -748,10 +735,10 @@ Prototype injuries:
 - Fracture: -10% AGI effective;
 - Concussion: -10% accuracy;
 - Burn: -10% Max HP;
-- Infection: periodic HP/morale penalty;
+- Infection: healing received−10% and morale−3 while active; no base/offline HP ticks, so infection never silently kills a resting survivor;
 - Trauma: combat penalty sau revive.
 
-Clinic chữa theo thời gian/resource.
+Clinic treatment durations/costs, fatigue recovery and injury triggers are defined in [SURVIVOR_RECOVERY_V0.1.md](SURVIVOR_RECOVERY_V0.1.md).
 
 ---
 
@@ -808,7 +795,7 @@ Ví dụ:
 - Bio resist cao;
 - tăng infection/anomaly event risk.
 
-Alien item phải khiến người chơi cân nhắc Power vs Humanity / Exposure.
+Alien item phải khiến người chơi cân nhắc power versus survivor identity / Exposure. Exposure band, gain and detox rules are specified in CAMPAIGN_CONTRACTS_V0.1.md.
 
 ---
 

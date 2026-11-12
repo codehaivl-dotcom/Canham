@@ -15,7 +15,7 @@ Mọi location dùng chung schema:
 | Size | Tiny / Small / Medium / Large / Complex |
 | Room Band | số phòng dự kiến |
 | Threat Band | 1–5 |
-| Threat Family | Human / Infected / Robot / Alien... |
+| Threat Family | Raider / Infected / Robot / Alien... |
 | Hazard | Gas, Radiation, Fire, Bio, Electric... |
 | Loot Affinity | nhóm loot có xác suất cao |
 | Intel Quality | độ tin cậy của Scout |
@@ -25,6 +25,8 @@ Mọi location dùng chung schema:
 | Control State | Unexplored / Cleared / Controlled / Contested |
 
 Target card không được cho biết chính xác enemy/loot/layout.
+
+Authored first-slice graphs/loot/fixtures are in [PROTOTYPE_CONTENT_PACK_V0.1.md](PROTOTYPE_CONTENT_PACK_V0.1.md); later guaranteed progression encounters are in [CAMPAIGN_CONTRACTS_V0.1.md](CAMPAIGN_CONTRACTS_V0.1.md). Archetype room bands below are normal-generation targets; explicitly smaller curated tutorial/contract graphs are exceptions, not alternate normal distributions.
 
 ---
 
@@ -674,7 +676,7 @@ Mỗi archetype chỉ dùng objective phù hợp.
 
 # 18. Extraction Contract
 
-Không phải dungeon nào cũng cho rút giống nhau.
+Không phải dungeon nào cũng cho rút giống nhau. Prototype curated House/Warehouse/Hospital always preserve a cleared path back to entry; generated path validator verifies objective and extraction reachable without a mandatory specialist/key absent from the map. One-way/collapse mechanics excluded from first slice. Session, body/cargo and force-close rules: MISSION_SESSION_REWARDS_V0.1.md and SURVIVOR_RECOVERY_V0.1.md.
 
 ### Normal
 quay về entrance.

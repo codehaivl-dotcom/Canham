@@ -13,9 +13,22 @@
 1. [Canonical Rules / Source of Truth](docs/CANONICAL_RULES_V0.1.md)
 2. [Game Vision / GDD v0.3 — legacy filename](docs/GAME_DESIGN_V0.1.md)
 3. [Design & Production Plan v0.4](docs/DESIGN_PLAN.md)
-4. [Current Design Audit v0.4](docs/AUDIT_V0.4.md)
+4. [Current Gap Closure & Content Delivery](docs/GAP_CLOSURE_2026-11-12.md)
+5. [QA Regression Matrix — runtime NOT RUN](docs/QA_GAP_REGRESSION_V0.1.md)
 
 If documents conflict, **Canonical Rules wins**.
+
+## Implementation contracts / playable content
+
+- [Death, Body Recovery, Clinic, Rest & Staffing](docs/SURVIVOR_RECOVERY_V0.1.md)
+- [Mission Sessions, Quit/Resume, Cache & Reward Settlement](docs/MISSION_SESSION_REWARDS_V0.1.md)
+- [CCL2–12, Guaranteed PvE Sources & Emergency Economy](docs/PROTOTYPE_PROGRESSION_V0.1.md)
+- [Starting Pandas, Three Missions & Tutorial Ledger](docs/PROTOTYPE_CONTENT_PACK_V0.1.md)
+- [34 Research Nodes & Recipe Gates](docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md)
+- [Combat, XP, Training & Loot Authoring Baseline](docs/IMPLEMENTATION_BASELINE_V0.1.md)
+- [Campaign, Faction & Mimic Contract Content](docs/CAMPAIGN_CONTRACTS_V0.1.md)
+
+First2h onboarding ends CCL4/squad3; extended2–4h slice adds CCL5/squad4 and research. New tables are prototype baselines, not runtime or balance evidence. Run `python tools/validate_design_docs.py` for static document checks.
 
 ## Brand / Art / UX
 
@@ -69,6 +82,8 @@ If documents conflict, **Canonical Rules wins**.
 - [Market & Competitor Research](docs/MARKET_RESEARCH_V0.1.md)
 - [Lessons Applied](docs/LESSONS_APPLIED_V0.1.md)
 - [Historical Audit v0.3](docs/AUDIT_V0.3.md)
+- [Historical Audit v0.4](docs/AUDIT_V0.4.md)
+- [Independent Audit Before Remediation](docs/INDEPENDENT_AUDIT_2026-11-12.md)
 
 These are context/reference documents; they do not override current canonical rules.
 

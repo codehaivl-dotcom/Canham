@@ -1,5 +1,8 @@
 # CĂN HẦM — Design Audit v0.3
 
+> Historical audit snapshot, not current readiness/sign-off. The 2026-11-12 remediation is tracked in [GAP_CLOSURE_2026-11-12.md](GAP_CLOSURE_2026-11-12.md); runtime tests remain NOT RUN.
+
+
 **Date:** 2026-11-12  
 **Scope:** audit toàn bộ design docs hiện có trước khi bước sâu vào prototype/balance.
 

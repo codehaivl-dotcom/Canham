@@ -76,6 +76,15 @@ Standard max:
 
 # 3. Core Design Specs — COMPLETE BASELINE
 
+## Implementation contracts and content
+
+- [Survivor recovery](SURVIVOR_RECOVERY_V0.1.md)
+- [Mission sessions/rewards](MISSION_SESSION_REWARDS_V0.1.md)
+- [Progression and emergency economy](PROTOTYPE_PROGRESSION_V0.1.md)
+- [Prototype content pack](PROTOTYPE_CONTENT_PACK_V0.1.md)
+- [Research catalog](PROTOTYPE_RESEARCH_CATALOG_V0.1.md)
+- [QA regression matrix](QA_GAP_REGRESSION_V0.1.md)
+
 ## Foundation
 
 - [GAME_DESIGN_V0.1.md](./GAME_DESIGN_V0.1.md)
@@ -161,7 +170,7 @@ COMBAT SIMULATION / TUNING
       ↓
 LOOT + RETURN LOOP
       ↓
-FIRST 2H VERTICAL SLICE
+FIRST 2H ONBOARDING → EXTENDED 2–4H VERTICAL SLICE
       ↓
 NPC SILO RAID
       ↓
@@ -178,7 +187,9 @@ Do not build full persistent MMO backend before the base + expedition + extracti
 
 # 6. Vertical Slice Target
 
-Vertical slice should demonstrate:
+First2h onboarding endsCCL4/squad3. Extended2–4h slice endsCCL5/squad4 withLabL1 and one completed tierI research. These are playtest targets, not measured completion times. Authoritative content/ledger: PROTOTYPE_CONTENT_PACK_V0.1.md; costs: PROTOTYPE_PROGRESSION_V0.1.md.
+
+Extended vertical slice should demonstrate:
 
 1. panda Silo home;
 2. Power/Water/Food;
@@ -224,8 +235,8 @@ Use [ART_PRODUCTION_V0.1.md](./ART_PRODUCTION_V0.1.md) as production ceiling.
 
 Do not let implementation agents silently decide these:
 
-- exact active combat control density;
-- exact CCL upgrade costs;
+- final active combat control density (prototype: target focus, consumable, pause PvE, no active abilities/reposition mid-combat);
+- final live CCL balance (prototype costs now specified);
 - final combat/economy tuning;
 - final drop probabilities;
 - monetization/pricing;

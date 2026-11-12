@@ -17,6 +17,8 @@ Factions provide:
 
 They are not just shops.
 
+Concrete introduction contracts, rewards, reputation gains, store baselines and hostility recovery: [CAMPAIGN_CONTRACTS_V0.1.md](CAMPAIGN_CONTRACTS_V0.1.md#3-faction-intro-contracts-and-reputation). Prototype faction tokens are disabled; use Credits and existing materials only.
+
 ---
 
 # 2. Initial Factions
@@ -166,7 +168,7 @@ No faction gives strictly mandatory best-in-slot gear.
 
 # 7. Faction Store
 
-Uses Credits + faction token where appropriate.
+Prototype uses Credits only; faction tokens are not implemented in this baseline. Store limits/catalog and research-source contracts are defined in CAMPAIGN_CONTRACTS_V0.1.md.
 
 Store offers:
 

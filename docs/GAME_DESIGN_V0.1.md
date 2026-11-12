@@ -1390,67 +1390,15 @@ Người chơi giỏi preparation có thể thắng mục tiêu mạnh hơn.
 
 # 34. Injury / death
 
-**Death là thật đối với unit mà người chơi chủ động deploy vào PvE hoặc dùng làm attacker trong raid.**
+Actively deployed PvE/attacker units can permanently die. Offline defenders and site workers never die permanently in normal resolution. Full state/escort/gear/revive/Clinic contract: [SURVIVOR_RECOVERY_V0.1.md](SURVIVOR_RECOVERY_V0.1.md).
 
-Ngoại lệ canonical: defender trong asynchronous PvP và worker bảo vệ Resource Site **không chết vĩnh viễn khi người chơi offline**; họ chỉ nhận Injury/Fatigue/recovery time.
-
-Khi HP về 0, unit chuyển sang trạng thái **DOWN / DEAD** tùy encounter và sát thương.
-
-Unit chết không tự hồi khi kết thúc trận.
-
-Muốn đưa unit trở lại, người chơi phải dùng một **revival item** hiếm tương tự chức năng hồi sinh trong Fallout Shelter, tạm gọi:
-
-- Revival Injector;
-- Trauma Kit;
-- Emergency Reanimator.
-
-Tên và fiction sẽ khóa sau.
-
-Quy tắc:
-
-- revive item chiếm inventory / consumable capacity;
-- có thể dùng trong mission nếu điều kiện an toàn;
-- nếu không còn item, squad phải mang thi thể / dữ liệu sinh học về hoặc chấp nhận mất unit;
-- một số trạng thái đặc biệt có thể chặn revive;
-- revive không nên miễn phí và không nên vô hạn.
-
-Difficulty tác động vào:
-
-- damage;
-- tốc độ unit bị hạ;
-- số lượng encounter;
-- khả năng tiếp cận extraction;
-- mức tiêu hao revive / medical item;
-
-chứ **không thay đổi nguyên tắc “Easy thì bất tử, Hard mới chết”.**
-
-Mục tiêu là khiến người chơi quý unit nhưng vẫn có một lớp cứu hộ để death không biến thành mất mát ngẫu nhiên hoàn toàn.
-
-Ngoài death, unit vẫn có thể bị **Lost / Captured / Separated**, mở rescue mission trong một số loại encounter.
+First lethal hit → DOWN60simulation seconds; one field Injector revive (HP30%,Medic40%) per unit/mission. Bleedout or second lethal hit → DEAD_RECOVERABLE, no second field revive. Body requires2CU and1living escort; successful extract enables paid timed Clinic recovery then Trauma treatment; unescorted body/wipe → permanent death. No untelegraphed disintegration/capture. Tutorial SAFE_DOWN and protected offline injury exceptions are explicit. Quit/resume cannot reset outcomes: MISSION_SESSION_REWARDS_V0.1.md.
 
 ---
 
 # 35. Rescue system
 
-Ví dụ:
-
-```
-UNIT LOST
-
-Maya Chen
-Last signal:
-Old Metro Sector 7
-
-Life signal:
-WEAK
-
-Rescue window:
-11h 42m
-```
-
-Người chơi có thể lập squad thứ hai đi cứu.
-
-Đây là một hệ thống rất phù hợp để tạo emergent story.
+Only explicitly tagged Metro/NPCSilo encounters may capture a survivor at first lethal hit; no hidden capture roll in normal content. Creates private persistent rescue node with12active-simulation-hour expiry, no PvP requirement. Rescue needs currently available squad (comeback recruitment/cot exists), Supply and2cleared rooms; objective passenger uses1CU/1living escort. Successful extract returns survivorHP30%,Trauma,Fatigue80; expiry → permanent death with preview at capture. Standard body recovery is separate; exact predicates in SURVIVOR_RECOVERY_V0.1.md.
 
 ---
 
@@ -1864,7 +1812,9 @@ Nếu ba prototype này vui, mới xây persistent world.
 
 # 51. Vertical slice mục tiêu
 
-Một vertical slice tốt phải cho người chơi trải nghiệm:
+First2h onboarding endsCCL4/squad3; extended2–4h slice addsCCL5/squad4,LabL1 and research. See PROTOTYPE_CONTENT_PACK_V0.1.md and PROTOTYPE_PROGRESSION_V0.1.md.
+
+Một extended vertical slice tốt phải cho người chơi trải nghiệm:
 
 1. bắt đầu Silo nhỏ;
 2. xây Power / Water / Living;
@@ -1928,9 +1878,9 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 
 Chưa khóa:
 
-- mức độ active-control trong combat cuối cùng (bao nhiêu skill / retarget / timing);
+- mức độ active-control cuối cùng; prototype uses target focus, consumable, PvEpause, no active abilities/manual midfight reposition;
 - monetization/pricing cụ thể;
-- exact CCL upgrade costs và balance;
+- final live CCL balance; prototype cost/requirements now in PROTOTYPE_PROGRESSION_V0.1.md;
 - final platform release order.
 
 Đã được resolve ở các spec mới:

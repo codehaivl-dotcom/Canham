@@ -15,6 +15,18 @@ If two documents conflict, use this precedence:
 
 Research files describe influences, not binding gameplay rules.
 
+Implementation baseline owners (2026-11-12 revision):
+
+- [Survivor Recovery](SURVIVOR_RECOVERY_V0.1.md): death/body/gear, treatment/rest, staffing.
+- [Mission Sessions](MISSION_SESSION_REWARDS_V0.1.md): quit/resume, extraction settlement, cache/inbox.
+- [Progression](PROTOTYPE_PROGRESSION_V0.1.md): CCL costs/source routes, emergency economy/offline timing.
+- [Content Pack](PROTOTYPE_CONTENT_PACK_V0.1.md): roster, authored tutorial missions/grants/repair ledger.
+- [Research Catalog](PROTOTYPE_RESEARCH_CATALOG_V0.1.md): node IDs/effects/costs/gates.
+- [Implementation Baseline](IMPLEMENTATION_BASELINE_V0.1.md): prototype input/targeting/actions/status/XP.
+- [Campaign Contract Catalog](CAMPAIGN_CONTRACTS_V0.1.md): chapter prerequisites, guaranteed sources and replayable objectives.
+
+These are tunable implementation baselines, not runtime/balance evidence. Historical audits remain snapshots of their recorded commits; current closure is tracked in GAP_CLOSURE_2026-11-12.md.
+
 ---
 
 # 1. Brand
@@ -126,7 +138,7 @@ Standard room max level:
 | 7–9 | L4 |
 | 10–12 | L5 |
 
-Exact CCL material costs remain tuning work.
+Prototype CCL2–12 cost/prerequisite table is specified in PROTOTYPE_PROGRESSION_V0.1.md; final live tuning remains open. First2h endsCCL4/squad3; extended2–4h slice addsCCL5/squad4/LabL1/one research. Tutorial repair prices are explicit one-time exceptions, not normal construction costs.
 
 ---
 
@@ -166,6 +178,8 @@ They may receive:
 - recovery time.
 
 This exception protects named-survivor attachment from offline punishment.
+
+Normal lethal transition: DOWN60simulation seconds, then DEAD_RECOVERABLE; one field Injector revive/unit/mission. Second lethal hit skips DOWN. Body2CU/one living escort; recovered body requires Clinic service, not automatic resurrection. Wipe/unescorted body causes permanent loss. Tutorial SAFE_DOWN and protected defender15min recovery use explicit Recovery contract.
 
 ---
 
@@ -219,6 +233,8 @@ Water Treatment L1:
 
 ---
 
+Core8PU emergency mode: Command2+Water3+Food3, consumption waived, no spendable emergency resource output. Manual Restart/bounded relief and comeback actions are specified in PROTOTYPE_PROGRESSION_V0.1.md. Survival production is exempt from hunger/dehydration/morale/fatigue negative efficiency; power/integrity still apply. All background clocks share8h offline window; no random offline survival deaths.
+
 # 10. Scout
 
 Scout never reaches 100% certainty.
@@ -249,6 +265,10 @@ Normal defender loss cannot include:
 - CCL loss;
 - unique survivor loss;
 - blueprint ownership loss.
+
+Silo/site PvP requires both accounts CCL8+ and explicit persistent account opt-in; NPC PvE never opts in. Private PvE sites at all tiers never convert to contested. Shared shields/caps/one incoming reservation cover all PvP assets. PvP defense cap5 fromCCL8; PvE defenseCCL6–7 cap4. Only Scrap/Components/Chemicals can be stolen; survival and strategic materials never stolen. Rolling24h per-resource caps forCCL8..12 are respectively60/20/12,75/25/15,90/30/18,105/35/21,120/40/24; exposed pool≤10%unreserved stock. PvP deadline15real min from departure; timeout only auto-extracts if squad currently at cleared valid exit and escort/cargo valid. Reservation/settlement details owned by PvPProtection.
+
+All site buffers8h output; free automatic collection from first site every8simulated production hours, shared offline8h cap. Beacon source/cost/refund owned by ResourceSites, accessible without PvP.
 
 ---
 
@@ -354,9 +374,9 @@ Still intentionally unresolved:
 
 - exact active-control density in combat;
 - final monetization/pricing model;
-- exact CCL upgrade costs;
+- final live CCL balance (prototype table exists);
 - final drop rates/tuning;
 - final platform release order;
 - technical backend/save architecture.
 
-These are not contradictions; they are open decisions.
+These are not contradictions; they are open decisions. Prototype combat control is concrete: deploy formation, autoattacks, manual focus/consumable, PvE tactical pause; active abilities and manual midfight reposition OFF. Final density remains playtest-dependent. Gameplay consequences of save/disconnect are already specified; backend/vendor choice may not silently change those rules.

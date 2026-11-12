@@ -124,7 +124,7 @@ Scout contribution:
 
 ```
 (PER - 5) × 2%
-+ Scout Role 5%
++ Scout Role 5 percentage points (once; same bonus as Units role)
 + relevant Trait
 ```
 
@@ -212,11 +212,11 @@ Base chance có event:
 
 Cap 25%.
 
-Event được resolve khi squad đến/return, không bắt player online đúng giây.
+Event rolled once and persisted at departure; resolved on arrival/return, no online-at-exact-second requirement. Secured loot/body cannot be lost on return. See MISSION_SESSION_REWARDS_V0.1.md.
 
 Possible:
 
-- minor ambush;
+- minor ambush (outbound HP loss≤10%currentHP, cannot down; return nonlethal fiction);
 - route delay;
 - found cache;
 - survivor signal;
@@ -277,7 +277,7 @@ Early chain:
 6. **Someone Is Hurt** → Hospital.
 7. **Encrypted Broadcast** → Research Lab.
 8. **Old Military Code** → Military Depot.
-9. **Unknown Human Signal** → NPC Silo.
+9. **Unknown Silo Signal** → NPC Silo.
 
 Player học world target bằng nhu cầu thật của Silo.
 
@@ -298,7 +298,7 @@ Generated từ thiếu hụt / progression.
 
 Curated narrative.
 
-- first human contact;
+- first survivor contact;
 - alien anomaly;
 - faction;
 - hidden structure.

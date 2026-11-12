@@ -124,10 +124,10 @@ Generator prevents all targets from being same type.
 
 Persistent nodes:
 - do not vanish;
-- can change state.
+- can change state; mandatory boss/key contracts repeat6h with guaranteed progression token, first access immediate; see PROTOTYPE_PROGRESSION_V0.1.md. Partial extraction does not reroll an uncleared instance; remaining rooms/loot persist. Completed room loot cannot be farmed twice in same version.
 
 Semi-persistent:
-- refresh after clear in 6–24h;
+- refresh after successful objective+extract in6h for prototype House/Warehouse; private instance contents immutable until settlement; Perimeter comeback node refresh immediate;
 - may return with new threat package.
 
 Temporary:

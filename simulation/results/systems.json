@@ -1,0 +1,2864 @@
+{
+  "summary": {
+    "seed": 20261112,
+    "scenario_count": 104,
+    "passed": 104,
+    "failed": 0
+  },
+  "provenance": {
+    "mode": "exported_data",
+    "path": "E:\\Project\\SiloGame\\Canham\\simulation\\data\\systems.json",
+    "sources": [
+      {
+        "path": "docs/CAMPAIGN_CONTRACTS_V0.1.md",
+        "sha256": "08e9167424d10a97bdfc4363cc2b0273d795d67c3050b20a3e5f19dbdfca0a8a"
+      },
+      {
+        "path": "docs/ECONOMY_RESOURCES_V0.1.md",
+        "sha256": "f6414c7a7b78371a5ab1d46213eb5162ecb33fb62660b62929699d2b850845fa"
+      },
+      {
+        "path": "docs/ENEMIES_RESISTANCES_V0.1.md",
+        "sha256": "cb2c0692dad7018abbe5d67414bf3d56149f43f77cd24b7b02f78a76f8cb13b0"
+      },
+      {
+        "path": "docs/IMPLEMENTATION_BASELINE_V0.1.md",
+        "sha256": "be27523214e3d13401d392aa635b805990cc286e2ebabfeeb147d17b4ca476f0"
+      },
+      {
+        "path": "docs/LOOT_CRAFTING_V0.1.md",
+        "sha256": "007312b38eb8abad7b4c81ef115d688eab008bf0de542abb4869674d270d3804"
+      },
+      {
+        "path": "docs/POPULATION_TRAITS_V0.1.md",
+        "sha256": "8030c15e192736de43400ee89e01aa17197a24158cd6ac29d66446c11db76e2c"
+      },
+      {
+        "path": "docs/PROTOTYPE_CONTENT_PACK_V0.1.md",
+        "sha256": "eab787dce325d1906fa84492728ff6881f199cee4c39e0ef73e4eabc1e10fa90"
+      },
+      {
+        "path": "docs/PROTOTYPE_PROGRESSION_V0.1.md",
+        "sha256": "9717b8b7adff11441efd4e539f88e3d7008390d5e09ac8547130162b4ccd0787"
+      },
+      {
+        "path": "docs/PROTOTYPE_RESEARCH_CATALOG_V0.1.md",
+        "sha256": "df50c5729fb04a1b90e620d4f6e53c940cd4baab4e2381f1493fa9ba6871b396"
+      },
+      {
+        "path": "docs/PVP_MATCHMAKING_PROTECTION_V0.1.md",
+        "sha256": "0f3e4ad8406746c612fa1906ec175d3db0ee0d6b3268e16a3d74a0feda37f4b8"
+      },
+      {
+        "path": "docs/RESOURCE_SITES_V0.1.md",
+        "sha256": "fade404f220bebee31f218840d1d28b6ac5ee9bd7a77611557970ee194620e48"
+      },
+      {
+        "path": "docs/SILO_BUILDINGS_V0.1.md",
+        "sha256": "4c7a929c6d0de78dfeeeaab932832d0d400bca82377659132eb005950523d722"
+      },
+      {
+        "path": "docs/SILO_DEFENSE_SECURITY_V0.1.md",
+        "sha256": "40b8fdb319d19fbf8532ce58571665217f45c848a37bc35bc9a91245c7e1c2c4"
+      },
+      {
+        "path": "docs/SURVIVOR_RECOVERY_V0.1.md",
+        "sha256": "c640956db86da1086e3705fe616f17c184e5d104551a668c7b74f40d718b302b"
+      },
+      {
+        "path": "docs/UNITS_ITEMS_V0.1.md",
+        "sha256": "41e025012e9b31ddb936b7782ceb8c8e23e6c9557050230cbe2d37b905ca85c4"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "name": "offline_partition_8h",
+      "category": "economy",
+      "passed": true,
+      "actual": {
+        "one_window": {
+          "chemicals": 40,
+          "components": 120,
+          "credits": 500,
+          "food": 132.0,
+          "research_data": 0,
+          "scrap": 300,
+          "supply": 20,
+          "water": 158.4
+        },
+        "eight_windows": {
+          "chemicals": 40,
+          "components": 120,
+          "credits": 500,
+          "food": 132.0,
+          "research_data": 0,
+          "scrap": 300,
+          "supply": 20,
+          "water": 158.40000000000006
+        },
+        "max_delta": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "full_storage_consumption",
+      "category": "economy",
+      "passed": true,
+      "actual": {
+        "food_after": 244.0,
+        "population": 6
+      }
+    },
+    {
+      "name": "offline16h_reconnect",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "site_produced": {
+          "scrap": 144.0
+        },
+        "collections": 1,
+        "reconnect_delta": {
+          "chemicals": 0,
+          "components": 0,
+          "credits": 0,
+          "food": 0.0,
+          "research_data": 0,
+          "scrap": 0,
+          "supply": 0,
+          "water": 0.0
+        }
+      }
+    },
+    {
+      "name": "blackout_manual_restart",
+      "category": "power",
+      "passed": true,
+      "actual": {
+        "generation": 24.0,
+        "stock": {
+          "chemicals": 40,
+          "components": 120,
+          "credits": 500,
+          "food": 0,
+          "research_data": 0,
+          "scrap": 285,
+          "supply": 20,
+          "water": 0.24000000000000002
+        },
+        "integrity": 0.25
+      }
+    },
+    {
+      "name": "normal_generator_repair",
+      "category": "power",
+      "passed": true,
+      "actual": {
+        "work_seconds": 180,
+        "generation": 28,
+        "scrap": 285
+      }
+    },
+    {
+      "name": "battery_to_emergency",
+      "category": "power",
+      "passed": true,
+      "actual": {
+        "battery": 0,
+        "emergency": true
+      }
+    },
+    {
+      "name": "bound_relief_no_repeat_mint",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "bound": {
+          "food": 10,
+          "water": 12,
+          "supply": 6
+        },
+        "repeat_accepted": false
+      }
+    },
+    {
+      "name": "clinic_pause_resume",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "complete": true,
+        "work": 20,
+        "chemicals": 7
+      }
+    },
+    {
+      "name": "fatigue81_boundary",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "fatigue": 80.0
+      }
+    },
+    {
+      "name": "tutorial_restore",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "branch": "restore",
+        "ccl": 4,
+        "residents": 8,
+        "stock": {
+          "scrap": 158,
+          "components": 177,
+          "chemicals": 75,
+          "supply": 11,
+          "food": 95,
+          "water": 114,
+          "research_data": 12
+        },
+        "ledger": [
+          {
+            "step": "generator",
+            "scrap": 280,
+            "components": 115,
+            "chemicals": 40,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "water",
+            "scrap": 260,
+            "components": 110,
+            "chemicals": 40,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "living",
+            "scrap": 250,
+            "components": 110,
+            "chemicals": 40,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "hydro",
+            "scrap": 170,
+            "components": 95,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "ccl2",
+            "scrap": 150,
+            "components": 90,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "ccl3",
+            "scrap": 120,
+            "components": 80,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "radio",
+            "scrap": 100,
+            "components": 70,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "house",
+            "scrap": 260,
+            "components": 145,
+            "chemicals": 60,
+            "supply": 13,
+            "food": 100,
+            "water": 120,
+            "research_data": 2
+          },
+          {
+            "step": "workshop",
+            "scrap": 230,
+            "components": 135,
+            "chemicals": 55,
+            "supply": 13,
+            "food": 100,
+            "water": 120,
+            "research_data": 2
+          },
+          {
+            "step": "supply_pack",
+            "scrap": 228,
+            "components": 135,
+            "chemicals": 55,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "ccl4",
+            "scrap": 188,
+            "components": 125,
+            "chemicals": 55,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "clinic",
+            "scrap": 158,
+            "components": 115,
+            "chemicals": 45,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "training",
+            "scrap": 138,
+            "components": 110,
+            "chemicals": 45,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "living_l2",
+            "scrap": 48,
+            "components": 95,
+            "chemicals": 45,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "warehouse",
+            "scrap": 348,
+            "components": 225,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          },
+          {
+            "step": "generator_l2",
+            "scrap": 228,
+            "components": 187,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          },
+          {
+            "step": "sensor_excavate",
+            "scrap": 178,
+            "components": 182,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          },
+          {
+            "step": "restore_sensor",
+            "scrap": 158,
+            "components": 177,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          }
+        ],
+        "storage_semantics": "entitlement ledger; inbox claims required before actual spending"
+      }
+    },
+    {
+      "name": "tutorial_convert",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "branch": "convert",
+        "ccl": 4,
+        "residents": 8,
+        "stock": {
+          "scrap": 178,
+          "components": 182,
+          "chemicals": 75,
+          "supply": 11,
+          "food": 95,
+          "water": 114,
+          "research_data": 12
+        },
+        "ledger": [
+          {
+            "step": "generator",
+            "scrap": 280,
+            "components": 115,
+            "chemicals": 40,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "water",
+            "scrap": 260,
+            "components": 110,
+            "chemicals": 40,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "living",
+            "scrap": 250,
+            "components": 110,
+            "chemicals": 40,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "hydro",
+            "scrap": 170,
+            "components": 95,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "ccl2",
+            "scrap": 150,
+            "components": 90,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "ccl3",
+            "scrap": 120,
+            "components": 80,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "radio",
+            "scrap": 100,
+            "components": 70,
+            "chemicals": 30,
+            "supply": 20,
+            "food": 100,
+            "water": 120,
+            "research_data": 0
+          },
+          {
+            "step": "house",
+            "scrap": 260,
+            "components": 145,
+            "chemicals": 60,
+            "supply": 13,
+            "food": 100,
+            "water": 120,
+            "research_data": 2
+          },
+          {
+            "step": "workshop",
+            "scrap": 230,
+            "components": 135,
+            "chemicals": 55,
+            "supply": 13,
+            "food": 100,
+            "water": 120,
+            "research_data": 2
+          },
+          {
+            "step": "supply_pack",
+            "scrap": 228,
+            "components": 135,
+            "chemicals": 55,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "ccl4",
+            "scrap": 188,
+            "components": 125,
+            "chemicals": 55,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "clinic",
+            "scrap": 158,
+            "components": 115,
+            "chemicals": 45,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "training",
+            "scrap": 138,
+            "components": 110,
+            "chemicals": 45,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "living_l2",
+            "scrap": 48,
+            "components": 95,
+            "chemicals": 45,
+            "supply": 18,
+            "food": 95,
+            "water": 114,
+            "research_data": 2
+          },
+          {
+            "step": "warehouse",
+            "scrap": 348,
+            "components": 225,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          },
+          {
+            "step": "generator_l2",
+            "scrap": 228,
+            "components": 187,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          },
+          {
+            "step": "sensor_excavate",
+            "scrap": 178,
+            "components": 182,
+            "chemicals": 75,
+            "supply": 11,
+            "food": 95,
+            "water": 114,
+            "research_data": 12
+          }
+        ],
+        "storage_semantics": "entitlement ledger; inbox claims required before actual spending"
+      }
+    },
+    {
+      "name": "extended_slice_ccl5_research",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "stock": {
+          "scrap": 18,
+          "components": 132,
+          "chemicals": 65,
+          "supply": 3,
+          "food": 95,
+          "water": 114,
+          "research_data": 4
+        },
+        "ccl": 5,
+        "squad_cap": 4,
+        "minimum_sequential_build_research_minutes": 18,
+        "prerequisites": {
+          "warehouse_clear": true,
+          "generator_l2": true,
+          "living_l2": true
+        },
+        "scope": "authored successful route; combat/travel/rest duration not claimed as a4h guarantee"
+      }
+    },
+    {
+      "name": "pve_gate_reachability",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "gates": 11,
+        "source_checks": 6,
+        "cycles": [],
+        "scope": "mandatory PvE token reachability; not a full campaign solver"
+      }
+    },
+    {
+      "name": "ccl_affordability_2",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 5,
+          "research_data": 0,
+          "scrap": 20
+        },
+        "prior_ccl_storage_level": 1,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 245,
+          "research_data": 250,
+          "scrap": 230
+        },
+        "upgrade_minutes": 0.5
+      }
+    },
+    {
+      "name": "ccl_affordability_3",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 10,
+          "research_data": 0,
+          "scrap": 30
+        },
+        "prior_ccl_storage_level": 1,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 240,
+          "research_data": 250,
+          "scrap": 220
+        },
+        "upgrade_minutes": 0.5
+      }
+    },
+    {
+      "name": "ccl_affordability_4",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 10,
+          "research_data": 0,
+          "scrap": 40
+        },
+        "prior_ccl_storage_level": 2,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 440,
+          "research_data": 450,
+          "scrap": 410
+        },
+        "upgrade_minutes": 1
+      }
+    },
+    {
+      "name": "ccl_affordability_5",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 75,
+          "research_data": 10,
+          "scrap": 200
+        },
+        "prior_ccl_storage_level": 2,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 375,
+          "research_data": 440,
+          "scrap": 250
+        },
+        "upgrade_minutes": 5
+      }
+    },
+    {
+      "name": "ccl_affordability_6",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 150,
+          "research_data": 30,
+          "scrap": 400
+        },
+        "prior_ccl_storage_level": 3,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 550,
+          "research_data": 670,
+          "scrap": 300
+        },
+        "upgrade_minutes": 10
+      }
+    },
+    {
+      "name": "ccl_affordability_7",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 240,
+          "research_data": 60,
+          "scrap": 650
+        },
+        "prior_ccl_storage_level": 3,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 460,
+          "research_data": 640,
+          "scrap": 50
+        },
+        "upgrade_minutes": 15
+      }
+    },
+    {
+      "name": "ccl_affordability_8",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 320,
+          "research_data": 90,
+          "scrap": 900
+        },
+        "prior_ccl_storage_level": 4,
+        "minimum_storage_modules": 1,
+        "remaining": {
+          "components": 680,
+          "research_data": 910,
+          "scrap": 100
+        },
+        "upgrade_minutes": 20
+      }
+    },
+    {
+      "name": "ccl_affordability_9",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 450,
+          "research_data": 140,
+          "scrap": 1250
+        },
+        "prior_ccl_storage_level": 4,
+        "minimum_storage_modules": 2,
+        "remaining": {
+          "components": 1550,
+          "research_data": 1860,
+          "scrap": 750
+        },
+        "upgrade_minutes": 30
+      }
+    },
+    {
+      "name": "ccl_affordability_10",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 600,
+          "research_data": 220,
+          "scrap": 1700
+        },
+        "prior_ccl_storage_level": 4,
+        "minimum_storage_modules": 2,
+        "remaining": {
+          "components": 1400,
+          "research_data": 1780,
+          "scrap": 300
+        },
+        "upgrade_minutes": 45
+      }
+    },
+    {
+      "name": "ccl_affordability_11",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 800,
+          "research_data": 320,
+          "scrap": 2200
+        },
+        "prior_ccl_storage_level": 5,
+        "minimum_storage_modules": 2,
+        "remaining": {
+          "components": 2000,
+          "research_data": 2480,
+          "scrap": 600
+        },
+        "upgrade_minutes": 60
+      }
+    },
+    {
+      "name": "ccl_affordability_12",
+      "category": "progression",
+      "passed": true,
+      "actual": {
+        "cost": {
+          "components": 1100,
+          "research_data": 450,
+          "scrap": 3000
+        },
+        "prior_ccl_storage_level": 5,
+        "minimum_storage_modules": 3,
+        "remaining": {
+          "components": 3100,
+          "research_data": 3750,
+          "scrap": 1200
+        },
+        "upgrade_minutes": 90
+      }
+    },
+    {
+      "name": "research_dependency_dag",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "nodes": 34,
+        "max_path_nodes": 3,
+        "errors": []
+      }
+    },
+    {
+      "name": "research_SUR-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SUR-01",
+        "cost": {
+          "research_data": 8
+        },
+        "seconds": 300.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_SUR-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SUR-02",
+        "cost": {
+          "research_data": 8
+        },
+        "seconds": 300.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_SUR-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SUR-03",
+        "cost": {
+          "research_data": 10
+        },
+        "seconds": 600.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_SUR-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SUR-04",
+        "cost": {
+          "research_data": 8
+        },
+        "seconds": 300.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_SUR-05",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SUR-05",
+        "cost": {
+          "chemicals": 4,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_EXP-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "EXP-01",
+        "cost": {
+          "research_data": 10
+        },
+        "seconds": 600.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_EXP-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "EXP-02",
+        "cost": {
+          "research_data": 12
+        },
+        "seconds": 900.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_EXP-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "EXP-03",
+        "cost": {
+          "components": 5,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_EXP-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "EXP-04",
+        "cost": {
+          "components": 5,
+          "research_data": 25
+        },
+        "seconds": 1500.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_EXP-05",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "EXP-05",
+        "cost": {
+          "research_data": 40
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_COM-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "COM-01",
+        "cost": {
+          "components": 3,
+          "research_data": 12
+        },
+        "seconds": 600.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_COM-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "COM-02",
+        "cost": {
+          "components": 5,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_COM-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "COM-03",
+        "cost": {
+          "chemicals": 4,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_COM-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "COM-04",
+        "cost": {
+          "chemicals": 4,
+          "research_data": 12
+        },
+        "seconds": 600.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_COM-05",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "COM-05",
+        "cost": {
+          "military_data": 2,
+          "research_data": 40
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_SEC-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SEC-01",
+        "cost": {
+          "components": 5,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_SEC-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SEC-02",
+        "cost": {
+          "components": 5,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_SEC-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SEC-03",
+        "cost": {
+          "components": 8,
+          "research_data": 25
+        },
+        "seconds": 1500.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_SEC-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SEC-04",
+        "cost": {
+          "military_data": 2,
+          "research_data": 40
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_SEC-05",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "SEC-05",
+        "cost": {
+          "military_data": 3,
+          "research_data": 50
+        },
+        "seconds": 3724.137931034483,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_ENG-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "ENG-01",
+        "cost": {
+          "components": 3,
+          "research_data": 10
+        },
+        "seconds": 600.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": true
+      }
+    },
+    {
+      "name": "research_ENG-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "ENG-02",
+        "cost": {
+          "components": 5,
+          "research_data": 20
+        },
+        "seconds": 1000.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_ENG-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "ENG-03",
+        "cost": {
+          "research_data": 10
+        },
+        "seconds": 600.0,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_ENG-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "ENG-04",
+        "cost": {
+          "components": 8,
+          "research_data": 40
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_ENG-05",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "ENG-05",
+        "cost": {
+          "prototype_core": 1,
+          "research_data": 80
+        },
+        "seconds": 7448.275862068966,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_XEN-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "XEN-01",
+        "cost": {
+          "alien_material": 2,
+          "research_data": 120
+        },
+        "seconds": 16457.14285714286,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_XEN-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "XEN-02",
+        "cost": {
+          "alien_material": 2,
+          "research_data": 120
+        },
+        "seconds": 16457.14285714286,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_XEN-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "XEN-03",
+        "cost": {
+          "alien_material": 4,
+          "research_data": 140
+        },
+        "seconds": 20571.428571428572,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_XEN-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "XEN-04",
+        "cost": {
+          "alien_material": 4,
+          "research_data": 140
+        },
+        "seconds": 20571.428571428572,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_XEN-05",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "XEN-05",
+        "cost": {
+          "alien_material": 5,
+          "research_data": 160
+        },
+        "seconds": 20571.42857142857,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_FAC-01",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "FAC-01",
+        "cost": {
+          "military_data": 2,
+          "research_data": 35
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_FAC-02",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "FAC-02",
+        "cost": {
+          "research_data": 35
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_FAC-03",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "FAC-03",
+        "cost": {
+          "chemicals": 4,
+          "research_data": 35
+        },
+        "seconds": 2482.7586206896553,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "research_FAC-04",
+      "category": "research",
+      "passed": true,
+      "actual": {
+        "id": "FAC-04",
+        "cost": {
+          "alien_material": 3,
+          "research_data": 100
+        },
+        "seconds": 16457.14285714286,
+        "discovery_gate_blocks": true,
+        "completed": true,
+        "cost_once": true,
+        "duplicate_blocked": true,
+        "effect_applications": 1,
+        "effect_behavior_simulated": false
+      }
+    },
+    {
+      "name": "noncombat_character_traits",
+      "category": "characters",
+      "passed": true,
+      "actual": {
+        "mechanic_workshop_efficiency_stat5_profession": 1.1340000000000001,
+        "mechanic_generator_power_bonus": 0,
+        "fast_learner_xp_per100": 110.00000000000001,
+        "scavenger_extra_common_rolls_in10000": 1005,
+        "hoarder_squad3_cargo": 13,
+        "hoarder_storage_efficiency": 0.95,
+        "slow_recovery_survivor_trauma_minutes_clinic_l2": 23.0,
+        "scout_per8_role_quick": 53,
+        "scout_all_bonuses_quick_cap": 72,
+        "scout_all_bonuses_deep_cap": 90,
+        "assumptions": [
+          "Keen Eye +8 interpreted as8percentage points for capped stress case; caps hold regardless of additive/multiplicative interpretation."
+        ]
+      }
+    },
+    {
+      "name": "craft_salvage_material_conservation",
+      "category": "economy",
+      "passed": true,
+      "actual": {
+        "recipes_checked": 8,
+        "profitable_cycles": []
+      }
+    },
+    {
+      "name": "recipe_source_sink_supply",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "food": 5,
+          "scrap": 2,
+          "water": 6
+        },
+        "outputs": {
+          "supply": 5
+        },
+        "minutes": 2,
+        "before": {
+          "food": 15,
+          "scrap": 6,
+          "water": 18
+        },
+        "after": {
+          "food": 10,
+          "scrap": 4,
+          "water": 12,
+          "supply": 5
+        },
+        "unlock_text": "",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_medkit",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "chemicals": 4,
+          "scrap": 1
+        },
+        "outputs": {
+          "medkit": 1
+        },
+        "minutes": 2,
+        "before": {
+          "chemicals": 12,
+          "scrap": 3
+        },
+        "after": {
+          "chemicals": 8,
+          "scrap": 2,
+          "medkit": 1
+        },
+        "unlock_text": "",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_frag_grenade",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "chemicals": 2,
+          "components": 1,
+          "scrap": 6
+        },
+        "outputs": {
+          "frag_grenade": 1
+        },
+        "minutes": 3,
+        "before": {
+          "chemicals": 6,
+          "components": 3,
+          "scrap": 18
+        },
+        "after": {
+          "chemicals": 4,
+          "components": 2,
+          "scrap": 12,
+          "frag_grenade": 1
+        },
+        "unlock_text": "",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_emp_grenade",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "chemicals": 2,
+          "components": 5,
+          "scrap": 2
+        },
+        "outputs": {
+          "emp_grenade": 1
+        },
+        "minutes": 4,
+        "before": {
+          "chemicals": 6,
+          "components": 15,
+          "scrap": 6
+        },
+        "after": {
+          "chemicals": 4,
+          "components": 10,
+          "scrap": 4,
+          "emp_grenade": 1
+        },
+        "unlock_text": "",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_pistol",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "components": 4,
+          "scrap": 18
+        },
+        "outputs": {
+          "pistol": 1
+        },
+        "minutes": 5,
+        "before": {
+          "components": 12,
+          "scrap": 54
+        },
+        "after": {
+          "components": 8,
+          "scrap": 36,
+          "pistol": 1
+        },
+        "unlock_text": "",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_service_rifle",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "components": 12,
+          "scrap": 30
+        },
+        "outputs": {
+          "service_rifle": 1
+        },
+        "minutes": 10,
+        "before": {
+          "components": 36,
+          "scrap": 90
+        },
+        "after": {
+          "components": 24,
+          "scrap": 60,
+          "service_rifle": 1
+        },
+        "unlock_text": "Requires Standard weapon blueprint.\r",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_combat_armor",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "chemicals": 4,
+          "components": 10,
+          "scrap": 35
+        },
+        "outputs": {
+          "combat_armor": 1
+        },
+        "minutes": 12,
+        "before": {
+          "chemicals": 12,
+          "components": 30,
+          "scrap": 105
+        },
+        "after": {
+          "chemicals": 8,
+          "components": 20,
+          "scrap": 70,
+          "combat_armor": 1
+        },
+        "unlock_text": "",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "recipe_source_sink_revival_injector",
+      "category": "crafting",
+      "passed": true,
+      "actual": {
+        "inputs": {
+          "chemicals": 12,
+          "components": 4,
+          "research_data": 2
+        },
+        "outputs": {
+          "revival_injector": 1
+        },
+        "minutes": 8,
+        "before": {
+          "chemicals": 36,
+          "components": 12,
+          "research_data": 6
+        },
+        "after": {
+          "chemicals": 24,
+          "components": 8,
+          "research_data": 4,
+          "revival_injector": 1
+        },
+        "unlock_text": "Requires Clinic L2 + COM-04 Combat Triage research. Crafted at Clinic with one worker and a free treatment slot; same queue ownership and persistence rules as recovery, not a second free Workshop queue.\r",
+        "unlock_semantics": "discovery/license condition supplied by caller; not parsed from prose"
+      }
+    },
+    {
+      "name": "npc_market_craft_sell_buy_salvage",
+      "category": "economy",
+      "passed": true,
+      "actual": {
+        "cycles": [
+          {
+            "recipe": "medkit",
+            "input_credit_value": 9,
+            "sale": 3,
+            "craft_sell_profit": -6,
+            "buy_salvage_sell_profit": -8,
+            "buy_sell_profit": -9
+          },
+          {
+            "recipe": "frag_grenade",
+            "input_credit_value": 12,
+            "sale": 4,
+            "craft_sell_profit": -8,
+            "buy_salvage_sell_profit": -13,
+            "buy_sell_profit": -14
+          },
+          {
+            "recipe": "pistol",
+            "input_credit_value": 26,
+            "sale": 10,
+            "craft_sell_profit": -16,
+            "buy_salvage_sell_profit": -27,
+            "buy_sell_profit": -30
+          },
+          {
+            "recipe": "service_rifle",
+            "input_credit_value": 54,
+            "sale": 30,
+            "craft_sell_profit": -24,
+            "buy_salvage_sell_profit": -93,
+            "buy_sell_profit": -90
+          }
+        ]
+      }
+    },
+    {
+      "name": "site_tier_worker_integrity_ownership_hide",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "output_per_hour": {
+          "1": {
+            "scrap": 14.256000000000002
+          },
+          "2": {
+            "scrap": 17.82
+          },
+          "3": {
+            "scrap": 21.384000000000004
+          },
+          "4": {
+            "scrap": 28.512000000000004
+          }
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_alien_crater",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "alien_material": 0.0
+        },
+        "maximum": {
+          "alien_material": 4.752000000000001
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_chemical_plant",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "chemicals": 0.0
+        },
+        "maximum": {
+          "chemicals": 19.008000000000003
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_data_center",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "research_data": 0.0
+        },
+        "maximum": {
+          "research_data": 14.256000000000004
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_military_salvage",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "components": 0.0
+        },
+        "maximum": {
+          "components": 11.880000000000003
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_scrapyard",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "scrap": 0.0
+        },
+        "maximum": {
+          "scrap": 42.76800000000001
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_solar_farm",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "energy_cells": 0.0
+        },
+        "maximum": {
+          "energy_cells": 19.008000000000003
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_uranium_mine",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "reactor_material": 0.0
+        },
+        "maximum": {
+          "reactor_material": 7.128000000000002
+        }
+      }
+    },
+    {
+      "name": "site_output_sweep_water_facility",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "combinations": 432,
+        "minimum": {
+          "water": 0.0
+        },
+        "maximum": {
+          "water": 71.28
+        }
+      }
+    },
+    {
+      "name": "defense_capacity_enumeration",
+      "category": "defense",
+      "passed": true,
+      "actual": {
+        "budgets": [
+          {
+            "capacity": 20,
+            "configurations_with_0to2_each": 61,
+            "maximum_used": 20,
+            "overbudget_turrets_rejected": true
+          },
+          {
+            "capacity": 35,
+            "configurations_with_0to2_each": 379,
+            "maximum_used": 35,
+            "overbudget_turrets_rejected": true
+          },
+          {
+            "capacity": 55,
+            "configurations_with_0to2_each": 1705,
+            "maximum_used": 55,
+            "overbudget_turrets_rejected": true
+          },
+          {
+            "capacity": 80,
+            "configurations_with_0to2_each": 4451,
+            "maximum_used": 80,
+            "overbudget_turrets_rejected": true
+          },
+          {
+            "capacity": 110,
+            "configurations_with_0to2_each": 6360,
+            "maximum_used": 110,
+            "overbudget_turrets_rejected": true
+          }
+        ],
+        "room_layout_geometry_simulated": false
+      }
+    },
+    {
+      "name": "seeded_weighted_loot_and_pity",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "scrap": 4984,
+          "blueprint_fragment": 346,
+          "food": 2382,
+          "water": 3077,
+          "rifle": 55,
+          "medkit": 119,
+          "components": 1715,
+          "chemicals": 1634,
+          "frag_grenade": 66,
+          "pistol": 58
+        },
+        "categories": {
+          "scrap": 434,
+          "food_water": 473,
+          "gear_consumable": 298,
+          "components": 151,
+          "chemicals": 147,
+          "fragment": 33
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 313,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_depot",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "medkit": 177,
+          "blueprint_fragment": 391,
+          "scrap": 2583,
+          "research_data": 231,
+          "frag_grenade": 102,
+          "chemicals": 967,
+          "components": 4370,
+          "pistol": 85,
+          "rifle": 87
+        },
+        "categories": {
+          "gear_consumable": 451,
+          "scrap": 223,
+          "data": 231,
+          "fragment": 156,
+          "chemicals": 82,
+          "components": 378
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 235,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_hospital",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "medkit": 107,
+          "blueprint_fragment": 347,
+          "scrap": 1657,
+          "components": 1919,
+          "research_data": 242,
+          "chemicals": 5775,
+          "water": 994,
+          "food": 983,
+          "pistol": 49,
+          "frag_grenade": 50,
+          "rifle": 51
+        },
+        "categories": {
+          "gear_consumable": 257,
+          "scrap": 146,
+          "components": 164,
+          "data": 242,
+          "chemicals": 491,
+          "food_water": 169,
+          "fragment": 35
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 312,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_house",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "scrap": 4984,
+          "blueprint_fragment": 346,
+          "food": 2382,
+          "water": 3077,
+          "rifle": 55,
+          "medkit": 119,
+          "components": 1715,
+          "chemicals": 1634,
+          "frag_grenade": 66,
+          "pistol": 58
+        },
+        "categories": {
+          "scrap": 434,
+          "food_water": 473,
+          "gear_consumable": 298,
+          "components": 151,
+          "chemicals": 147,
+          "fragment": 33
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 313,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_lab",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "medkit": 90,
+          "blueprint_fragment": 390,
+          "scrap": 1596,
+          "research_data": 482,
+          "frag_grenade": 46,
+          "chemicals": 2501,
+          "components": 3478,
+          "rifle": 35,
+          "pistol": 38
+        },
+        "categories": {
+          "gear_consumable": 209,
+          "scrap": 141,
+          "data": 482,
+          "chemicals": 218,
+          "components": 294,
+          "fragment": 162
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 228,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_metro",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "scrap": 4131,
+          "blueprint_fragment": 347,
+          "food": 1754,
+          "water": 1844,
+          "rifle": 42,
+          "chemicals": 2600,
+          "research_data": 155,
+          "components": 2616,
+          "medkit": 65,
+          "frag_grenade": 40,
+          "pistol": 46
+        },
+        "categories": {
+          "scrap": 359,
+          "food_water": 309,
+          "gear_consumable": 193,
+          "chemicals": 225,
+          "data": 155,
+          "components": 221,
+          "fragment": 44
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 303,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_npc_silo",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "medkit": 133,
+          "blueprint_fragment": 396,
+          "scrap": 3375,
+          "research_data": 310,
+          "frag_grenade": 63,
+          "chemicals": 1683,
+          "components": 3405,
+          "pistol": 61,
+          "rifle": 57
+        },
+        "categories": {
+          "gear_consumable": 314,
+          "scrap": 293,
+          "data": 310,
+          "chemicals": 145,
+          "components": 292,
+          "fragment": 158
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 238,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "loot_distribution_warehouse",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "outcomes": {
+          "scrap": 6065,
+          "blueprint_fragment": 342,
+          "research_data": 69,
+          "water": 907,
+          "components": 5233,
+          "chemicals": 1563,
+          "medkit": 53,
+          "food": 980,
+          "frag_grenade": 29,
+          "rifle": 28,
+          "pistol": 18
+        },
+        "categories": {
+          "scrap": 527,
+          "data": 69,
+          "food_water": 164,
+          "components": 443,
+          "chemicals": 133,
+          "gear_consumable": 128,
+          "fragment": 32
+        },
+        "successful_clears": 1000,
+        "pity_guaranteed": 310,
+        "max_dry_gap": 2
+      }
+    },
+    {
+      "name": "treatment_routine_hp_recovery",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 500.0,
+        "remaining_chemicals": 100,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_tutorial_bruising",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 150.0,
+        "remaining_chemicals": 100,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_fracture",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 750.0,
+        "remaining_chemicals": 98,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_concussion",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 600.0,
+        "remaining_chemicals": 98,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_burn",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 500.0,
+        "remaining_chemicals": 98,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_infection",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 1000.0,
+        "remaining_chemicals": 96,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_trauma",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 1000.0,
+        "remaining_chemicals": 97,
+        "completed": true
+      }
+    },
+    {
+      "name": "treatment_recovered_body",
+      "category": "recovery",
+      "passed": true,
+      "actual": {
+        "seconds_at_speed1_2": 1500.0,
+        "remaining_chemicals": 94,
+        "completed": true
+      }
+    },
+    {
+      "name": "normal_five_card_cache_contract",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "cards": [
+          [
+            "chemicals",
+            8
+          ],
+          [
+            "frag_grenade",
+            1
+          ],
+          [
+            "credits",
+            30
+          ],
+          [
+            "pistol",
+            1
+          ],
+          [
+            "blueprint_fragment",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "name": "house_authored_cargo",
+      "category": "loot",
+      "passed": true,
+      "actual": {
+        "kept": [
+          "common0",
+          "common1",
+          "common2",
+          "common3",
+          "common4",
+          "knowledge",
+          "cache",
+          "rescue"
+        ],
+        "dropped": [],
+        "used": 10,
+        "capacity": 12
+      }
+    },
+    {
+      "name": "reward_failed_retry_replay_cache_claim",
+      "category": "persistence",
+      "passed": true,
+      "actual": {
+        "inventory": {
+          "scrap": 40
+        },
+        "inbox": {
+          "scrap": 70
+        },
+        "cards": [
+          "components",
+          "components",
+          "scrap",
+          "components",
+          "scrap"
+        ],
+        "first_clear_count": 1,
+        "knowledge": [
+          "crawler"
+        ]
+      }
+    },
+    {
+      "name": "cross_asset_concurrent_reservation_replay",
+      "category": "pvp",
+      "passed": true,
+      "actual": {
+        "exposure": {
+          "scrap": 20,
+          "components": 20,
+          "chemicals": 10
+        },
+        "second_rejected": true,
+        "stock": {
+          "scrap": 988.0,
+          "components": 200.0,
+          "chemicals": 100.0
+        },
+        "result": {
+          "successful": true,
+          "stolen": {
+            "scrap": 12,
+            "components": 0,
+            "chemicals": 0
+          },
+          "time": 100
+        }
+      }
+    },
+    {
+      "name": "rolling24h_exact_boundary",
+      "category": "pvp",
+      "passed": true,
+      "actual": {
+        "remaining_after_old_entry_expires": 48
+      }
+    },
+    {
+      "name": "reservation_expiry_failed_extraction",
+      "category": "pvp",
+      "passed": true,
+      "actual": {
+        "stock": {
+          "scrap": 1000.0,
+          "components": 200.0,
+          "chemicals": 100.0
+        },
+        "incoming": null,
+        "reserved": {}
+      }
+    },
+    {
+      "name": "pvp_eligibility_matrix",
+      "category": "pvp",
+      "passed": true,
+      "actual": {
+        "all_denied": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "name": "beacon_claim_interruption_refund",
+      "category": "sites",
+      "passed": true,
+      "actual": {
+        "stock": {
+          "scrap": 100,
+          "components": 20,
+          "supply": 20,
+          "claim_beacon": 1
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "offline_partition_8h",
+      "passed": true
+    },
+    {
+      "name": "full_storage_consumption",
+      "passed": true
+    },
+    {
+      "name": "offline16h_reconnect",
+      "passed": true
+    },
+    {
+      "name": "blackout_manual_restart",
+      "passed": true
+    },
+    {
+      "name": "normal_generator_repair",
+      "passed": true
+    },
+    {
+      "name": "battery_to_emergency",
+      "passed": true
+    },
+    {
+      "name": "bound_relief_no_repeat_mint",
+      "passed": true
+    },
+    {
+      "name": "clinic_pause_resume",
+      "passed": true
+    },
+    {
+      "name": "fatigue81_boundary",
+      "passed": true
+    },
+    {
+      "name": "tutorial_restore",
+      "passed": true
+    },
+    {
+      "name": "tutorial_convert",
+      "passed": true
+    },
+    {
+      "name": "extended_slice_ccl5_research",
+      "passed": true
+    },
+    {
+      "name": "pve_gate_reachability",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_2",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_3",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_4",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_5",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_6",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_7",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_8",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_9",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_10",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_11",
+      "passed": true
+    },
+    {
+      "name": "ccl_affordability_12",
+      "passed": true
+    },
+    {
+      "name": "research_dependency_dag",
+      "passed": true
+    },
+    {
+      "name": "research_SUR-01",
+      "passed": true
+    },
+    {
+      "name": "research_SUR-02",
+      "passed": true
+    },
+    {
+      "name": "research_SUR-03",
+      "passed": true
+    },
+    {
+      "name": "research_SUR-04",
+      "passed": true
+    },
+    {
+      "name": "research_SUR-05",
+      "passed": true
+    },
+    {
+      "name": "research_EXP-01",
+      "passed": true
+    },
+    {
+      "name": "research_EXP-02",
+      "passed": true
+    },
+    {
+      "name": "research_EXP-03",
+      "passed": true
+    },
+    {
+      "name": "research_EXP-04",
+      "passed": true
+    },
+    {
+      "name": "research_EXP-05",
+      "passed": true
+    },
+    {
+      "name": "research_COM-01",
+      "passed": true
+    },
+    {
+      "name": "research_COM-02",
+      "passed": true
+    },
+    {
+      "name": "research_COM-03",
+      "passed": true
+    },
+    {
+      "name": "research_COM-04",
+      "passed": true
+    },
+    {
+      "name": "research_COM-05",
+      "passed": true
+    },
+    {
+      "name": "research_SEC-01",
+      "passed": true
+    },
+    {
+      "name": "research_SEC-02",
+      "passed": true
+    },
+    {
+      "name": "research_SEC-03",
+      "passed": true
+    },
+    {
+      "name": "research_SEC-04",
+      "passed": true
+    },
+    {
+      "name": "research_SEC-05",
+      "passed": true
+    },
+    {
+      "name": "research_ENG-01",
+      "passed": true
+    },
+    {
+      "name": "research_ENG-02",
+      "passed": true
+    },
+    {
+      "name": "research_ENG-03",
+      "passed": true
+    },
+    {
+      "name": "research_ENG-04",
+      "passed": true
+    },
+    {
+      "name": "research_ENG-05",
+      "passed": true
+    },
+    {
+      "name": "research_XEN-01",
+      "passed": true
+    },
+    {
+      "name": "research_XEN-02",
+      "passed": true
+    },
+    {
+      "name": "research_XEN-03",
+      "passed": true
+    },
+    {
+      "name": "research_XEN-04",
+      "passed": true
+    },
+    {
+      "name": "research_XEN-05",
+      "passed": true
+    },
+    {
+      "name": "research_FAC-01",
+      "passed": true
+    },
+    {
+      "name": "research_FAC-02",
+      "passed": true
+    },
+    {
+      "name": "research_FAC-03",
+      "passed": true
+    },
+    {
+      "name": "research_FAC-04",
+      "passed": true
+    },
+    {
+      "name": "noncombat_character_traits",
+      "passed": true
+    },
+    {
+      "name": "craft_salvage_material_conservation",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_supply",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_medkit",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_frag_grenade",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_emp_grenade",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_pistol",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_service_rifle",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_combat_armor",
+      "passed": true
+    },
+    {
+      "name": "recipe_source_sink_revival_injector",
+      "passed": true
+    },
+    {
+      "name": "npc_market_craft_sell_buy_salvage",
+      "passed": true
+    },
+    {
+      "name": "site_tier_worker_integrity_ownership_hide",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_alien_crater",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_chemical_plant",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_data_center",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_military_salvage",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_scrapyard",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_solar_farm",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_uranium_mine",
+      "passed": true
+    },
+    {
+      "name": "site_output_sweep_water_facility",
+      "passed": true
+    },
+    {
+      "name": "defense_capacity_enumeration",
+      "passed": true
+    },
+    {
+      "name": "seeded_weighted_loot_and_pity",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_depot",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_hospital",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_house",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_lab",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_metro",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_npc_silo",
+      "passed": true
+    },
+    {
+      "name": "loot_distribution_warehouse",
+      "passed": true
+    },
+    {
+      "name": "treatment_routine_hp_recovery",
+      "passed": true
+    },
+    {
+      "name": "treatment_tutorial_bruising",
+      "passed": true
+    },
+    {
+      "name": "treatment_fracture",
+      "passed": true
+    },
+    {
+      "name": "treatment_concussion",
+      "passed": true
+    },
+    {
+      "name": "treatment_burn",
+      "passed": true
+    },
+    {
+      "name": "treatment_infection",
+      "passed": true
+    },
+    {
+      "name": "treatment_trauma",
+      "passed": true
+    },
+    {
+      "name": "treatment_recovered_body",
+      "passed": true
+    },
+    {
+      "name": "normal_five_card_cache_contract",
+      "passed": true
+    },
+    {
+      "name": "house_authored_cargo",
+      "passed": true
+    },
+    {
+      "name": "reward_failed_retry_replay_cache_claim",
+      "passed": true
+    },
+    {
+      "name": "cross_asset_concurrent_reservation_replay",
+      "passed": true
+    },
+    {
+      "name": "rolling24h_exact_boundary",
+      "passed": true
+    },
+    {
+      "name": "reservation_expiry_failed_extraction",
+      "passed": true
+    },
+    {
+      "name": "pvp_eligibility_matrix",
+      "passed": true
+    },
+    {
+      "name": "beacon_claim_interruption_refund",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Noncombat reference model; not the game runtime, network/server, engine or manual playtest.",
+    "Tutorial ledger computes authored entitlement and affordability, not a timed optimal-policy playthrough or UI inbox interaction.",
+    "Loot uses exported category weights,Easy1–2 rolls/clear,Easy8–15 quantities and documented3successful-clear pity; eligible gear pool is a four-item baseline, not all research/CCL loot filters.",
+    "Craft/salvage tests use documented50% maximum material recovery; NPC craft/sell and buy/salvage/sell cycles run for priced recipes; arbitrary full multi-recipe conversion cycles are not proven absent.",
+    "PvP model covers consent, locks, exposure, rolling theft, charges, shields and expiry; not ranking/match quality, capture combat or collusion enforcement.",
+    "Power model runs life-support priority and battery/emergency/restart, not a full arbitrary room-grid topology solver.",
+    "Economy assumes staffed life support at efficiency1 and full-integrity rooms unless overridden; detailed hunger-derived nonessential penalties and relief pending-mission eligibility are not modeled.",
+    "Recovery models rest and one powered treatment with pause/resume; parallel clinic queue, full roster/body/capture state machine belong to combat/runtime validation."
+  ]
+}

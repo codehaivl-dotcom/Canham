@@ -198,7 +198,7 @@ Reveal có thể:
 - reveal all;
 - auto-skip sau khi player đã quen.
 
-Animation không được làm player chờ lâu bắt buộc.
+Animation không được làm player chờ lâu bắt buộc. CacheID/outcome roll once at instance creation, field cache remains sealed until extract. Open/RevealAll/Skip/reload only present the same cards; settlement/claims are idempotent, overflow uses Return Inbox. See MISSION_SESSION_REWARDS_V0.1.md.
 
 ---
 

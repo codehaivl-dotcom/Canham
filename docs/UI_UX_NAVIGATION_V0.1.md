@@ -188,8 +188,8 @@ Core actions only:
 
 - focus target;
 - consumable;
-- ability if enabled;
-- reposition limited;
+- prototype abilities OFF;
+- formation fixed at deploy, no manual reposition during prototype combat;
 - retreat/extract.
 
 Damage types communicated with VFX/icons.
@@ -207,7 +207,7 @@ Sequence:
 5. XP/Bestiary/Blueprint/Contract progress;
 6. Return to Silo.
 
-"Skip reveal animation" option.
+"Skip reveal animation" option. Reward ownership committed at successful extraction; animation is presentation only. Show Resume Mission after PvE restart and live countdown for PvP. Full inventory routes to Return Inbox with no auto-discard; see MISSION_SESSION_REWARDS_V0.1.md.
 
 ---
 
@@ -240,6 +240,7 @@ Tree grouped by:
 - Combat;
 - Expedition;
 - Security;
+- Engineering;
 - Alien;
 - Faction.
 

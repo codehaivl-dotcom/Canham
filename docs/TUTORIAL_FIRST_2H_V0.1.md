@@ -28,7 +28,7 @@ Curated tutorial progression:
 - Before the first full expedition, curated objectives advance to **CCL3** → Radio/Scout + Workshop.
 - After first expedition/return milestone, advance to **CCL4** → Clinic/Training.
 
-These early CCL upgrades are tutorial-curated and inexpensive; exact live costs remain tuning work.
+Use prototype CCL/repair costs and deterministic ledger in [PROTOTYPE_CONTENT_PACK_V0.1.md](PROTOTYPE_CONTENT_PACK_V0.1.md); final live costs remain tunable. Before first Quick Scout the repaired RadioL1 is operational, not just unlocked.
 
 ---
 
@@ -63,7 +63,9 @@ Tasks:
 3. clear first adjacent sector:
    - debris;
    - 2 easy Crawler;
-4. build Hydroponics.
+4. build Hydroponics;
+5. upgrade CCL2 then CCL3 using fixed tutorial costs;
+6. repair RadioL1 before first Quick Scout. Living does not require a worker; staff Generator/Water/Hydro with3residents while squad3 deploys.
 
 Teach:
 - population;
@@ -107,7 +109,7 @@ Teach:
 Post-run:
 
 - survivor injury;
-- Clinic build;
+- CCL4 upgrade then Clinic repair;
 - loot used for Workshop;
 - open first Supply Cache;
 - rescue survivor joins;
@@ -143,9 +145,9 @@ Teach:
 
 ---
 
-# 7. 50–65 Minutes — Radio
+# 7. 50–65 Minutes — Expand Radio Use
 
-Repair Radio/Scout Center.
+RadioL1 was repaired before minute15. Teach its existing World Map search/filter; do not charge a second repair. GeneratorL2 upgrade is available after Warehouse for Clinic/Training power headroom.
 
 A distant Hospital appears.
 
@@ -213,7 +215,7 @@ Player gets objective:
 
 **Investigate when ready.**
 
-This points toward Chapter 1/2 and later NPC Silo.
+This is a passive story transmission preview, not a deployable18.4km target outside RadioL1 range. Investigation unlocks at CCL7 with RadioL3; existing range limits still apply. This points toward Chapter3/NPC Silo. Sensor Room restore adds a clue, never a mandatory range bypass.
 
 Tutorial ends.
 
@@ -223,7 +225,7 @@ Tutorial ends.
 
 During first hour:
 
-- no random permanent death;
+- no permanent death in protected tutorial missions/sector; SAFE_DOWN handling in SURVIVOR_RECOVERY_V0.1.md;
 - no PvP;
 - no Mimic;
 - no Resource Site contest;
@@ -262,7 +264,7 @@ Settings:
 
 # 14. First Session Success
 
-At 2 hours player should have:
+First2h is onboarding scope, not the whole extended slice. At2h player should haveCCL4 and:
 
 - functioning Silo;
 - 7–8 survivors;
@@ -273,4 +275,4 @@ At 2 hours player should have:
 - World Map unlocked;
 - first unknown signal.
 
-Player should already understand the full loop in miniature.
+Player should already understand the full loop in miniature. Extended2–4h slice adds CCL5,squad4,ResearchLabL1 and one tierI research. Content/ledger and longer-slice checklist live in PROTOTYPE_CONTENT_PACK_V0.1.md and PROTOTYPE_PROGRESSION_V0.1.md.

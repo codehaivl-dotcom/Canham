@@ -240,57 +240,17 @@ Water demand = 12 / h
 
 # 6. Hunger / Dehydration
 
-Không giết dân ngay khi kho về 0.
+No random offline death/injury from stock depletion. Food0:0–1h morale warning,1–4h nonessential production−15%/Clinic speed−10%,4h+ nonessential production−30% and exhausted civilians blocked from normal deployment. Water0:0–1h warning,1h+ nonessential production−25%/Clinic speed−25%,3h+ readiness−10%MaxHP (minimum1HP), no new injury roll.
 
-## Food = 0
-
-0–1h:
-
-- Morale loss.
-
-1–4h:
-
-- production -15%;
-- healing -10%.
-
-4h+:
-
-- production -30%;
-- combat deployment blocked cho exhausted civilian unit;
-- health event chance.
-
-## Water = 0
-
-Nghiêm trọng hơn.
-
-0–1h:
-
-- Morale loss.
-
-1–3h:
-
-- production -25%;
-- Clinic efficiency -25%.
-
-3h+:
-
-- injury/health event;
-- combat readiness penalty.
-
-Không thiết kế starvation như punishment khi người chơi offline qua đêm; offline cap/protection cần giữ economy sane.
+Food/Water/Generator, REST and emergency actions are exempt from these negative production modifiers; room power/integrity still matter. Combined nonessential production penalty capped40%, Clinic penalty capped25%. Stable normal supplies10min clear readiness/hunger timer. At total blackout Core emergency mode waives consumption and pauses hunger timers, no free tradable output. Full comeback inputs, relief thresholds and no-squad fallback: [PROTOTYPE_PROGRESSION_V0.1.md §3](PROTOTYPE_PROGRESSION_V0.1.md#3-emergency8pu-mode-và-survival-comeback).
 
 ---
 
 # 7. Offline Production
 
-Prototype:
+All background simulation shares one trusted elapsed window capped8real hours: production, consumption, rest, Clinic, construction, research, site collection. Full storage stops only that output, never consumption. Iterate next state boundary before computing next interval; clamp stocks≥0. Resume must give same state as partitioning same8h into smaller intervals without player actions. Beyond8h background clocks freeze; PvP shields/reservation deadlines remain real time.
 
-- production tiếp tục **8 real hours** offline;
-- consumption cũng chạy trong cùng window;
-- nếu storage đầy, production dừng;
-- không để Food/Water âm.
-
-Có thể tăng offline cap bằng Command/Storage tech sau này, nhưng không monetize kiểu bắt buộc.
+No reconnect-reset grants. Detailed time/reward contracts: [PROTOTYPE_PROGRESSION_V0.1.md §4](PROTOTYPE_PROGRESSION_V0.1.md#4-offline-event-stepping), [MISSION_SESSION_REWARDS_V0.1.md](MISSION_SESSION_REWARDS_V0.1.md).
 
 ---
 
@@ -398,7 +358,7 @@ Production có thể bị ảnh hưởng bởi:
 - room damage;
 - event.
 
-Không dùng worker stat bonus trong v0.1 economy formula cho đến Population spec.
+Worker/stat integration is defined in SURVIVOR_RECOVERY_V0.1.md: staffed life-support floor1.00×, cap1.35×; no worker50% listed output; relevant stat is primary/secondary average.
 
 ---
 
@@ -469,7 +429,7 @@ Craft time:
 2 minutes
 ```
 
-Workshop không bắt buộc để tạo tutorial Supply nhỏ; Command Core có emergency packing queue 1.
+Workshop không bắt buộc để tạo Supply; Command Core có packing queue1 shared with Claim Beacon. Same5Food/6Water/2Scrap→5Supply/2min recipe, no free craft output. Bound emergency relief Supply only deploys comeback PvE; cannot substitute recipe inputs.
 
 ---
 
@@ -538,7 +498,7 @@ Credits/Data không dùng physical storage cap trong MVP.
 Storage full:
 
 - production dừng;
-- expedition loot vẫn có thể mang về nhưng phải salvage/sell/discard overflow.
+- expedition/site rewards overflow into nonexpiring Return Inbox; claim to available capacity or explicitly salvage/sell/discard. No automatic deletion; settlement rules in MISSION_SESSION_REWARDS_V0.1.md.
 
 Không xóa loot tự động.
 

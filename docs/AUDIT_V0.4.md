@@ -1,5 +1,8 @@
 # BURROW ZERO — Design Audit v0.4
 
+> Historical audit snapshot, not current readiness/sign-off. The 2026-11-12 remediation is tracked in [GAP_CLOSURE_2026-11-12.md](GAP_CLOSURE_2026-11-12.md); runtime tests remain NOT RUN.
+
+
 **Date:** 2026-11-12  
 **Scope:** full document consistency audit after multi-turn design expansion.  
 **Excluded by request:** Combat Simulation execution.

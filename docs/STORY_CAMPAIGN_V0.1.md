@@ -9,6 +9,8 @@
 
 Story must grow from the same systems the player already uses.
 
+Concrete chapter predicates, staged rewards, guaranteed source nodes, faction contracts and VI/EN objective strings: [CAMPAIGN_CONTRACTS_V0.1.md](CAMPAIGN_CONTRACTS_V0.1.md). That catalog owns prototype content gates; the sections here describe narrative direction.
+
 Do not create a separate linear campaign mode.
 
 Story progression should use:
