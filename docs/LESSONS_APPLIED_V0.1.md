@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Lessons Applied from Comparable Games v0.1
+# BURROW ZERO — Lessons Applied from Comparable Games v0.1
 
 **Date:** 2026-11-12  
 **Purpose:** ghi rõ cái gì học, cái gì không copy.
@@ -222,7 +222,7 @@ BASE-AS-PVP-DUNGEON
 CONTESTED RESOURCE WORLD
 ```
 
-Đây là identity của Căn Hầm.
+Đây là identity của BURROW ZERO.
 
 ---
 
