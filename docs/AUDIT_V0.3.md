@@ -474,3 +474,62 @@ Major remaining design gaps:
 6. Combat Simulation.
 
 Combat Simulation remains **NOT STARTED**.
+
+
+---
+
+# 11. Major gap closure — 2026-11-12
+
+The previously missing gameplay/product systems now have dedicated baseline specs:
+
+| Area | File | Status |
+|---|---|---|
+| Resource Site capture/contest | RESOURCE_SITES_V0.1.md | ✅ |
+| NPC Silo Raid | NPC_SILO_RAID_V0.1.md | ✅ |
+| Player PvP Raid | PLAYER_PVP_RAID_V0.1.md | ✅ |
+| Matchmaking/protection/loss/revenge | PVP_MATCHMAKING_PROTECTION_V0.1.md | ✅ |
+| World Map/regions/refresh | WORLD_MAP_REGIONS_V0.1.md | ✅ |
+| Factions | FACTIONS_V0.1.md | ✅ |
+| Alliance/Coalition | ALLIANCE_COALITION_V0.1.md | ✅ |
+| Mimic/Infiltration | MIMIC_INFILTRATION_V0.1.md | ✅ |
+| Story campaign/chapters | STORY_CAMPAIGN_V0.1.md | ✅ |
+| First 1–2h tutorial | TUTORIAL_FIRST_2H_V0.1.md | ✅ |
+| Full UI/UX navigation | UI_UX_NAVIGATION_V0.1.md | ✅ |
+| Sound/music direction | SOUND_MUSIC_V0.1.md | ✅ |
+| Seasons/endgame | SEASONS_ENDGAME_V0.1.md | ✅ |
+
+## Revised readiness excluding Combat Simulation
+
+| Area | Readiness |
+|---|---:|
+| Game vision | 95% |
+| Core PvE loop | 92% |
+| Silo/base systems | 88% |
+| Units/items/enemies | 85% |
+| Loot/economy/population | 82% |
+| World targets/map | 88% |
+| Resource territory | 82% |
+| NPC raid | 85% |
+| Player PvP policy | 82% |
+| Faction/Alliance | 75% |
+| Story/tutorial | 82% |
+| UI/UX | 80% |
+| Sound direction | 75% |
+| Season/endgame | 75% |
+| Brand/localization | 90% |
+
+Overall game-design documentation readiness excluding Combat Simulation:
+
+**~87–90%**
+
+There are no longer major undefined core gameplay loops.
+
+Remaining gaps are mostly production-depth rather than concept-depth:
+
+1. Art Production/asset specification;
+2. exact numerical/content tuning;
+3. technical architecture/backend/save;
+4. detailed monetization/store economy;
+5. analytics/telemetry;
+6. final story dialogue/content;
+7. Combat Simulation — intentionally not started.
