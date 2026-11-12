@@ -1,4 +1,4 @@
-# CĂN HẦM — Game Vision / GDD v0.1
+# CĂN HẦM — Game Vision / GDD v0.2
 
 **Trạng thái:** Concept / Pre-production  
 **Mục tiêu tài liệu:** khóa hướng game trước khi prototype để tránh biến dự án thành bản sao đơn giản của Fallout Shelter hoặc Clash of Clans.
@@ -275,6 +275,57 @@ Door: Pre-war military
 
 Như vậy ngay cả việc mở rộng căn cứ cũng tạo exploration.
 
+## Quy tắc chiếm phòng / sector
+
+**Phát hiện một phòng không đồng nghĩa sở hữu phòng đó.**
+
+Một sector mới đào trúng luôn bắt đầu ở trạng thái chưa kiểm soát, ví dụ:
+
+- UNKNOWN;
+- SEALED;
+- HOSTILE;
+- CONTAMINATED;
+- UNSTABLE;
+- CONTROLLED.
+
+Để biến sector thành đất xây dựng, người chơi có thể phải:
+
+- phá cửa;
+- cấp điện tạm;
+- scan môi trường;
+- tiêu diệt sinh vật;
+- vô hiệu hóa turret / robot;
+- xử lý khí độc / bức xạ;
+- dọn ổ ký sinh;
+- sửa kết cấu;
+- đánh mini-boss;
+- giữ sector trong một khoảng thời gian.
+
+Ví dụ:
+
+```
+SECTOR B-17
+
+Status: HOSTILE
+Threat: UNKNOWN BIOLOGICAL
+Power: OFFLINE
+Atmosphere: PARTIAL TOXIC
+
+Objective:
+[ ] Restore emergency power
+[ ] Clear hostile presence
+[ ] Seal ventilation breach
+[ ] Establish control
+
+Reward:
++1 buildable room
+Unknown cache
+```
+
+Chỉ sau khi hoàn thành điều kiện kiểm soát, phòng mới trở thành một phần chính thức của Silo và cho phép xây / cải tạo.
+
+Một số phòng có thể có giá trị đặc biệt đến mức người chơi chọn **giữ nguyên công năng cũ** thay vì phá đi xây lại, ví dụ reactor cổ, kho quân sự hay laboratory.
+
 ---
 
 # 8. Unit system
@@ -504,15 +555,42 @@ Deep Scout tốn:
 - intel;
 - scout unit.
 
-Nhưng có thể reveal:
+Nhưng Scout **không bao giờ biến mission thành thông tin hoàn hảo**.
 
-- enemy type;
-- boss;
-- room count;
-- hazard;
-- loot quality.
+Scout có thể reveal hoặc ước lượng:
 
-Scout tốt làm giảm rủi ro.
+- nhóm enemy có khả năng xuất hiện;
+- dấu hiệu boss;
+- số room ước tính;
+- hazard đã phát hiện;
+- nhóm loot có khả năng tồn tại;
+- mức độ hoạt động;
+- một phần layout.
+
+Thông tin phải có **confidence** và có thể thiếu.
+
+Ví dụ:
+
+```
+DEEP SCAN
+
+Biological activity: HIGH       Confidence 82%
+Mechanical activity: LOW        Confidence 61%
+Energy weapon signature: NONE   Confidence 47%
+Rooms detected: 6–9
+Possible loot:
+- Medical
+- Research
+- Unknown
+
+Unmapped area: YES
+```
+
+Scout tốt làm giảm rủi ro chứ không xóa rủi ro.
+
+Một căn cứ được báo chủ yếu là biological vẫn có thể có robot trong phòng sâu. Một boss được dự đoán dùng giáp nhẹ vẫn có thể xuất hiện biến thể kháng laser.
+
+**Information is probabilistic, not omniscient.**
 
 ---
 
@@ -1215,29 +1293,41 @@ Người chơi giỏi preparation có thể thắng mục tiêu mạnh hơn.
 
 # 34. Injury / death
 
-Để tạo tension nhưng tránh quá punitive:
+**Death là thật ở mọi nội dung combat.**
 
-### Easy
-không permadeath; unit bị incapacitated/injury.
+Khi HP về 0, unit chuyển sang trạng thái **DOWN / DEAD** tùy encounter và sát thương.
 
-### Medium
-death rất hiếm.
+Unit chết không tự hồi khi kết thúc trận.
 
-### Hard
-death có thể xảy ra nếu không extract.
+Muốn đưa unit trở lại, người chơi phải dùng một **revival item** hiếm tương tự chức năng hồi sinh trong Fallout Shelter, tạm gọi:
 
-### Extreme
-permadeath risk rõ ràng.
+- Revival Injector;
+- Trauma Kit;
+- Emergency Reanimator.
 
-Điều này cần test kỹ.
+Tên và fiction sẽ khóa sau.
 
-Một phương án khác là “Lost” thay vì chết ngay:
+Quy tắc:
 
-unit bị kẹt / captured.
+- revive item chiếm inventory / consumable capacity;
+- có thể dùng trong mission nếu điều kiện an toàn;
+- nếu không còn item, squad phải mang thi thể / dữ liệu sinh học về hoặc chấp nhận mất unit;
+- một số trạng thái đặc biệt có thể chặn revive;
+- revive không nên miễn phí và không nên vô hạn.
 
-Người chơi có rescue mission trong thời gian giới hạn.
+Difficulty tác động vào:
 
-Điều này vừa tạo drama vừa đỡ rage quit.
+- damage;
+- tốc độ unit bị hạ;
+- số lượng encounter;
+- khả năng tiếp cận extraction;
+- mức tiêu hao revive / medical item;
+
+chứ **không thay đổi nguyên tắc “Easy thì bất tử, Hard mới chết”.**
+
+Mục tiêu là khiến người chơi quý unit nhưng vẫn có một lớp cứu hộ để death không biến thành mất mát ngẫu nhiên hoàn toàn.
+
+Ngoài death, unit vẫn có thể bị **Lost / Captured / Separated**, mở rescue mission trong một số loại encounter.
 
 ---
 
@@ -1716,6 +1806,10 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 - Expedition là gameplay room-by-room / area-by-area.
 - Người chơi được chọn difficulty.
 - Team composition, equipment và consumable quyết định khả năng sống sót.
+- Combat giữ nhịp trực quan kiểu Fallout Shelter nhưng thêm formation, role và tactical preparation.
+- Unit có thể chết thật và phải dùng revival item để cứu.
+- Scout chỉ cung cấp thông tin xác suất; không có reconnaissance 100% chính xác.
+- Phòng / sector mới trong Silo phải được clear và giành quyền kiểm soát trước khi sử dụng.
 - Rare progression materials tồn tại ngoài Silo.
 - Một số blueprint/component chỉ đến từ Boss, PvP hoặc contested content.
 - PvP ưu tiên matchmaking ngang CCL/power.
@@ -1732,10 +1826,9 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 
 Chưa khóa:
 
-- combat real-time hay semi-auto;
+- mức độ active-control trong combat (bao nhiêu skill / retarget / timing);
 - side-view hay isometric;
 - squad 4 hay 5;
-- permadeath chính xác;
 - số Command Core Level;
 - PvP target selection;
 - season duration;
@@ -1759,3 +1852,294 @@ Một session tốt phải tạo được câu chuyện kiểu:
 # 55. Một câu tóm tắt sản phẩm
 
 > **Căn Hầm là survival base-builder nơi mỗi người chơi xây một Silo, nuôi một đội survivor, khám phá thế giới hậu thảm họa theo từng khu vực và buộc phải mạo hiểm PvE, Boss hoặc PvP để giành công nghệ cần thiết cho bước tiến hóa tiếp theo của căn cứ.**
+
+
+---
+
+# 56. Combat direction lock — Fallout Shelter feel, sâu hơn về chiến thuật
+
+Combat giữ tinh thần dễ đọc của Fallout Shelter:
+
+- squad bước vào room / encounter;
+- battle diễn ra liên tục;
+- unit tự thực hiện đòn đánh cơ bản;
+- weapon và target tạo phần lớn DPS;
+- người chơi không micro từng bước chân như RTS.
+
+Nhưng trước và trong trận có thêm chiều sâu.
+
+## Trước trận
+
+Người chơi quyết định:
+
+- squad composition;
+- formation;
+- weapon;
+- armor;
+- utility;
+- consumables;
+- target priority preset.
+
+Ví dụ:
+
+```
+FRONT
+Vanguard      Shotgun
+
+MID
+Assault       Laser Rifle
+Engineer      SMG + EMP
+
+BACK
+Medic         Pistol
+```
+
+## Trong trận
+
+Người chơi tập trung vào các quyết định quan trọng thay vì spam thao tác:
+
+- focus target;
+- đổi target;
+- kích hoạt consumable;
+- heal / revive;
+- dùng active ability nếu unit có;
+- đổi vị trí trong giới hạn;
+- quyết định đi tiếp hay rút.
+
+Mục tiêu:
+
+> **Easy to control, hard to prepare well.**
+
+Chiến thuật chính nằm ở đội hình và preparation, không phải APM.
+
+---
+
+# 57. Imperfect Intel — không bao giờ biết chắc mình sắp gặp gì
+
+Đây là một nguyên tắc gameplay khóa.
+
+Người chơi **không được biết chính xác toàn bộ enemy, resistance, loot và layout trước khi vào**.
+
+Recon chỉ thay đổi từ:
+
+> “gần như mù”
+
+thành:
+
+> “có cơ sở để dự đoán”.
+
+Không bao giờ thành:
+
+> “biết chính xác 100%”.
+
+Ví dụ người chơi thấy:
+
+```
+OLD ENERGY LAB
+
+Known:
+- electromagnetic activity
+- at least 1 hostile lifeform
+- possible weapon storage
+
+Unknown:
+- lower floors
+- exact enemy subtype
+- boss resistance
+```
+
+Người chơi đoán nơi này hợp với laser weapon.
+
+Nhưng xuống sâu có thể gặp:
+
+**Crystal Carapace Beast**
+- Laser Resistance 70%
+- Ballistic Resistance 10%
+
+Assault mang Laser Rifle lúc này trở thành lựa chọn không tối ưu.
+
+Điều này là **feature**, không phải lỗi RNG.
+
+---
+
+# 58. Tactical redundancy — một lựa chọn sai không được phá toàn bộ squad
+
+Bất định chỉ vui nếu người chơi còn cách xoay xở.
+
+Vì vậy game phải tránh hard-counter tuyệt đối ở nội dung bình thường.
+
+Ví dụ:
+
+- enemy kháng Laser 70%, không phải miễn nhiễm 100%;
+- Engineer mang súng yếu vẫn có thể hỗ trợ EMP / utility;
+- Vanguard có thể giữ quái để Ballistic unit gánh DPS;
+- grenade hoặc consumable có thể bù một phần;
+- người chơi có thể bỏ room đó và tìm route khác;
+- cuối cùng luôn có quyền **RETREAT** nếu chưa bị mechanic đặc biệt khóa.
+
+Một team cân bằng có khả năng chịu sai thông tin tốt hơn một team cực đoan.
+
+Đây tạo ra trade-off:
+
+### Specialized Squad
+đánh rất nhanh nếu đoán đúng target.
+
+### Balanced Squad
+chậm hơn nhưng sống sót tốt khi thông tin sai.
+
+Không đội hình nào luôn tối ưu.
+
+---
+
+# 59. Mission completion không bắt buộc 100%
+
+Người chơi **không cần clear toàn bộ map để mission được xem là có giá trị**.
+
+Ví dụ:
+
+```
+MAP DISCOVERED: 8 rooms
+
+Cleared: 5
+Unexplored: 3
+
+Recovered:
++ 1 Military Rifle
++ 18 Electronics
++ Medical Data
+
+Squad:
+1 DEAD — revived
+2 injured
+Revival items: 0
+
+[GO DEEPER]
+[EXTRACT]
+```
+
+Rút lui sau 5/8 phòng là một quyết định hợp lệ.
+
+Điều này rất quan trọng vì nó biến:
+
+> “không đủ mạnh = thua”
+
+thành:
+
+> “không đủ mạnh = phải biết dừng đúng lúc”.
+
+Một mission có thể kết thúc với:
+
+- Partial Clear;
+- Successful Extraction;
+- Full Clear;
+- Boss Clear;
+- Failed Extraction.
+
+Reward và progression phản ánh mức hoàn thành.
+
+---
+
+# 60. Silo Expansion Encounter
+
+Mở rộng căn cứ dùng **cùng combat language** với expedition.
+
+Ví dụ người chơi đào sang một phòng mới:
+
+```
+DEPTH -184 m
+
+UNKNOWN CHAMBER
+Door integrity: 63%
+Internal motion: DETECTED
+Signal quality: POOR
+```
+
+Người chơi chuẩn bị squad ngay trong Silo.
+
+Sau khi phá cửa:
+
+### Room 1
+hai sinh vật.
+
+### Room 2
+turret cũ tự kích hoạt.
+
+### Room 3
+khí độc + một container quân sự.
+
+### Core room
+mini-boss / control terminal.
+
+Sau khi clear:
+
+```
+SECTOR SECURED
+
+Choose:
+[Convert to Buildable Space]
+[Restore Original Facility]
+[Seal Sector]
+```
+
+Như vậy mỗi lần Silo lớn lên đều có khả năng tạo một câu chuyện nhỏ, thay vì chỉ:
+
+> trả tài nguyên → chờ timer → có phòng mới.
+
+---
+
+# 61. Encounter variability
+
+Cùng một location template không đồng nghĩa cùng encounter.
+
+Ví dụ:
+
+**Abandoned Warehouse — Medium**
+
+Lần A:
+- raider;
+- ballistic weapon;
+- food cache.
+
+Lần B:
+- infected;
+- biological hazard;
+- medicine.
+
+Lần C:
+- trống ở tầng đầu;
+- alien organism ở basement;
+- prototype component.
+
+Game sinh encounter từ nhiều lớp:
+
+```
+LOCATION TYPE
+    +
+THREAT FAMILY
+    +
+THREAT VARIANT
+    +
+HAZARD
+    +
+ROOM MODIFIER
+    +
+LOOT TABLE
+    +
+RARE EVENT
+```
+
+Scout reveal một phần của các lớp trên.
+
+Nhờ vậy người chơi học cách **đọc dấu hiệu và chuẩn bị**, nhưng không thể thuộc lòng toàn bộ map.
+
+---
+
+# 62. Revised combat fantasy
+
+Một mission đúng tinh thần game có thể diễn ra như sau:
+
+> Scout phát hiện một kho nghiên cứu có dấu hiệu năng lượng cao. Tôi đoán sẽ gặp robot nên mang hai Laser Rifle và một EMP. Ba phòng đầu đúng như dự đoán. Sang phòng bốn, squad gặp sinh vật có lớp vỏ hấp thụ năng lượng khiến một Assault gần như mất phần lớn hiệu quả. Tôi không thể đổi loadout giữa mission. Vanguard giữ aggro, Medic dùng Stim, Engineer chuyển sang SMG và Assault còn lại dùng ballistic sidearm để gánh. Tôi vẫn clear thêm hai phòng nhưng mất một unit và phải dùng Revival Injector cuối cùng. Radar báo phía dưới còn ba phòng chưa biết và có tín hiệu boss. Tôi đang mang loot tốt, không còn revive nên quyết định rút. Mission chỉ clear 6/9 phòng nhưng vẫn là một chuyến đi thành công.
+
+Đây là trải nghiệm mục tiêu:
+
+**chuẩn bị tốt giúp tăng cơ hội, nhưng không bao giờ xóa bất định; đội hình tốt giúp chịu được một phần sai lầm; người chơi giỏi biết khi nào phải rút.**
