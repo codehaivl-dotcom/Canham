@@ -585,7 +585,7 @@ Prototype controlled site:
 
 *Energy Cell là field/strategic item; không cộng trực tiếp vào live grid nếu site ở xa.
 
-Strategic site output chắc chắn phải giảm/điều chỉnh sau economy simulation.
+Strategic site output vẫn là prototype baseline và sẽ được điều chỉnh sau economy/content tuning.
 
 ---
 
