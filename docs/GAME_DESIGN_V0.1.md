@@ -1909,7 +1909,7 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 - Squad progression khóa theo **3 → 4 → 5**, với **5 là cap tiêu chuẩn tối đa**.
 - Combat giữ nhịp trực quan kiểu Fallout Shelter nhưng thêm formation, role và tactical preparation.
 - Weapon class phải khác nhau bằng damage profile/effect, không chỉ bằng con số DPS.
-- Unit có thể chết thật và phải dùng revival item để cứu.
+- Unit chủ động deploy có thể chết thật và phải dùng revival item để cứu; offline async defenders là ngoại lệ bảo vệ account.
 - Scout chỉ cung cấp thông tin xác suất; không có reconnaissance 100% chính xác.
 - Phòng / sector mới trong Silo phải được clear và giành quyền kiểm soát trước khi sử dụng.
 - Rare progression materials tồn tại ngoài Silo.
@@ -1928,7 +1928,6 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 
 Chưa khóa:
 
-- mức độ active-control trong combat (bao nhiêu skill / retarget / timing);
 - mức độ active-control trong combat cuối cùng (bao nhiêu skill / retarget / timing);
 - monetization/pricing cụ thể;
 - exact CCL upgrade costs và balance;
@@ -1942,7 +1941,7 @@ Chưa khóa:
 - season duration: 8–12 tuần;
 - alliance baseline: 20 thành viên.
 
-Không nên khóa những điểm này trước khi có prototype chiến đấu.
+Các điểm còn mở này chỉ được khóa khi có đủ prototype/product evidence; không để agent tự quyết định trong implementation.
 
 ---
 
