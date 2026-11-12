@@ -40,7 +40,7 @@ Later evidence suggests:
 
 Central question:
 
-> Are survivors rebuilding Earth, or awakening something already buried beneath it?
+> Are survivors rebuilding their world, or awakening something already buried beneath it?
 
 ---
 
