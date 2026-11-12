@@ -1,7 +1,11 @@
-# CĂN HẦM — Design & Production Plan
+# BURROW ZERO — Design & Production Plan
+
+> **Deep Below. Far Beyond.**
 
 **Status:** Pre-production design  
-**Purpose:** biến Game Vision thành các hệ thống đủ chính xác để prototype, test và balance.
+**Initial languages:** Vietnamese + English  
+**Art:** AI-first simple low-poly 3D, panda survivor mascot
+
 
 ---
 
