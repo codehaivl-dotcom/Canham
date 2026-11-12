@@ -2536,8 +2536,15 @@ Nó mở ra khả năng mang một vai trò chuyên dụng mà trước đây ng
 
 # Extended System Specs
 
+Cross-system authority:
+- [CANONICAL_RULES_V0.1.md](./CANONICAL_RULES_V0.1.md)
+
 The following documents are canonical extensions of this GDD:
 
+- [ART_PRODUCTION_V0.1.md](./ART_PRODUCTION_V0.1.md)
+- [VISUAL_SCREEN_TARGETS_V0.1.md](./VISUAL_SCREEN_TARGETS_V0.1.md)
+- [RESEARCH_TECH_TREE_V0.1.md](./RESEARCH_TECH_TREE_V0.1.md)
+- [SILO_DEFENSE_SECURITY_V0.1.md](./SILO_DEFENSE_SECURITY_V0.1.md)
 - [RESOURCE_SITES_V0.1.md](./RESOURCE_SITES_V0.1.md)
 - [NPC_SILO_RAID_V0.1.md](./NPC_SILO_RAID_V0.1.md)
 - [PLAYER_PVP_RAID_V0.1.md](./PLAYER_PVP_RAID_V0.1.md)
@@ -2551,5 +2558,6 @@ The following documents are canonical extensions of this GDD:
 - [UI_UX_NAVIGATION_V0.1.md](./UI_UX_NAVIGATION_V0.1.md)
 - [SOUND_MUSIC_V0.1.md](./SOUND_MUSIC_V0.1.md)
 - [SEASONS_ENDGAME_V0.1.md](./SEASONS_ENDGAME_V0.1.md)
+- [SOCIAL_PLAYER_SAFETY_V0.1.md](./SOCIAL_PLAYER_SAFETY_V0.1.md)
 
 Combat Simulation is intentionally not started and is not assumed by these specs.
