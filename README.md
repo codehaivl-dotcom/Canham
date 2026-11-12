@@ -12,10 +12,11 @@
 - [Economy & Resources v0.1](docs/ECONOMY_RESOURCES_V0.1.md)
 - [Silo Buildings & Power v0.1](docs/SILO_BUILDINGS_V0.1.md)
 - [Design Audit v0.3](docs/AUDIT_V0.3.md)
+- [Market & Competitor Research v0.1](docs/MARKET_RESEARCH_V0.1.md)
 
 ### Thứ tự thiết kế hiện tại
 
-**World Targets ✓ → Units & Items ✓ → Enemies ✓ → Economy/Buildings ✓ baseline → Combat Simulation → Loot/Crafting → Population/Traits → Scout/Travel → Silo Expansion → Resource Sites → NPC Silo Raid → Vertical Slice → PvP.**
+**World Targets ✓ → Units & Items ✓ → Enemies ✓ → Economy/Buildings ✓ baseline → Market Research ✓ → Combat Simulation NOT STARTED → Loot/Crafting → Population/Traits → Scout/Travel → Silo Expansion → Resource Sites → NPC Silo Raid → Vertical Slice → PvP.**
 
 ## North Star
 
