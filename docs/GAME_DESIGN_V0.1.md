@@ -423,6 +423,83 @@ Một unit sống sót nhiều mission có giá trị hơn unit mới không ch�
 
 Không có một đội hình “4 khẩu súng mạnh nhất” luôn thắng.
 
+## Squad size progression — khóa 3 → 4 → 5
+
+Squad mở dần theo progression:
+
+| Giai đoạn | Squad cap | Mục đích |
+|---|---:|---|
+| Early game | 3 | học combat, weapon, heal, revive, retreat |
+| Mid game | 4 | bắt đầu role specialization rõ ràng |
+| Late game | 5 | mở full tactical composition |
+| Endgame | 5 max | mạnh lên bằng build/gear/trait, không tăng quân số |
+
+**5 là giới hạn cứng của squad tiêu chuẩn.**
+
+Lý do:
+
+- đủ nhỏ để người chơi nhớ từng survivor;
+- đủ lớn để tạo Tank / DPS / Medic / Engineer / Specialist;
+- combat vẫn đọc được rõ ràng theo phong cách Fallout Shelter;
+- tránh biến trận đánh thành đám đông khó theo dõi;
+- mỗi slot mới mở phải tạo cảm giác progression đáng kể.
+
+Ví dụ ở squad 3, người chơi thường phải đánh đổi:
+
+```
+Vanguard
+Assault
+Medic
+```
+
+Khi mở slot 4:
+
+```
+Vanguard
+Assault
+Medic
+Engineer
+```
+
+Khi mở slot 5:
+
+```
+Vanguard
+Assault
+Heavy / Specialist
+Engineer
+Medic
+```
+
+Unlock slot thứ 4 và thứ 5 nên gắn với milestone CCL / facility progression thay vì chỉ level nhân vật.
+
+### Không phải lúc nào cũng nên mang đủ 5
+
+Cuối game vẫn phải có lý do để squad 3–4 người tồn tại.
+
+Mission có thể tác động bởi:
+
+- supply consumption;
+- travel speed;
+- Noise / detection;
+- deployment cost;
+- giới hạn không gian.
+
+Ví dụ:
+
+```
+STEALTH RECON
+Recommended: 3 units or fewer
+
+COLLAPSED TUNNEL
+Maximum deployment: 3
+
+HEAVY ASSAULT
+Maximum deployment: 5
+```
+
+Squad 5 mạnh hơn trong combat nhưng không mặc định tối ưu cho mọi nhiệm vụ.
+
 Ví dụ squad 4 người:
 
 ```
@@ -1741,7 +1818,8 @@ Prototype đầu nên chứng minh 3 thứ:
 
 ## Prototype B — Expedition
 
-- squad 4 unit;
+- squad system hỗ trợ cap 5;
+- prototype bắt đầu bằng squad 3 và test unlock 4 → 5;
 - 1 map;
 - 8–12 room;
 - loot;
@@ -1796,7 +1874,7 @@ Status: ACTIVE
 
 ---
 
-# 52. Các quyết định thiết kế khóa ở v0.1
+# 52. Các quyết định thiết kế khóa ở v0.2
 
 Các điểm sau được xem là direction chính cho tới khi prototype chứng minh ngược lại:
 
@@ -1806,7 +1884,9 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 - Expedition là gameplay room-by-room / area-by-area.
 - Người chơi được chọn difficulty.
 - Team composition, equipment và consumable quyết định khả năng sống sót.
+- Squad progression khóa theo **3 → 4 → 5**, với **5 là cap tiêu chuẩn tối đa**.
 - Combat giữ nhịp trực quan kiểu Fallout Shelter nhưng thêm formation, role và tactical preparation.
+- Weapon class phải khác nhau bằng damage profile/effect, không chỉ bằng con số DPS.
 - Unit có thể chết thật và phải dùng revival item để cứu.
 - Scout chỉ cung cấp thông tin xác suất; không có reconnaissance 100% chính xác.
 - Phòng / sector mới trong Silo phải được clear và giành quyền kiểm soát trước khi sử dụng.
@@ -1828,7 +1908,7 @@ Chưa khóa:
 
 - mức độ active-control trong combat (bao nhiêu skill / retarget / timing);
 - side-view hay isometric;
-- squad 4 hay 5;
+- mốc CCL chính xác để mở slot squad thứ 4 và thứ 5;
 - số Command Core Level;
 - PvP target selection;
 - season duration;
@@ -2143,3 +2223,284 @@ Một mission đúng tinh thần game có thể diễn ra như sau:
 Đây là trải nghiệm mục tiêu:
 
 **chuẩn bị tốt giúp tăng cơ hội, nhưng không bao giờ xóa bất định; đội hình tốt giúp chịu được một phần sai lầm; người chơi giỏi biết khi nào phải rút.**
+
+
+---
+
+# 63. Weapon identity — khác nhau bằng damage profile, không chỉ DPS
+
+Vũ khí không được thiết kế theo kiểu:
+
+```
+Rifle   20 damage
+Laser   30 damage
+Rocket  50 damage
+```
+
+Mỗi weapon class phải có **combat identity** riêng.
+
+## Laser / Energy Rifle
+
+Vai trò:
+
+- single-target focus mạnh;
+- accuracy tốt;
+- sustained damage vào một mục tiêu;
+- có thể hiệu quả với armor / shield tùy loại.
+
+Điểm yếu:
+
+- kém khi bị swarm;
+- một số sinh vật / material có resistance năng lượng cao.
+
+Ví dụ:
+
+```
+LASER RIFLE
+
+Damage profile:
+Single Target ++++
+AOE            -
+Fire rate      +++
+Armor effect   ++
+
+Special:
+Focus Beam — càng giữ cùng target càng ổn định damage.
+```
+
+## Rocket Launcher / Bazooka
+
+Vai trò:
+
+- burst damage cao;
+- AOE;
+- rất mạnh khi nhiều enemy đứng cùng room.
+
+Điểm yếu:
+
+- reload chậm;
+- overkill mục tiêu nhỏ;
+- không nhất thiết tối ưu với một boss đơn lẻ.
+
+```
+ROCKET LAUNCHER
+
+Damage profile:
+Single Target  ++
+AOE            +++++
+Fire rate      -
+Stagger        +++
+
+Special:
+Explosion hits nearby enemies.
+```
+
+## Shotgun
+
+- close-range burst;
+- cone / multi-target;
+- mạnh với enemy áp sát;
+- giảm hiệu quả ở khoảng cách xa.
+
+## Assault Rifle
+
+- general-purpose;
+- damage ổn định;
+- ít matchup tệ;
+- lựa chọn an toàn khi intel kém.
+
+## Sniper Rifle
+
+- single-target burst cực cao;
+- ưu tiên elite / boss;
+- fire rate chậm;
+- dễ bị swarm gây áp lực.
+
+## Flamethrower
+
+- AOE;
+- damage-over-time;
+- mạnh với swarm / biological target;
+- có thể kém với robot / heat-resistant enemy.
+
+## EMP / Disruptor
+
+- raw damage thấp;
+- mạnh với shield / robot / electronic system;
+- stun / disable / vulnerability window.
+
+Danh sách weapon class sẽ mở rộng sau, nhưng nguyên tắc phải giữ:
+
+> **Vũ khí mạnh vì đúng tình huống, không phải vì luôn có con số damage lớn hơn.**
+
+---
+
+# 64. Soft counter — mang sai vũ khí vẫn phải gây damage
+
+Do reconnaissance cố ý không hoàn hảo, game **không được hard-punish người chơi bằng immunity tràn lan**.
+
+Nếu mang sai vũ khí:
+
+- vẫn gây damage;
+- damage bị giảm;
+- effect có thể kém hiệu quả;
+- kill time dài hơn;
+- squad tiêu hao heal / revive / ammo nhiều hơn.
+
+Ví dụ:
+
+```
+CRYSTAL BEAST
+
+Laser Resistance:    70%
+Ballistic Resistance:10%
+Explosive Resistance:25%
+```
+
+Laser Rifle vẫn gây khoảng 30% damage cơ bản thay vì:
+
+```
+IMMUNE
+0 DAMAGE
+```
+
+Hard immunity chỉ nên dành cho mechanic đặc biệt rất rõ ràng và hiếm.
+
+Điều này bảo vệ triết lý:
+
+> **Một char mang sai gear là weak link, không phải dead slot.**
+
+Các thành viên khác vẫn có thể gánh team ở mức nhất định.
+
+---
+
+# 65. Damage effect phải thay đổi cách trận đánh diễn ra
+
+Damage không chỉ là số HP bị trừ.
+
+Các damage profile có thể tạo effect khác nhau:
+
+### Energy
+- focus;
+- shield interaction;
+- heat / overload.
+
+### Ballistic
+- reliable direct damage;
+- armor penetration tùy ammunition;
+- stagger nhẹ.
+
+### Explosive
+- AOE;
+- stagger;
+- phá cover / thiết bị;
+- friendly-spacing pressure nếu sau này cần.
+
+### Fire
+- DOT;
+- panic / area denial;
+- mạnh với swarm.
+
+### Electric / EMP
+- disable;
+- shield break;
+- anti-robot.
+
+### Chemical / Biological
+- poison / corrosion;
+- damage theo thời gian;
+- hiệu quả theo physiology.
+
+Không cần tất cả ngay ở MVP.
+
+Prototype chỉ cần chứng minh rõ ít nhất:
+
+1. **single-target weapon**;
+2. **AOE weapon**;
+3. **general-purpose weapon**;
+4. **utility / anti-system weapon**.
+
+Nếu bốn nhóm này đã khiến người chơi đổi đội hình theo target, hệ thống weapon đã đi đúng hướng.
+
+---
+
+# 66. Formation cho squad tối đa 5
+
+Formation phải đủ để tạo chiến thuật nhưng không biến game thành tactical grid.
+
+Gợi ý cơ bản:
+
+```
+          FRONT
+          [ 1 ]
+
+       [ 2 ] [ 3 ]
+
+       [ 4 ] [ 5 ]
+          BACK
+```
+
+Formation ảnh hưởng:
+
+- aggro probability;
+- melee exposure;
+- protection;
+- weapon range;
+- target priority;
+- một số skill / AOE.
+
+Ví dụ:
+
+- Vanguard ở front có khả năng giữ aggro;
+- Shotgun muốn gần front;
+- Assault linh hoạt mid;
+- Medic / Sniper thường ở back;
+- enemy flank hoặc ambush có thể làm backline bị đe dọa.
+
+Formation không nên yêu cầu di chuyển từng ô.
+
+Người chơi set trước trận và chỉ có một số thao tác đổi vị trí quan trọng trong combat.
+
+---
+
+# 67. Squad progression fantasy
+
+Progression squad phải tạo cảm giác rõ ràng:
+
+### Squad cap 3
+
+> “Tôi không thể có tất cả. Tôi buộc phải hy sinh một vai trò.”
+
+Ví dụ:
+
+```
+Vanguard + Assault + Medic
+```
+
+Không có Engineer → nhiều phòng kỹ thuật khó mở.
+
+### Squad cap 4
+
+> “Tôi bắt đầu xây được một team hoàn chỉnh.”
+
+```
+Vanguard + Assault + Engineer + Medic
+```
+
+### Squad cap 5
+
+> “Tôi có slot cho specialization.”
+
+```
+Vanguard
+Assault
+Engineer
+Medic
+Heavy / Sniper / Scout / Specialist
+```
+
+Slot thứ 5 không đơn giản là +25% damage.
+
+Nó mở ra khả năng mang một vai trò chuyên dụng mà trước đây người chơi không đủ chỗ.
+
+Đây phải là một trong những milestone progression đáng nhớ của Silo.
