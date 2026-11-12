@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Population, Jobs, Traits & Perks v0.1
+# BURROW ZERO — Population, Jobs, Traits & Perks v0.1
 
 **Status:** Prototype baseline  
 **Goal:** survivor phải có giá trị cả trong Silo lẫn expedition.
