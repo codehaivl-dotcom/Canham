@@ -958,19 +958,10 @@ Cần combat simulation để xác nhận:
 
 ---
 
-# 31. Next dependency
+# 31. Enemy dependency — completed
 
-Để balance Units & Items đúng, bước kế tiếp phải là:
+Enemy baseline đã được thiết kế tại:
 
-> **ENEMIES & RESISTANCES v0.1**
+[ENEMIES_RESISTANCES_V0.1.md](./ENEMIES_RESISTANCES_V0.1.md)
 
-Cần ít nhất:
-
-- 5 Infected;
-- 4 Human/Raider;
-- 4 Robot;
-- 5 Alien;
-- 3 Elite;
-- 3 Boss;
-
-và matrix resistance để kiểm tra Assault Rifle, Laser, Rocket, Fire, EMP có thật sự tạo lựa chọn khác nhau hay không.
+Bước tiếp theo là **COMBAT_SIMULATION_V0.1** để xác nhận các con số Unit/Item/Enemy bằng TTK, HP loss và matchup thực tế.
