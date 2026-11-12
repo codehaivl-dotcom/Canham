@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Loot, Crafting & Blueprint Economy v0.1
+# BURROW ZERO — Loot, Crafting & Blueprint Economy v0.1
 
 **Status:** Prototype baseline  
 **Research influence:** extraction progression / base-useful loot / directed source clarity.  
