@@ -1,4 +1,4 @@
-# ECHO SILO / CĂN HẦM — Silo Buildings & Power v0.1
+# BURROW ZERO — Silo Buildings & Power v0.1
 
 **Status:** Prototype baseline  
 **Dependency:** [ECONOMY_RESOURCES_V0.1.md](./ECONOMY_RESOURCES_V0.1.md)
@@ -66,7 +66,7 @@ CCL là progression trung tâm.
 | 11 | Coalition systems |
 | 12 | Surface Return / endgame |
 
-Exact upgrade cost của CCL sẽ làm sau Loot/Crafting simulation.
+Exact upgrade cost của CCL sẽ được chốt sau economy/content tuning; hiện dùng baseline trong các spec canonical.
 
 Không nâng CCL chỉ bằng Credits.
 
