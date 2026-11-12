@@ -2,72 +2,94 @@
 
 > **Deep Below. Far Beyond.**
 
-**BURROW ZERO** là game survival-management / expedition strategy với một **Silo riêng cho từng người chơi**, đội survivor gấu trúc có giá trị lâu dài, PvE dungeon/extraction, boss, crafting, tranh đoạt tài nguyên và PvP bất đồng bộ nơi Silo của người chơi khác trở thành một dungeon để đột nhập.
+**BURROW ZERO** là survival-management / expedition strategy với Silo riêng, đội survivor gấu trúc, PvE dungeon/extraction, boss, crafting/research, Resource Sites và asynchronous Silo PvP.
 
-**Ngôn ngữ đầu tiên:** Tiếng Việt + English.
+**Initial languages:** Tiếng Việt + English  
+**Art:** AI-first simple low-poly 3D  
+**Combat Simulation:** NOT STARTED intentionally
 
-## Tài liệu thiết kế
+## Start here — Source of Truth
 
-- [Brand & Localization v0.1](docs/BRAND_LOCALIZATION_V0.1.md)
-- [Design & Production Plan](docs/DESIGN_PLAN.md)
-- [Game Vision / GDD](docs/GAME_DESIGN_V0.1.md)
-- [World Targets / Dungeon Design v0.1](docs/WORLD_TARGETS_V0.1.md)
-- [Units, Weapons & Items v0.1](docs/UNITS_ITEMS_V0.1.md)
-- [Enemies & Resistances v0.1](docs/ENEMIES_RESISTANCES_V0.1.md)
-- [Economy & Resources v0.1](docs/ECONOMY_RESOURCES_V0.1.md)
-- [Silo Buildings & Power v0.1](docs/SILO_BUILDINGS_V0.1.md)
-- [Design Audit v0.3](docs/AUDIT_V0.3.md)
-- [Market & Competitor Research v0.1](docs/MARKET_RESEARCH_V0.1.md)
-- [Lessons Applied from Comparable Games v0.1](docs/LESSONS_APPLIED_V0.1.md)
-- [Silo Expansion & Sector Control v0.1](docs/SILO_EXPANSION_V0.1.md)
-- [Scout, Travel & Contracts v0.1](docs/SCOUT_TRAVEL_CONTRACTS_V0.1.md)
-- [Population, Jobs, Traits & Perks v0.1](docs/POPULATION_TRAITS_V0.1.md)
-- [Loot, Crafting & Blueprint Economy v0.1](docs/LOOT_CRAFTING_V0.1.md)
-- [Reward Reveal, Cache & Survivor Signal v0.1](docs/REWARD_REVEAL_CACHE_V0.1.md)
-- [Resource Sites & Contest v0.1](docs/RESOURCE_SITES_V0.1.md)
-- [NPC Silo Raid v0.1](docs/NPC_SILO_RAID_V0.1.md)
-- [Player PvP Silo Raid v0.1](docs/PLAYER_PVP_RAID_V0.1.md)
-- [PvP Matchmaking, Protection & Revenge v0.1](docs/PVP_MATCHMAKING_PROTECTION_V0.1.md)
-- [World Map, Regions & Refresh v0.1](docs/WORLD_MAP_REGIONS_V0.1.md)
-- [Faction System v0.1](docs/FACTIONS_V0.1.md)
-- [Alliance / Coalition v0.1](docs/ALLIANCE_COALITION_V0.1.md)
-- [Mimic & Infiltration v0.1](docs/MIMIC_INFILTRATION_V0.1.md)
-- [Story Campaign & Chapters v0.1](docs/STORY_CAMPAIGN_V0.1.md)
-- [Tutorial — First 2 Hours v0.1](docs/TUTORIAL_FIRST_2H_V0.1.md)
-- [UI/UX Navigation v0.1](docs/UI_UX_NAVIGATION_V0.1.md)
-- [Sound & Music Direction v0.1](docs/SOUND_MUSIC_V0.1.md)
-- [Seasons & Endgame v0.1](docs/SEASONS_ENDGAME_V0.1.md)
+1. [Canonical Rules / Source of Truth](docs/CANONICAL_RULES_V0.1.md)
+2. [Game Vision / GDD v0.3 — legacy filename](docs/GAME_DESIGN_V0.1.md)
+3. [Design & Production Plan v0.4](docs/DESIGN_PLAN.md)
+4. [Current Design Audit v0.4](docs/AUDIT_V0.4.md)
 
-### Thứ tự thiết kế hiện tại
+If documents conflict, **Canonical Rules wins**.
 
-**Core gameplay/world design baseline is now documented: World Targets ✓ → Units/Items ✓ → Enemies ✓ → Economy/Buildings ✓ → Loot/Crafting ✓ → Population/Traits ✓ → Scout/Travel ✓ → Silo Expansion ✓ → Resource Sites ✓ → NPC Silo Raid ✓ → Player PvP/Matchmaking ✓ → World Map ✓ → Factions ✓ → Alliance ✓ → Mimic ✓ → Story ✓ → Tutorial ✓ → UI/UX ✓ → Sound ✓ → Seasons/Endgame ✓. Combat Simulation remains NOT STARTED.**
+## Brand / Art / UX
+
+- [Brand & Localization](docs/BRAND_LOCALIZATION_V0.1.md)
+- [AI-First Art Production Spec](docs/ART_PRODUCTION_V0.1.md)
+- [10 Core Visual Screen Targets](docs/VISUAL_SCREEN_TARGETS_V0.1.md)
+- [UI/UX Navigation](docs/UI_UX_NAVIGATION_V0.1.md)
+- [Sound & Music Direction](docs/SOUND_MUSIC_V0.1.md)
+
+## Silo / Economy / Research
+
+- [Economy & Resources](docs/ECONOMY_RESOURCES_V0.1.md)
+- [Silo Buildings & Power](docs/SILO_BUILDINGS_V0.1.md)
+- [Silo Expansion & Sector Control](docs/SILO_EXPANSION_V0.1.md)
+- [Silo Defense & Security](docs/SILO_DEFENSE_SECURITY_V0.1.md)
+- [Research & Technology Tree](docs/RESEARCH_TECH_TREE_V0.1.md)
+
+## Survivors / Combat / Loot
+
+- [Units, Weapons & Items](docs/UNITS_ITEMS_V0.1.md)
+- [Population, Jobs, Traits & Perks](docs/POPULATION_TRAITS_V0.1.md)
+- [Enemies & Resistances](docs/ENEMIES_RESISTANCES_V0.1.md)
+- [Loot, Crafting & Blueprint Economy](docs/LOOT_CRAFTING_V0.1.md)
+- [Reward Reveal, Cache & Survivor Signal](docs/REWARD_REVEAL_CACHE_V0.1.md)
+
+## Exploration / World
+
+- [World Targets / Dungeon Design](docs/WORLD_TARGETS_V0.1.md)
+- [Scout, Travel & Contracts](docs/SCOUT_TRAVEL_CONTRACTS_V0.1.md)
+- [World Map, Regions & Refresh](docs/WORLD_MAP_REGIONS_V0.1.md)
+- [Resource Sites & Contest](docs/RESOURCE_SITES_V0.1.md)
+- [Mimic & Infiltration](docs/MIMIC_INFILTRATION_V0.1.md)
+
+## Raid / PvP / Social
+
+- [NPC Silo Raid](docs/NPC_SILO_RAID_V0.1.md)
+- [Player PvP Silo Raid](docs/PLAYER_PVP_RAID_V0.1.md)
+- [PvP Matchmaking, Protection & Revenge](docs/PVP_MATCHMAKING_PROTECTION_V0.1.md)
+- [Social, Profile & Safety](docs/SOCIAL_PLAYER_SAFETY_V0.1.md)
+
+## Narrative / Factions / Live
+
+- [Story Campaign & Chapters](docs/STORY_CAMPAIGN_V0.1.md)
+- [Tutorial — First 2 Hours](docs/TUTORIAL_FIRST_2H_V0.1.md)
+- [Faction System](docs/FACTIONS_V0.1.md)
+- [Alliance / Coalition](docs/ALLIANCE_COALITION_V0.1.md)
+- [Seasons & Endgame](docs/SEASONS_ENDGAME_V0.1.md)
+
+## Research / Historical Docs
+
+- [Market & Competitor Research](docs/MARKET_RESEARCH_V0.1.md)
+- [Lessons Applied](docs/LESSONS_APPLIED_V0.1.md)
+- [Historical Audit v0.3](docs/AUDIT_V0.3.md)
+
+These are context/reference documents; they do not override current canonical rules.
 
 ## North Star
 
 > Xây một Silo mà người chơi thực sự có cảm giác sở hữu; nuôi một đội survivor mà họ sợ mất; rồi buộc họ phải bước ra khỏi nơi an toàn để tranh giành những thứ không thể tự sản xuất.
 
-## Core loop
+## Core Loop
 
-**Xây Silo → nuôi/trang bị Survivor → Scout → chọn rủi ro → Expedition / Boss / PvP → Extract → chế tạo/nâng cấp → mở công nghệ và khu vực mới → gặp mối đe dọa lớn hơn.**
+**Build Silo → Recruit/Train → Craft/Equip → Scout → Prepare → Expedition/Boss/PvP → Loot/Extract → Heal/Research → Upgrade → Explore deeper.**
 
-## Art direction
+## Locked Product Principles
 
-- Panda survivor mascot.
-- Simple AI-first low-poly 3D.
-- Một shared rig/body cho survivor.
-- Role đọc qua silhouette + mũ/balo/vũ khí.
-- Không realistic fur/cloth simulation.
-- Môi trường dùng primitive lớn, ít chi tiết nhỏ, dễ dựng bằng AI/code.
-
-## Nguyên tắc
-
-- PvE phải đủ hay để tự đứng vững như một game hoàn chỉnh.
-- PvP là lớp đối kháng nổi bật, không phải lý do duy nhất để chơi.
-- Silo là trái tim của game, không chỉ là menu nâng cấp.
-- Survivor là nhân vật có giá trị, không phải lính dùng một lần hay hero-gacha.
-- Loot mạnh nhất không thể chỉ farm thụ động trong căn cứ.
-- Khó hơn phải đòi hỏi **team composition + gear + consumable + quyết định**, không chỉ tăng HP kẻ địch.
-- PvP ưu tiên đối thủ ngang tầm và gameplay đột nhập Silo.
+- PvE phải tự đủ hay và đủ progression.
+- PvP là lớp đối kháng/prestige/alternate progression, không ép core PvE.
+- Panda survivors là cư dân canonical, không phải human placeholder.
+- Silo là home base và về sau cũng là PvP dungeon.
+- Survivor có giá trị cá nhân; không hero-gacha.
+- Imperfect Intel luôn giữ uncertainty.
+- Wrong weapon vẫn gây damage; soft-counter > hard immunity.
 - Không pay-to-win.
+- Art phải dễ cho AI agent dựng trực tiếp bằng primitive/modular mesh.
 
 Repo đang ở giai đoạn **concept / pre-production**.
