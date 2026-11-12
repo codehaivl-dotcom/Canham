@@ -29,14 +29,14 @@ Story progression should use:
 
 Two centuries after collapse, the player's Silo detects a signal that should not exist.
 
-At first it appears human.
+At first it appears to come from another survivor Silo.
 
 Later evidence suggests:
 
 - multiple Silo networks survived;
 - pre-collapse projects knew more than public records admit;
 - alien structures may predate the catastrophe;
-- some signals may not be human at all.
+- some signals may not come from survivor civilization at all.
 
 Central question:
 
@@ -46,13 +46,13 @@ Central question:
 
 # 3. Campaign Structure
 
-Prototype main campaign: **8 Chapters**.
+Prototype main campaign: **1 Prologue + 8 Chapters**.
 
 Each chapter unlocks systems naturally.
 
 ---
 
-# 4. Chapter 0 — Wake
+# 4. Prologue — Wake
 
 Theme:
 Survival.
@@ -89,7 +89,7 @@ Unlocks:
 - first rescue.
 
 Story:
-A fragmented human distress transmission.
+A fragmented survivor distress transmission.
 
 End:
 player rescues first outside survivor.
@@ -137,7 +137,7 @@ some Silo systems were connected before collapse.
 # 8. Chapter 4 — Lines in the Dust
 
 Theme:
-Human factions.
+Survivor factions.
 
 Unlocks:
 - faction reputation;
@@ -177,7 +177,7 @@ ancient material dating conflict.
 # 10. Chapter 6 — Open Network
 
 Theme:
-Human conflict.
+Silo-network conflict.
 
 Unlocks:
 - PvP;
@@ -204,7 +204,7 @@ Unlocks:
 - regional endgame.
 
 Story:
-signals originate below known human infrastructure.
+signals originate below known old-world infrastructure.
 
 Major revelation:
 some structures existed before modern civilization.
@@ -218,7 +218,7 @@ Choice / endgame transition.
 
 Player chooses strategic research direction:
 
-- restore human network;
+- restore the survivor network;
 - hybridize alien technology;
 - isolate and defend;
 - coalition path.
