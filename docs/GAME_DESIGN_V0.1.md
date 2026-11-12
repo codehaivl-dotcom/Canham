@@ -20,13 +20,15 @@
 
 Canonical brand/localization spec: [BRAND_LOCALIZATION_V0.1.md](./BRAND_LOCALIZATION_V0.1.md)
 
+Canonical cross-spec rules: [CANONICAL_RULES_V0.1.md](./CANONICAL_RULES_V0.1.md)
+
 ---
 
 # 1. High concept
 
-Trong tương lai, nhân loại phải đối mặt với nhiều mối đe dọa ngoài Trái Đất: sinh vật lạ, bào tử biến đổi sinh học, công nghệ không rõ nguồn gốc, nhiễu điện từ và những cấu trúc xuất hiện trên bề mặt.
+Trong tương lai, nền văn minh trên hành tinh phải đối mặt với nhiều mối đe dọa ngoài thế giới: sinh vật lạ, bào tử biến đổi sinh học, công nghệ không rõ nguồn gốc, nhiễu điện từ và những cấu trúc xuất hiện trên bề mặt.
 
-Thảm họa không diễn ra trong một ngày. Trong nhiều năm, các quốc gia, tập đoàn và tổ chức quân sự xây dựng hàng nghìn dự án trú ẩn sâu dưới lòng đất.
+Cư dân chính thức của BURROW ZERO là các survivor gấu trúc anthropomorphic. Thảm họa không diễn ra trong một ngày. Trong nhiều năm, các chính quyền, tập đoàn và tổ chức quân sự của nền văn minh cũ xây dựng hàng nghìn dự án trú ẩn sâu dưới lòng đất.
 
 Mỗi người chơi là người điều hành **một Silo sinh tồn độc lập**.
 
@@ -174,38 +176,40 @@ Silo có cấp trung tâm tương tự Town Hall trong Clash of Clans, tạm g�
 
 **Command Core Level — CCL**
 
-Ví dụ prototype:
+Canonical prototype baseline:
 
 | CCL | Giai đoạn | Mở khóa chính |
 |---|---|---|
-| 1 | Survival | Power, Water, Living, Storage |
-| 2 | Stability | Workshop, Clinic |
-| 3 | Contact | Radio, Scout |
-| 4 | Expedition | Squad deployment |
-| 5 | Research | Research Lab |
-| 6 | Defense | Security, turret, reinforced door |
-| 7 | Network | phát hiện Silo khác |
-| 8 | Conflict | PvP raid |
-| 9 | Advanced Tech | prototype weapon |
-| 10 | Alien Tech | artifact research |
+| 1 | Survival | Survival rooms |
+| 2 | First Expedition | Surface Gate + squad cap 3 + basic expedition |
+| 3 | Contact | Radio/Scout + Workshop |
+| 4 | Recovery | Clinic/Training + Medium targets |
+| 5 | Research | Research Lab + squad cap 4 |
+| 6 | Defense | Security/Armory + Resource Site capture |
+| 7 | Network | NPC Silo + broader Silo signals |
+| 8 | Conflict | Player PvP + squad cap 5 |
+| 9 | Advanced Tech | Prototype Forge |
+| 10 | Alien Tech | Xenobiology / Artifact research |
 | 11 | Coalition | alliance projects |
 | 12 | Surface Return | endgame systems |
 
-Con số chưa khóa; mục tiêu là có một trục progression rất dễ hiểu.
+Mốc CCL này là baseline canonical hiện tại; exact upgrade cost vẫn là tuning work.
 
 ## Quy tắc quan trọng
 
 Nâng CCL không chỉ cần tài nguyên xây dựng.
 
-Từ mid-game, một số mốc phải cần:
+Từ mid-game, một số mốc phải cần vật liệu hoặc bằng chứng progression từ bên ngoài Silo, ví dụ:
 
 - boss component;
 - encrypted core;
 - military authorization chip;
-- PvP research token;
+- Combat Data;
 - alien material.
 
-Nhờ vậy người chơi không thể chỉ idle farm để lên endgame.
+**Không có CCL bắt buộc một item chỉ kiếm được từ PvP.** PvP có thể là đường nhanh/khác để lấy một số tài nguyên, nhưng core PvE progression luôn có PvE/NPC/contested alternative.
+
+Nhờ vậy người chơi không thể chỉ idle farm để lên endgame, nhưng cũng không bị ép PvP.
 
 ---
 
@@ -1001,11 +1005,10 @@ PvP không mở ngay đầu game.
 
 Đề xuất:
 
-- CCL 1–4: hoàn toàn PvE.
-- CCL 5–6: thấy NPC Silo.
-- CCL 7: trade / scan player.
-- CCL 8: raid PvP mở.
-- CCL 9+: advanced PvP systems.
+- CCL 1–6: PvE-first.
+- CCL 7: NPC Silo + broader Silo/network signals.
+- CCL 8: player PvP raid mở + squad cap 5.
+- CCL 9+: advanced competitive systems / seasonal modifiers.
 
 Mục đích:
 
@@ -1387,7 +1390,9 @@ Người chơi giỏi preparation có thể thắng mục tiêu mạnh hơn.
 
 # 34. Injury / death
 
-**Death là thật ở mọi nội dung combat.**
+**Death là thật đối với unit mà người chơi chủ động deploy vào PvE hoặc dùng làm attacker trong raid.**
+
+Ngoại lệ canonical: defender trong asynchronous PvP và worker bảo vệ Resource Site **không chết vĩnh viễn khi người chơi offline**; họ chỉ nhận Injury/Fatigue/recovery time.
 
 Khi HP về 0, unit chuyển sang trạng thái **DOWN / DEAD** tùy encounter và sát thương.
 
@@ -1476,7 +1481,7 @@ Nhưng gây:
 
 Người chơi phải chọn:
 
-**Human Technology**
+**Conventional / Old-World Technology**
 
 hay
 
@@ -1628,7 +1633,7 @@ Progression chuyển sang:
 
 Mục tiêu dài hạn:
 
-> từ một căn hầm cố sống sót → trở thành một trung tâm tái thiết nhân loại.
+> từ một căn hầm cố sống sót → trở thành một trung tâm tái thiết nền văn minh.
 
 ---
 
@@ -1636,7 +1641,7 @@ Mục tiêu dài hạn:
 
 Gợi ý cốt truyện dài hạn:
 
-Ban đầu nhân loại tin rằng Alien đã xâm lược Trái Đất.
+Ban đầu cư dân của nền văn minh cũ tin rằng Alien đã xâm lược Trái Đất.
 
 Sau này phát hiện:
 
@@ -1721,7 +1726,7 @@ Nhờ vậy economy tự nhiên buộc người chơi mở rộng gameplay.
 
 Không bán trực tiếp:
 
-- PvP-exclusive blueprint;
+- competitive-earned blueprint without paid bypass;
 - boss-exclusive component;
 - artifact;
 - max-level gear.
@@ -1879,7 +1884,7 @@ Một vertical slice tốt phải cho người chơi trải nghiệm:
 Khoảnh khắc kết thúc slice:
 
 ```
-UNKNOWN HUMAN SIGNAL DETECTED
+UNKNOWN SILO SIGNAL DETECTED
 
 Distance: 18.4 km
 Status: ACTIVE
@@ -1908,7 +1913,7 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 - Scout chỉ cung cấp thông tin xác suất; không có reconnaissance 100% chính xác.
 - Phòng / sector mới trong Silo phải được clear và giành quyền kiểm soát trước khi sử dụng.
 - Rare progression materials tồn tại ngoài Silo.
-- Một số blueprint/component chỉ đến từ Boss, PvP hoặc contested content.
+- Một số blueprint/component chỉ đến từ high-risk external content như Boss, high-difficulty PvE, contested site hoặc PvP; PvP không là đường bắt buộc duy nhất cho core progression.
 - PvP ưu tiên matchmaking ngang CCL/power.
 - PvP là asynchronous Silo infiltration.
 - Không cho high-level farm người mới.
@@ -1924,13 +1929,18 @@ Các điểm sau được xem là direction chính cho tới khi prototype chứ
 Chưa khóa:
 
 - mức độ active-control trong combat (bao nhiêu skill / retarget / timing);
-- side-view hay isometric;
-- mốc CCL chính xác để mở slot squad thứ 4 và thứ 5;
-- số Command Core Level;
-- PvP target selection;
-- season duration;
-- alliance size;
-- monetization cụ thể.
+- mức độ active-control trong combat cuối cùng (bao nhiêu skill / retarget / timing);
+- monetization/pricing cụ thể;
+- exact CCL upgrade costs và balance;
+- final platform release order.
+
+Đã được resolve ở các spec mới:
+- expedition camera: shallow isometric / 2.5D, khoảng 25–35°;
+- squad cap: CCL2 = 3, CCL5 = 4, CCL8 = 5;
+- CCL baseline: 12;
+- PvP target selection: matchmaking spec;
+- season duration: 8–12 tuần;
+- alliance baseline: 20 thành viên.
 
 Không nên khóa những điểm này trước khi có prototype chiến đấu.
 
@@ -1948,7 +1958,7 @@ Một session tốt phải tạo được câu chuyện kiểu:
 
 # 55. Một câu tóm tắt sản phẩm
 
-> **Căn Hầm là survival base-builder nơi mỗi người chơi xây một Silo, nuôi một đội survivor, khám phá thế giới hậu thảm họa theo từng khu vực và buộc phải mạo hiểm PvE, Boss hoặc PvP để giành công nghệ cần thiết cho bước tiến hóa tiếp theo của căn cứ.**
+> **BURROW ZERO là survival base-builder / expedition strategy nơi người chơi xây một Silo, nuôi đội survivor gấu trúc, khám phá thế giới hậu thảm họa theo từng khu vực, săn Boss và lựa chọn tham gia PvP để giành lợi thế, prestige và alternate progression — trong khi PvE vẫn là một game path hoàn chỉnh.**
 
 
 ---
