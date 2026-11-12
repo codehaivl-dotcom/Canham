@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Silo Expansion & Sector Control v0.1
+# BURROW ZERO — Silo Expansion & Sector Control v0.1
 
 **Status:** Prototype baseline  
 **Core rule:** đào thấy không đồng nghĩa sở hữu.
