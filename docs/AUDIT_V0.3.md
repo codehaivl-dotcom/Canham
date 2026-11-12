@@ -407,3 +407,34 @@ Overall pre-production design readiness:
 **~62%**
 
 Đủ để bắt đầu prototype combat/base nhỏ, chưa đủ để build full game.
+
+
+---
+
+# 9. Market research bổ sung
+
+Chi tiết:
+
+[MARKET_RESEARCH_V0.1.md](./MARKET_RESEARCH_V0.1.md)
+
+Các reference quan trọng:
+
+- **Escape from Duckov** — extraction greed, layered progression, fixed map identity + variable run, quest-driven system onboarding.
+- **Bunker Buster** — competitor gần nhất về bunker + power/life support + research + fortress raid/PvP.
+- **Last Fortress: Underground** — underground base + survivor jobs + squad synergy + world/alliance.
+- **Zero City** — shelter + equipped squad + PvP attacks.
+- **System Arrival** — expedition → supply → underground bunker progression.
+- **AETHUS** — exploration/crafting và narrative reason to dig deeper.
+
+Differentiation phải giữ:
+
+1. named survivors có attachment/death;
+2. imperfect intel;
+3. room-by-room expedition;
+4. extraction/retreat;
+5. Silo expansion phải clear sector;
+6. weapon soft-counter/formation;
+7. base-as-dungeon asynchronous PvP;
+8. contested resource sites.
+
+Combat Simulation: **NOT STARTED**.
