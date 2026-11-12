@@ -169,7 +169,33 @@ Chi tiết: [SILO_BUILDINGS_V0.1.md](./SILO_BUILDINGS_V0.1.md)
 
 ---
 
-# 6. Combat Simulation & Encounter Budget — NEXT
+# 6. Market / Competitor Research — DRAFTED
+
+Chi tiết: [MARKET_RESEARCH_V0.1.md](./MARKET_RESEARCH_V0.1.md)
+
+Đã research:
+
+- Fallout Shelter;
+- Last Fortress: Underground;
+- Zero City;
+- Escape from Duckov;
+- Bunker Buster;
+- System Arrival;
+- AETHUS;
+- bunker/underground watchlist.
+
+Kết luận:
+
+- chưa tìm thấy game ghép đúng toàn bộ Silo + named squad + imperfect intel + extraction + resource conflict + PvP dungeon;
+- Bunker Buster là competitor gần nhất ở bunker/power/PvP;
+- Duckov là reference mạnh nhất cho extraction greed loop và layered progression;
+- cần giữ differentiation bằng named squad, room-by-room expedition, base-as-dungeon PvP và contested resources.
+
+**Combat Simulation vẫn chưa bắt đầu.**
+
+---
+
+# 7. Combat Simulation & Encounter Budget — NEXT
 
 Sau Enemy table:
 
@@ -203,7 +229,7 @@ Mục tiêu:
 
 ---
 
-# 7. Loot / Crafting / Blueprint Economy
+# 8. Loot / Crafting / Blueprint Economy
 
 Thiết kế chính xác:
 
@@ -227,7 +253,7 @@ Phải đảm bảo:
 
 ---
 
-# 8. Silo Architecture & Progression — PARTIAL
+# 9. Silo Architecture & Progression — PARTIAL
 
 Thiết kế:
 
@@ -259,7 +285,7 @@ Cần xác định chính xác:
 
 ---
 
-# 9. Scout / Intel System
+# 10. Scout / Intel System
 
 Thiết kế:
 
@@ -278,7 +304,7 @@ Không bao giờ reveal 100%.
 
 ---
 
-# 10. Expedition Flow
+# 11. Expedition Flow
 
 Full state machine:
 
@@ -310,7 +336,7 @@ Cần UI state cho:
 
 ---
 
-# 11. Resource Sites & Territory
+# 12. Resource Sites & Territory
 
 Thiết kế:
 
@@ -337,7 +363,7 @@ Resource sites ban đầu:
 
 ---
 
-# 12. PvP Silo Raid
+# 13. PvP Silo Raid
 
 Thiết kế sau khi PvE combat ổn.
 
@@ -362,7 +388,7 @@ PvP phải sử dụng cùng combat language với PvE.
 
 ---
 
-# 13. World Map
+# 14. World Map
 
 Cần định nghĩa:
 
@@ -381,7 +407,7 @@ Cần định nghĩa:
 
 ---
 
-# 14. Vertical Slice
+# 15. Vertical Slice
 
 Vertical slice đầu tiên chưa cần MMO.
 
@@ -419,7 +445,7 @@ Status: ACTIVE
 
 ---
 
-# 15. Thứ tự triển khai khuyến nghị
+# 16. Thứ tự triển khai khuyến nghị
 
 ```
 GAME VISION
