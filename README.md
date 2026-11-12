@@ -1,9 +1,14 @@
-# Căn Hầm
+# BURROW ZERO
 
-**Căn Hầm** là game survival-management lấy cảm hứng từ vòng lặp dễ tiếp cận của *Fallout Shelter*, nhưng mở rộng thành một thế giới có **Silo riêng cho từng người chơi, expedition PvE có điều khiển, RPG squad/gear, boss, PvP bất đồng bộ và tranh đoạt tài nguyên/công nghệ**.
+> **Deep Below. Far Beyond.**
+
+**BURROW ZERO** là game survival-management / expedition strategy với một **Silo riêng cho từng người chơi**, đội survivor gấu trúc có giá trị lâu dài, PvE dungeon/extraction, boss, crafting, tranh đoạt tài nguyên và PvP bất đồng bộ nơi Silo của người chơi khác trở thành một dungeon để đột nhập.
+
+**Ngôn ngữ đầu tiên:** Tiếng Việt + English.
 
 ## Tài liệu thiết kế
 
+- [Brand & Localization v0.1](docs/BRAND_LOCALIZATION_V0.1.md)
 - [Design & Production Plan](docs/DESIGN_PLAN.md)
 - [Game Vision / GDD](docs/GAME_DESIGN_V0.1.md)
 - [World Targets / Dungeon Design v0.1](docs/WORLD_TARGETS_V0.1.md)
@@ -30,15 +35,26 @@
 
 ## Core loop
 
-**Xây Silo → nuôi/trang bị Unit → Scout → chọn rủi ro → Expedition / Boss / PvP → Extract → chế tạo/nâng cấp → mở tầng công nghệ và khu vực mới → gặp mối đe dọa lớn hơn.**
+**Xây Silo → nuôi/trang bị Survivor → Scout → chọn rủi ro → Expedition / Boss / PvP → Extract → chế tạo/nâng cấp → mở công nghệ và khu vực mới → gặp mối đe dọa lớn hơn.**
+
+## Art direction
+
+- Panda survivor mascot.
+- Simple AI-first low-poly 3D.
+- Một shared rig/body cho survivor.
+- Role đọc qua silhouette + mũ/balo/vũ khí.
+- Không realistic fur/cloth simulation.
+- Môi trường dùng primitive lớn, ít chi tiết nhỏ, dễ dựng bằng AI/code.
 
 ## Nguyên tắc
 
+- PvE phải đủ hay để tự đứng vững như một game hoàn chỉnh.
+- PvP là lớp đối kháng nổi bật, không phải lý do duy nhất để chơi.
 - Silo là trái tim của game, không chỉ là menu nâng cấp.
-- Unit là nhân vật có giá trị, không phải lính dùng một lần.
+- Survivor là nhân vật có giá trị, không phải lính dùng một lần hay hero-gacha.
 - Loot mạnh nhất không thể chỉ farm thụ động trong căn cứ.
-- Khó hơn phải đòi hỏi **team composition + gear + consumable + quyết định**, không chỉ tăng chỉ số kẻ địch.
-- PvP ưu tiên đối thủ ngang tầm và gameplay đột nhập Silo, tránh kiểu người mạnh nghiền người mới.
-- Không pay-to-win: tiền thật không được thay thế thành tích PvP/Boss để mở blueprint độc quyền.
+- Khó hơn phải đòi hỏi **team composition + gear + consumable + quyết định**, không chỉ tăng HP kẻ địch.
+- PvP ưu tiên đối thủ ngang tầm và gameplay đột nhập Silo.
+- Không pay-to-win.
 
 Repo đang ở giai đoạn **concept / pre-production**.
