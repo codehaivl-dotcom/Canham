@@ -5,44 +5,20 @@
 
 ---
 
-# 1. Working title audit
+# 1. Brand status — LOCKED
 
-Repo hiện dùng **Căn Hầm / Canham** như codename.
+The previous naming audit is superseded.
 
-Quick public-name check cho thấy nhiều hướng tên hiển nhiên đã bị dùng:
+**Official game name:** BURROW ZERO  
+**Official slogan:** Deep Below. Far Beyond.  
+**Initial languages:** Vietnamese + English.  
+**Primary survivor art:** panda mascot, simple AI-first low-poly 3D.
 
-- Deep Signal — đã có game;
-- Hollow Signal — đã có game;
-- Deepward — đã có game;
-- Deephold — đã có game;
-- Project Silo — đã có ít nhất một game/project;
-- Signal Below — đã có game.
+Canonical brand spec:
 
-## Working title đề xuất: ECHO SILO
+[BRAND_LOCALIZATION_V0.1.md](./BRAND_LOCALIZATION_V0.1.md)
 
-Lý do:
-
-- ngắn;
-- quốc tế;
-- gợi đúng hai trụ cốt truyện: **Silo + Signal**;
-- “Echo” hợp với việc các Silo tìm thấy nhau sau nhiều năm im lặng;
-- dùng được cho logo / UI / season:
-  - ECHO SILO
-  - ECHO SILO: FIRST SIGNAL
-  - ECHO SILO: THE AWAKENING
-- quick search hiện không surfacing một game nổi bật có exact title này.
-
-**Lưu ý:** quick web check không phải trademark clearance. Trước khi public/store page cần kiểm tra Steam/App Store/domain/trademark chính thức.
-
-Các tên dự phòng:
-
-1. **ECHO SILO** — đề xuất số 1.
-2. **UNDERNODE** — mạnh về persistent network, yếu hơn về survival fantasy.
-3. **SILO ECHO** — trực diện nhưng âm kém tự nhiên hơn.
-4. **THE LAST NETWORK** — nhấn shared world, không nói bunker.
-5. **DEEP NETWORK** — đúng concept nhưng generic.
-
-Repo tiếp tục dùng Canham cho tới khi chủ dự án khóa tên.
+Final commercial trademark/store/domain clearance remains a pre-launch task.
 
 ---
 
