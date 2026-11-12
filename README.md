@@ -24,10 +24,23 @@
 - [Population, Jobs, Traits & Perks v0.1](docs/POPULATION_TRAITS_V0.1.md)
 - [Loot, Crafting & Blueprint Economy v0.1](docs/LOOT_CRAFTING_V0.1.md)
 - [Reward Reveal, Cache & Survivor Signal v0.1](docs/REWARD_REVEAL_CACHE_V0.1.md)
+- [Resource Sites & Contest v0.1](docs/RESOURCE_SITES_V0.1.md)
+- [NPC Silo Raid v0.1](docs/NPC_SILO_RAID_V0.1.md)
+- [Player PvP Silo Raid v0.1](docs/PLAYER_PVP_RAID_V0.1.md)
+- [PvP Matchmaking, Protection & Revenge v0.1](docs/PVP_MATCHMAKING_PROTECTION_V0.1.md)
+- [World Map, Regions & Refresh v0.1](docs/WORLD_MAP_REGIONS_V0.1.md)
+- [Faction System v0.1](docs/FACTIONS_V0.1.md)
+- [Alliance / Coalition v0.1](docs/ALLIANCE_COALITION_V0.1.md)
+- [Mimic & Infiltration v0.1](docs/MIMIC_INFILTRATION_V0.1.md)
+- [Story Campaign & Chapters v0.1](docs/STORY_CAMPAIGN_V0.1.md)
+- [Tutorial — First 2 Hours v0.1](docs/TUTORIAL_FIRST_2H_V0.1.md)
+- [UI/UX Navigation v0.1](docs/UI_UX_NAVIGATION_V0.1.md)
+- [Sound & Music Direction v0.1](docs/SOUND_MUSIC_V0.1.md)
+- [Seasons & Endgame v0.1](docs/SEASONS_ENDGAME_V0.1.md)
 
 ### Thứ tự thiết kế hiện tại
 
-**World Targets ✓ → Units & Items ✓ → Enemies ✓ → Economy/Buildings ✓ → Market Research ✓ → Loot/Crafting ✓ baseline → Population/Traits ✓ baseline → Scout/Travel/Contracts ✓ baseline → Silo Expansion ✓ baseline → Combat Simulation NOT STARTED → Resource Sites → NPC Silo Raid → Vertical Slice → PvP.**
+**Core gameplay/world design baseline is now documented: World Targets ✓ → Units/Items ✓ → Enemies ✓ → Economy/Buildings ✓ → Loot/Crafting ✓ → Population/Traits ✓ → Scout/Travel ✓ → Silo Expansion ✓ → Resource Sites ✓ → NPC Silo Raid ✓ → Player PvP/Matchmaking ✓ → World Map ✓ → Factions ✓ → Alliance ✓ → Mimic ✓ → Story ✓ → Tutorial ✓ → UI/UX ✓ → Sound ✓ → Seasons/Endgame ✓. Combat Simulation remains NOT STARTED.**
 
 ## North Star
 
