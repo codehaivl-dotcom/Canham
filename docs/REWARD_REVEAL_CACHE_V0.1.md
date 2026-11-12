@@ -1,4 +1,4 @@
-# CĂN HẦM / ECHO SILO — Reward Reveal, Cache & Survivor Signal v0.1
+# BURROW ZERO — Reward Reveal, Cache & Survivor Signal v0.1
 
 **Status:** Direction lock + prototype baseline  
 **Purpose:** tạo cảm giác mở thưởng mạnh như Fallout Shelter nhưng không biến game thành hero-gacha hoặc paid RNG.
@@ -277,11 +277,11 @@ Exact UI colors sẽ khóa trong Art Direction.
 
 Không có:
 
-- SSR human;
-- Legendary human;
-- 5-star human.
+- SSR survivor;
+- Legendary survivor;
+- 5-star survivor.
 
-Con người được đánh giá bằng:
+Survivor được đánh giá bằng:
 
 - stats;
 - profession;
