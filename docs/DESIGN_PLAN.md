@@ -586,3 +586,29 @@ Sau khi chủ dự án muốn tiếp tục, hai hướng hợp lý nhất:
 2. NPC Silo Raid exact flow / defender AI / alarm.
 
 Combat Simulation có thể làm sau khi hai nhánh trên đủ context.
+
+
+---
+
+# 23. Reward Reveal / Cache / Survivor Signal — LOCKED DIRECTION
+
+Chi tiết: [REWARD_REVEAL_CACHE_V0.1.md](./REWARD_REVEAL_CACHE_V0.1.md)
+
+Đã khóa:
+
+- card-style reward reveal;
+- Supply / Medical / Military / Research / Alien / Combat cache;
+- cache quality gắn với source location;
+- item rarity presentation;
+- survivor không có Common/Rare/Epic/Legendary;
+- survivor đến từ Rescue / Distress / Radio / Cryo / Story;
+- Distress Signal có thể cho player chọn survivor;
+- Cryo Pod là rare discovery;
+- direct loot/crafting vẫn tồn tại;
+- cache tìm trong dungeon vẫn phải extract;
+- PvE tự đủ content và progression;
+- PvP là lớp đối kháng/prestige/economy, không bắt buộc để game thú vị;
+- anti-gacha rules;
+- paid RNG không được là nguồn exclusive power.
+
+Combat Simulation vẫn **NOT STARTED**.
